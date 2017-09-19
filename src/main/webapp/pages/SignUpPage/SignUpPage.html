@@ -1,0 +1,124 @@
+<wm-page data-ng-controller="SignUpPagePageController" name="page1" pagetitle="signUp"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-page-content columnwidth="12" name="page_content1" padding="0px"> 
+            <wm-container width="100%" height="100%" backgroundrepeat="repeat" backgroundsize="auto 205%" backgroundattachment="fixed" name="container1" backgroundcolor="#ffffff"> 
+                <wm-layoutgrid name="layoutgrid1" width="100%"> 
+                    <wm-gridrow name="gridrow1" height="100%" padding="5px unset unset unset"> 
+                        <wm-gridcolumn columnwidth="4" name="gridcolumn28_1"></wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="4" name="gridcolumn29_1"> 
+                            <wm-message name="message1" show="false"></wm-message> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="4" name="gridcolumn31"></wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow2" height="100%"> 
+                        <wm-gridcolumn columnwidth="2" name="gridcolumn2"></wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="8" horizontalalign="center" name="gridcolumn3" padding="80px unset 205px unset" height="100%"> 
+                            <wm-layoutgrid name="layoutgrid7"> 
+                                <wm-gridrow name="gridrow19_1"> 
+                                    <wm-gridcolumn columnwidth="2" name="gridcolumn58"></wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="2" name="gridcolumn26" padding="100px unset unset unset"> 
+                                        <wm-layoutgrid name="layoutgrid6"> 
+                                            <wm-gridrow name="gridrow20"> 
+                                                <wm-gridcolumn columnwidth="6" name="gridcolumn28"></wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                            <wm-gridrow name="gridrow18_1"> 
+                                                <wm-gridcolumn columnwidth="12" name="gridcolumn24"> 
+                                                    <wm-container name="container7_1" backgroundcolor="#d6f5d6"> 
+                                                        <wm-label padding="unset 0.5em" name="label8" caption="Get the tools," backgroundposition="-100%" fontsize="35"></wm-label> 
+                                                        <wm-label padding="unset 0.5em" caption="take the opportunity" backgroundposition="-100%" fontsize="35" name="label7_1"></wm-label> 
+                                                    </wm-container> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                            <wm-gridrow name="gridrow19_2"> 
+                                                <wm-gridcolumn columnwidth="6" name="gridcolumn26_1"></wm-gridcolumn> 
+                                                <wm-gridcolumn columnwidth="6" name="gridcolumn27_1"></wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                        </wm-layoutgrid> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="4" name="gridcolumn27" padding="0px"> 
+                                        <wm-form title="Sign Up:" style="max-width: 350px; margin: 0 auto;" class="panel-default" name="form1" iconclass="fa fa-user-plus" enctype="application/x-www-form-urlencoded" validationtype="default"> 
+                                            <wm-layoutgrid name="layoutgrid6_1"> 
+                                                <wm-gridrow name="gridrow19" padding="unset .5px"> 
+                                                    <wm-gridcolumn columnwidth="12" name="gridcolumn23"> 
+                                                        <wm-composite name="composite7"> 
+                                                            <wm-label class="col-md-3" width="100%" caption="Name" required="false" name="label11" textalign="center"></wm-label> 
+                                                            <wm-container class="col-md-9" width="100%" name="container11"> 
+                                                                <wm-text placeholder="" type="text" name="name" required="false" autocomplete="true"></wm-text> 
+                                                            </wm-container> 
+                                                        </wm-composite> 
+                                                    </wm-gridcolumn> 
+                                                </wm-gridrow> 
+                                                <wm-gridrow padding="unset .5px unset unset" name="gridrow14_1"> 
+                                                    <wm-gridcolumn columnwidth="12" name="gridcolumn17_1"> 
+                                                        <wm-composite name="composite4"> 
+                                                            <wm-label class="col-md-3" width="100%" caption="Email" required="true" name="label6"></wm-label> 
+                                                            <wm-container class="col-md-9" width="100%" name="container7"> 
+                                                                <wm-text placeholder="" type="email" name="email" regexp="^[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$" autocomplete="true"></wm-text> 
+                                                            </wm-container> 
+                                                        </wm-composite> 
+                                                    </wm-gridcolumn> 
+                                                </wm-gridrow> 
+                                                <wm-gridrow padding="1em .5em 1em unset" name="gridrow16"> 
+                                                    <wm-gridcolumn columnwidth="12" padding="unset .5em" name="gridcolumn20"> 
+                                                        <wm-button type="submit" caption="Sign Up" width="100%" class="btn-success" fontsize="1.2" fontunit="em" name="button1" on-click="button1Click($event, $scope)" on-dblclick="button1Dblclick($event, $scope)"></wm-button> 
+                                                        <wm-buttongroup horizontalalign="right" class="col-md-12" name="buttongroup1"></wm-buttongroup> 
+                                                    </wm-gridcolumn> 
+                                                </wm-gridrow> 
+                                                <wm-gridrow horizontalalign="center" padding="unset .5em" name="gridrow17"> 
+                                                    <wm-gridcolumn columnwidth="12" name="gridcolumn21"> 
+                                                        <wm-container opacity="0.5" name="container10" show="false"> 
+                                                            <hr class="col-sm-3 col-xs-3" color="#7c7b7b"> 
+                                                            <wm-label caption="OR Sign Up using" backgroundcolor="#FFF" margin="5px 0px unset" padding=".5em" class="col-sm-6 col-xs-6" textalign="center" name="label10"></wm-label> 
+                                                            <hr class="col-sm-3 col-xs-3" color="#7c7b7b"> 
+                                                        </wm-container> 
+                                                        <wm-label padding="unset 0.5em" name="label_ip" caption="89.114.213.45"></wm-label> 
+                                                    </wm-gridcolumn> 
+                                                </wm-gridrow> 
+                                                <wm-gridrow name="gridrow18" padding="10px unset 13px unset"> 
+                                                    <wm-gridcolumn columnwidth="12" padding=".5em unset" name="gridcolumn22"> 
+                                                        <wm-label padding="unset 0.5em" name="label6_1" caption="bind:Variables.UserInfoFromIpAddress.dataSet.country_name"></wm-label> 
+                                                    </wm-gridcolumn> 
+                                                </wm-gridrow> 
+                                                <wm-gridrow name="gridrow1"> 
+                                                    <wm-gridcolumn name="gridcolumn1" columnwidth="NaN"></wm-gridcolumn> 
+                                                </wm-gridrow> 
+                                            </wm-layoutgrid> 
+                                        </wm-form> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="2" name="gridcolumn30" horizontalalign="center" padding="55px unset unset unset"> 
+                                        <wm-layoutgrid name="layoutgrid6_2"> 
+                                            <wm-gridrow name="gridrow18_2"> 
+                                                <wm-gridcolumn columnwidth="6" name="gridcolumn25"></wm-gridcolumn> 
+                                                <wm-gridcolumn columnwidth="6" name="gridcolumn26_2"></wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                            <wm-gridrow name="gridrow19_3"> 
+                                                <wm-gridcolumn columnwidth="12" name="gridcolumn27_2"> 
+                                                    <wm-picture picturesource="resources/images/imagelists/advert-84408_1920.png" width="200" name="picture2" pictureaspect="H" shape="rounded"></wm-picture> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                            <wm-gridrow name="gridrow20_1"> 
+                                                <wm-gridcolumn columnwidth="6" name="gridcolumn29"></wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                        </wm-layoutgrid> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="2" name="gridcolumn57"></wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="2" name="gridcolumn14"> 
+                            <wm-container name="container6" backgroundposition="left"></wm-container> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow17_1" padding="50px unset unset unset" overflow="auto"> 
+                        <wm-gridcolumn columnwidth="2" name="gridcolumn25_1"></wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="8" name="gridcolumn26_3"></wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="2" name="gridcolumn27_3"></wm-gridcolumn> 
+                    </wm-gridrow> 
+                </wm-layoutgrid> 
+            </wm-container> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

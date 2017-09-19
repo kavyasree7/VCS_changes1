@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" id="EMailService" class="com.faturacaomodelo.emailservice.EMailService" type="JavaService" springFile="EMailService.spring.xml">
+    <dataobjects/>
+</service>

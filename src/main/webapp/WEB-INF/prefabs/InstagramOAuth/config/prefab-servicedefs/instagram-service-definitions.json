@@ -1,0 +1,96 @@
+{
+  "InstagramController_getAccessToken" : {
+    "controller" : "InstagramController",
+    "wmServiceOperationInfo" : {
+      "methodType" : "get",
+      "relativePath" : "/instagram/accessToken",
+      "name" : "getAccessToken",
+      "produces" : [ "application/json" ],
+      "directPath" : "/instagram/accessToken",
+      "proxySettings" : {
+        "web" : true,
+        "mobile" : true
+      },
+      "httpMethod" : "get",
+      "parameters" : [ ],
+      "definitions" : { },
+      "consumes" : null
+    },
+    "service" : "instagram",
+    "operationType" : "string",
+    "id" : "InstagramController_getAccessToken",
+    "type" : "string"
+  },
+  "InstagramController_callback" : {
+    "controller" : "InstagramController",
+    "wmServiceOperationInfo" : {
+      "methodType" : "get",
+      "relativePath" : "/instagram/callback",
+      "name" : "callback",
+      "produces" : null,
+      "directPath" : "/instagram/callback",
+      "proxySettings" : {
+        "web" : true,
+        "mobile" : true
+      },
+      "httpMethod" : "get",
+      "parameters" : [ ],
+      "definitions" : { },
+      "consumes" : null
+    },
+    "service" : "instagram",
+    "operationType" : "object",
+    "id" : "InstagramController_callback",
+    "type" : "object"
+  },
+  "InstagramController_getCallbackURL" : {
+    "controller" : "InstagramController",
+    "wmServiceOperationInfo" : {
+      "methodType" : "get",
+      "relativePath" : "/instagram/callbackURL",
+      "name" : "getCallbackURL",
+      "produces" : [ "application/json" ],
+      "directPath" : "/instagram/callbackURL",
+      "proxySettings" : {
+        "web" : true,
+        "mobile" : true
+      },
+      "httpMethod" : "get",
+      "parameters" : [ ],
+      "definitions" : { },
+      "consumes" : null
+    },
+    "service" : "instagram",
+    "operationType" : "string",
+    "id" : "InstagramController_getCallbackURL",
+    "type" : "string"
+  },
+  "InstagramController_getLoginURL" : {
+    "controller" : "InstagramController",
+    "wmServiceOperationInfo" : {
+      "methodType" : "get",
+      "relativePath" : "/instagram/loginURl",
+      "name" : "getLoginURL",
+      "produces" : [ "application/json" ],
+      "directPath" : "/instagram/loginURl",
+      "proxySettings" : {
+        "web" : true,
+        "mobile" : true
+      },
+      "httpMethod" : "get",
+      "parameters" : [ {
+        "parameterType" : "query",
+        "name" : "state",
+        "type" : "java.lang.String",
+        "contentType" : null,
+        "required" : false
+      } ],
+      "definitions" : { },
+      "consumes" : null
+    },
+    "service" : "instagram",
+    "operationType" : "string",
+    "id" : "InstagramController_getLoginURL",
+    "type" : "string"
+  }
+}

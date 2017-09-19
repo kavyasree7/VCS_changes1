@@ -1,0 +1,261 @@
+<wm-partial data-ng-controller="topnavPageController" name="topnav" type="topnav"> 
+    <wm-navbar name="navbar1" backgroundcolor="#00bb80" show="true"> 
+        <wm-nav name="leftTopLinks" type="navbar" class="navbar-left" show="true" autoclose="always"> 
+            <wm-nav-item name="nav_item15"> 
+                <wm-anchor name="anchor11" iconclass="wi wi-home" caption="Home" accessroles="Anonymous" on-click="Variables.goToPage_HomePage.invoke()"></wm-anchor> 
+            </wm-nav-item> 
+            <wm-nav-item name="nav_item7_2"> 
+                <wm-anchor name="anchor5" iconclass="wi wi-dashboard" caption="My Business Dashboard" on-click="Variables.goToPage_myBusinessPage.invoke()" accessroles="Authenticated"></wm-anchor> 
+            </wm-nav-item> 
+            <wm-nav-item name="list_services"> 
+                <wm-anchor caption="My Network" name="MyNetwork" iconclass="fa fa-users" on-click="Variables.goToPage_myNetworkPage.invoke()" accessroles="Authenticated"></wm-anchor> 
+            </wm-nav-item> 
+            <wm-nav-item name="nav_item5"> 
+                <wm-anchor name="MyProfile" iconclass="fa fa-book" caption="Business Profile" on-click="Variables.goToPage_myProfilePage.invoke()" accessroles="Authenticated" show="false"></wm-anchor> 
+            </wm-nav-item> 
+            <wm-nav-item name="nav_item14"> 
+                <wm-anchor name="anchor10" iconclass="fa fa-globe" caption="Social" accessroles="Authenticated" on-click="Variables.goToPage_socialPage.invoke()"></wm-anchor> 
+            </wm-nav-item> 
+        </wm-nav> 
+        <wm-nav name="rightTopLinks" type="navbar" class="navbar-right"> 
+            <wm-nav-item name="nav_item7"></wm-nav-item> 
+            <wm-nav-item name="nav_item11_1"> 
+                <wm-anchor name="anchor7" iconclass="wi wi-file" caption="Princing" on-click="Variables.goToPage_princingPage.invoke()" accessroles="Everyone"></wm-anchor> 
+            </wm-nav-item> 
+            <wm-nav-item name="nav_item12"> 
+                <wm-anchor name="anchor8" iconclass="fa fa-sign-in" caption="Sign In" on-click="Variables.goToPage_Login.invoke()" accessroles="Anonymous"></wm-anchor> 
+            </wm-nav-item> 
+            <wm-nav-item name="nav_item13"> 
+                <wm-anchor name="anchor9" iconclass="fa fa-user-plus" caption="Sign Up" on-click="Variables.goToPage_SignUpPage.invoke()" accessroles="Anonymous"></wm-anchor> 
+            </wm-nav-item> 
+            <wm-nav-item name="nav_item8"> 
+                <wm-anchor name="anchor6" iconclass="wi wi-notifications fa-lg" caption="" accessroles="Authenticated" hint="Notification"></wm-anchor> 
+            </wm-nav-item> 
+            <wm-nav-item name="nav_item11"> 
+                <wm-nav-item name="list_help"> 
+                    <wm-anchor caption="" name="helpLink" iconclass="wi wi-help-outline" accessroles="Authenticated" hint="Help"></wm-anchor> 
+                </wm-nav-item> 
+            </wm-nav-item> 
+            <wm-nav-item name="nav_item10"> 
+                <wm-nav-item name="list_logout"> 
+                    <wm-anchor caption="" name="logoutLink" iconclass="wi wi-sign-out" on-click="Actions.logoutAction.invoke()" accessroles="Authenticated" hint="Logout"></wm-anchor> 
+                </wm-nav-item> 
+            </wm-nav-item> 
+            <wm-nav-item name="nav_item7_1"> 
+                <wm-menu caption="" autoclose="outsideClick" name="menu3" iconclass="fa fa-cog fa-lg" dataset="bind:[
+
+{
+
+&quot;label&quot;: &quot;Sequences&quot;,
+
+&quot;icon&quot;: &quot;wi wi-arrow-right&quot;,
+
+&quot;link&quot;: &quot;#/sequence&quot;,
+
+&quot;role&quot;: &quot;admin&quot;
+
+},
+
+{
+
+&quot;label&quot;: &quot;Product Type&quot;,
+
+&quot;icon&quot;: &quot;wi wi-arrow-right&quot;,
+
+&quot;link&quot;: &quot;#/productTypePage&quot;,
+
+&quot;role&quot;: &quot;admin&quot;
+
+},
+
+{
+
+&quot;label&quot;: &quot;Language&quot;,
+
+&quot;icon&quot;: &quot;wi wi-arrow-right&quot;,
+
+&quot;link&quot;: &quot;#/language&quot;,
+
+&quot;role&quot;: &quot;admin&quot;
+
+},
+
+{
+
+&quot;label&quot;: &quot;Translation&quot;,
+
+&quot;icon&quot;: &quot;wi wi-arrow-right&quot;,
+
+&quot;link&quot;: &quot;#/translationPage&quot;,
+
+&quot;role&quot;: &quot;admin&quot;
+
+},
+
+{
+
+&quot;label&quot;: &quot;Currency&quot;,
+
+&quot;icon&quot;: &quot;wi wi-arrow-right&quot;,
+
+&quot;link&quot;: &quot;#/currency&quot;,
+
+&quot;role&quot;: &quot;admin&quot;
+
+},
+
+{
+
+&quot;label&quot;: &quot;Timezone&quot;,
+
+&quot;icon&quot;: &quot;wi wi-arrow-right&quot;,
+
+&quot;link&quot;: &quot;#/timezonePage&quot;,
+
+&quot;role&quot;: &quot;admin&quot;
+
+},
+
+{
+
+&quot;label&quot;: &quot;Payment Methods&quot;,
+
+&quot;icon&quot;: &quot;wi wi-arrow-right&quot;,
+
+&quot;link&quot;: &quot;#/paymentMethodPage&quot;,
+
+&quot;role&quot;: &quot;admin&quot;
+
+},
+
+{
+
+&quot;label&quot;: &quot;Documents Workflow&quot;,
+
+&quot;icon&quot;: &quot;wi wi-arrow-right&quot;,
+
+&quot;link&quot;: &quot;#/state&quot;,
+
+&quot;role&quot;: &quot;admin&quot;
+
+},
+
+{
+
+&quot;label&quot;: &quot;Document Media Library&quot;,
+
+&quot;icon&quot;: &quot;wi wi-arrow-right&quot;,
+
+&quot;link&quot;: &quot;#/mediaLibraryPage&quot;,
+
+&quot;role&quot;: &quot;admin&quot;
+
+},
+
+{
+
+&quot;label&quot;: &quot;Fiscal Position&quot;,
+
+&quot;icon&quot;: &quot;wi wi-arrow-right&quot;,
+
+&quot;link&quot;: &quot;#/FiscalPosition&quot;,
+
+&quot;role&quot;: &quot;admin&quot;
+
+},
+
+{
+
+&quot;label&quot;: &quot;Tax&quot;,
+
+&quot;icon&quot;: &quot;wi wi-arrow-right&quot;,
+
+&quot;link&quot;: &quot;#/tax&quot;,
+
+&quot;role&quot;: &quot;admin&quot;
+
+},
+
+{
+
+&quot;label&quot;: &quot;Tax Rate&quot;,
+
+&quot;icon&quot;: &quot;wi wi-arrow-right&quot;,
+
+&quot;link&quot;: &quot;#/taxRatePage&quot;,
+
+&quot;role&quot;: &quot;admin&quot;
+
+},
+
+{
+
+&quot;label&quot;: &quot;Tax Type&quot;,
+
+&quot;icon&quot;: &quot;wi wi-arrow-right&quot;,
+
+&quot;link&quot;: &quot;#/taxTypePage&quot;,
+
+&quot;role&quot;: &quot;admin&quot;
+
+}
+
+]" menuclass="btn-link" accessroles="admin" hint="Admin Settings" width="100%"></wm-menu> 
+            </wm-nav-item> 
+            <wm-nav-item name="nav_item16"> 
+                <wm-menu caption="" autoclose="outsideClick" name="menu3_1" iconclass="fa fa-cog fa-lg" menuclass="btn-link" hint="User Settings" dataset="bind:[
+
+{
+
+&quot;label&quot;: &quot;Users&quot;,
+
+&quot;icon&quot;: &quot;wi wi-arrow-right&quot;,
+
+&quot;link&quot;: &quot;#/user&quot;,
+
+&quot;role&quot;: &quot;user&quot;
+
+},
+
+{
+
+&quot;label&quot;: &quot;Payment Terms&quot;,
+
+&quot;icon&quot;: &quot;wi wi-arrow-right&quot;,
+
+&quot;link&quot;: &quot;#/paymentterms&quot;,
+
+&quot;role&quot;: &quot;user&quot;
+
+},
+
+{
+
+&quot;label&quot;: &quot;Tax&quot;,
+
+&quot;icon&quot;: &quot;wi wi-arrow-right&quot;,
+
+&quot;link&quot;: &quot;#/tax&quot;,
+
+&quot;role&quot;: &quot;user&quot;
+
+},
+
+{
+
+&quot;label&quot;: &quot;Tax Rate&quot;,
+
+&quot;icon&quot;: &quot;wi wi-arrow-right&quot;,
+
+&quot;link&quot;: &quot;#/taxRatePage&quot;,
+
+&quot;role&quot;: &quot;user&quot;
+
+}
+
+]" width="100%" accessroles="Authenticated"></wm-menu> 
+            </wm-nav-item> 
+        </wm-nav> 
+    </wm-navbar> 
+    <wm-select class="select-locale" dataset="bind:Variables.supportedLocale.dataSet" on-change="changeAppLocale($scope)" placeholder="Select Language" name="select1"></wm-select> 
+</wm-partial>

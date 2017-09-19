@@ -1,0 +1,34 @@
+{
+  "partnerCount" : {
+    "name" : "partnerCount",
+    "description" : "partnerCount",
+    "version" : "V2",
+    "queryString" : "select COUNT(name) from partner",
+    "countQueryString" : "select count(*) from (select COUNT(name) from partner) wmTempTable",
+    "nativeSql" : true,
+    "fetchCount" : true,
+    "type" : "SELECT",
+    "parameters" : [ ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : "GET"
+    },
+    "identifiers" : [ ],
+    "response" : {
+      "typeRef" : "com.faturacaomodelo.dbinvoice.models.query.PartnerCountResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "PAGINATED",
+      "properties" : [ {
+        "name" : "COUNT(name)",
+        "fieldName" : "count_name_",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Long",
+          "list" : false
+        }
+      } ]
+    }
+  }
+}

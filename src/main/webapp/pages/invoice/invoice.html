@@ -1,0 +1,32 @@
+<wm-page data-ng-controller="invoicePageController" pagetitle="Invoice" name="page1"> 
+    <wm-header content="header" name="header1" backgroundimage="resources/images/imagelists/slide3.jpg"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container name="container1"> 
+                <wm-label padding="unset 0.5em" class="h1" caption="Invoice" name="label1" color="#00bb80" fontweight="bold"></wm-label> 
+            </wm-container> 
+            <wm-container name="container3" padding="5px unset" horizontalalign="right"> 
+                <wm-button class="btn-success" caption="New Invoice" type="button" margin="unset 0.5em" name="button1" iconclass="wi wi-plus" on-click="Variables.goToPage_createNewInvoice.invoke()"></wm-button> 
+            </wm-container> 
+            <wm-table editmode="inline" title="Invoice List" dataset="bind:Variables.DbinvoiceInvoiceData.dataSet" navigation="Classic" name="grid1"> 
+                <wm-table-column binding="id" caption="Id" type="integer" primary-key="true" generator="identity" readonly="true" edit-widget-type="number" show="true"></wm-table-column> 
+                <wm-table-column binding="invoiceStatus.id" caption="Status (Id)" type="integer" primary-key="true" generator="identity" edit-widget-type="select" datafield="id" displayfield="id" show="true" related-entity-name="InvoiceStatus" readonly="false"></wm-table-column> 
+                <wm-table-column binding="invoiceStatus.status" caption="Status" type="string" generator="assigned" readonly="true" edit-widget-type="text" show="true" related-entity-name="InvoiceStatus"></wm-table-column> 
+                <wm-table-column binding="paymentValidationDate" caption="Due Date" type="date" primary-key="false" generator="assigned" edit-widget-type="date" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="invoiceDate" caption="Invoice Date" type="date" generator="assigned" edit-widget-type="date" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="company.partnerId" caption="Partner Id" type="integer" primary-key="false" generator="assigned" readonly="true" edit-widget-type="number" show="true" related-entity-name="Company"></wm-table-column> 
+                <wm-table-column binding="partner.name" caption="Name" type="string" primary-key="false" generator="assigned" readonly="true" edit-widget-type="text" show="true" related-entity-name="Partner"></wm-table-column> 
+                <wm-table-column binding="invoiceTotal" caption="Amount Due" type="integer" generator="assigned" edit-widget-type="number" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="rowOperations" caption="Actions" type="custom" width="120px" readonly="true" edit-widget-type="text" sortable="false" searchable="false" show="true"></wm-table-column> 
+                <wm-table-row-action key="updaterow" display-name="" show="true" class="btn-transparent" iconclass="wi wi-pencil" title="Edit" action="editRow()" disabled="false"></wm-table-row-action> 
+                <wm-table-row-action key="deleterow" display-name="" show="true" class="btn-transparent" iconclass="wi wi-trash" title="Delete" action="deleteRow()" disabled="false"></wm-table-row-action> 
+            </wm-table> 
+            <wm-container padding="5px unset" horizontalalign="right" name="container3_1"> 
+                <wm-button class="btn-success" caption="New Invoice" type="button" margin="unset 0.5em" iconclass="wi wi-plus" name="button2" on-click="Variables.goToPage_createNewInvoice.invoke()"></wm-button> 
+            </wm-container> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

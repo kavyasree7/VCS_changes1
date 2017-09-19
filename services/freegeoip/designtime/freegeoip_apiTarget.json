@@ -1,0 +1,93 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "2.0",
+    "x-WM-SERVICE_TYPE" : "RestService",
+    "x-WM-API_ID" : "20e13deb-cc03-4eb6-af6d-0fb48328f4d2",
+    "x-WM-USE_PROXY_FOR_WEB" : true,
+    "x-WM-SERVICE_ID" : "freegeoip2",
+    "x-WM-USE_PROXY_FOR_MOBILE" : true
+  },
+  "host" : "freegeoip.net",
+  "basePath" : "",
+  "tags" : [ {
+    "name" : "RestServiceVirtualController",
+    "description" : "Rest service swagger documentation"
+  } ],
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/json/{useripaddress}" : {
+      "get" : {
+        "tags" : [ "RestServiceVirtualController" ],
+        "operationId" : "freegeoip_RestServiceVirtualController-invoke",
+        "consumes" : [ "text/xml" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "useripaddress",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/RootResponse"
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "invoke",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-TAG" : "RestServiceVirtualController",
+      "x-WM-BASE_PATH" : "/json/{useripaddress}",
+      "x-WM-COMPLETE_PATH" : "${rest.freegeoip.scheme}://${rest.freegeoip.host}${rest.freegeoip.basepath}/json/{useripaddress}",
+      "x-WM-RELATIVE_PATH" : ""
+    }
+  },
+  "definitions" : {
+    "RootResponse" : {
+      "required" : [ "city", "country_code", "country_name", "ip", "latitude", "longitude", "metro_code", "region_code", "region_name", "time_zone", "zip_code" ],
+      "properties" : {
+        "region_name" : {
+          "type" : "string"
+        },
+        "time_zone" : {
+          "type" : "string"
+        },
+        "zip_code" : {
+          "type" : "string"
+        },
+        "metro_code" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "region_code" : {
+          "type" : "string"
+        },
+        "longitude" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "latitude" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "country_code" : {
+          "type" : "string"
+        },
+        "country_name" : {
+          "type" : "string"
+        },
+        "ip" : {
+          "type" : "string"
+        },
+        "city" : {
+          "type" : "string"
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "freegeoip.RootResponse",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ]
+    }
+  }
+}

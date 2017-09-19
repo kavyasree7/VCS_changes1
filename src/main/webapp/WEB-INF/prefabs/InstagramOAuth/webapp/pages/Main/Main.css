@@ -1,0 +1,8 @@
+.wm-app .instagram-login-btn, .wm-app .instagram-login-btn:hover {
+    background-color : #125688;
+    color: #fff;
+}
+.wm-app .instagram-login-btn .btn-caption:not(:empty) {
+    border-left: 0.5px solid rgba(255, 255, 255, 0.34);
+    padding-left: 5px;
+}

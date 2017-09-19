@@ -1,0 +1,466 @@
+<wm-page data-ng-controller="myBusinessPagePageController" name="page1" pagetitle="myBusinessDashboard"> 
+    <wm-header content="header" name="header1" backgroundimage="resources/images/imagelists/slide3.jpg"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container name="container1"> 
+                <wm-container name="container8_1" backgroundcolor="#ffffff"> 
+                    <wm-layoutgrid name="layoutgrid6"> 
+                        <wm-gridrow name="gridrow12"> 
+                            <wm-gridcolumn columnwidth="5" name="gridcolumn20_1" padding="20px unset 20px 20px" horizontalalign="left"> 
+                                <wm-label padding="unset 0.5em" class="h1" caption="My Business Dashboard" color="#00bb80" fontweight="bold" textalign="left" name="label31"></wm-label> 
+                            </wm-gridcolumn> 
+                            <wm-gridcolumn columnwidth="2" name="gridcolumn122"></wm-gridcolumn> 
+                            <wm-gridcolumn columnwidth="5" name="gridcolumn71_1" padding="35px unset 10px unset"> 
+                                <wm-layoutgrid name="layoutgrid18"> 
+                                    <wm-gridrow name="gridrow58"> 
+                                        <wm-gridcolumn columnwidth="6" name="gridcolumn98_1"></wm-gridcolumn> 
+                                        <wm-gridcolumn columnwidth="6" name="gridcolumn99_1"></wm-gridcolumn> 
+                                    </wm-gridrow> 
+                                    <wm-gridrow name="gridrow59" padding="10px unset"> 
+                                        <wm-gridcolumn columnwidth="6" name="gridcolumn100"></wm-gridcolumn> 
+                                        <wm-gridcolumn columnwidth="6" name="gridcolumn101"> 
+                                            <wm-button class="btn-success" caption="New Business" type="button" margin="unset 0.5em" textalign="left" iconclass="wi wi-plus" on-click="Variables.goToPage_business.invoke()" name="button1"></wm-button> 
+                                        </wm-gridcolumn> 
+                                    </wm-gridrow> 
+                                </wm-layoutgrid> 
+                            </wm-gridcolumn> 
+                        </wm-gridrow> 
+                        <wm-gridrow name="gridrow57"></wm-gridrow> 
+                        <wm-gridrow name="gridrow41_1" padding="10px unset"> 
+                            <wm-gridcolumn columnwidth="3" name="gridcolumn70_1" padding="unset unset unset 5px"></wm-gridcolumn> 
+                            <wm-gridcolumn columnwidth="3" name="gridcolumn104"> 
+                                <wm-tile backgroundcolor="#ffffff" name="tile7"> 
+                                    <wm-layoutgrid name="layoutgrid23"> 
+                                        <wm-gridrow class="bordered" name="gridrow70_1"> 
+                                            <wm-gridcolumn columnwidth="2" padding="10px unset 10px 5px" name="gridcolumn134"> 
+                                                <wm-picture class="picture" shape="circle" width="50" picturesource="resources/images/imagelists/dog-1484728_960_720.png" pictureaspect="None" name="picture4"></wm-picture> 
+                                            </wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="6" name="gridcolumn119_1" padding="5px"> 
+                                                <wm-label padding="unset 3em unset unset" caption="Suite Animal" fontweight="bold" fontsize="14" name="label53" class="p"></wm-label> 
+                                                <wm-icon caption="Facebook" iconclass="fa fa-facebook-square" name="icon9"></wm-icon> 
+                                                <wm-label padding="unset 0.5em" caption="|" name="label54"></wm-label> 
+                                                <wm-icon caption="Linkedin" iconclass="fa fa-linkedin-square" name="icon10"></wm-icon> 
+                                            </wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="2" name="gridcolumn118_1" padding="5px unset"> 
+                                                <wm-button class="btn-default" caption="" type="button" margin="unset 0.5em" hint="Profile" iconclass="fa fa-external-link" on-click="Variables.goToPage_PageBusiness01.invoke()" name="button18"></wm-button> 
+                                            </wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="2" name="gridcolumn117"> 
+                                                <wm-checkbox caption="" name="checkbox3"></wm-checkbox> 
+                                            </wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                    </wm-layoutgrid> 
+                                </wm-tile> 
+                            </wm-gridcolumn> 
+                            <wm-gridcolumn columnwidth="3" name="gridcolumn130"> 
+                                <wm-tile backgroundcolor="#ffffff" name="tile7_1"> 
+                                    <wm-layoutgrid name="layoutgrid19"> 
+                                        <wm-gridrow name="gridrow61" class="bordered"> 
+                                            <wm-gridcolumn columnwidth="2" name="gridcolumn107" padding="10px unset 10px 5px"> 
+                                                <wm-picture class="picture" shape="circle" width="50" picturesource="resources/images/imagelists/logo_ornimundo.jpg" name="picture2" pictureaspect="None"></wm-picture> 
+                                            </wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="6" name="gridcolumn108" padding="5px"> 
+                                                <wm-label padding="unset 3em unset unset" caption="Orimundo" fontweight="bold" fontsize="14" name="label50_2" class="p"></wm-label> 
+                                                <wm-icon caption="Facebook" iconclass="fa fa-facebook-square" name="icon5"></wm-icon> 
+                                                <wm-label padding="unset 0.5em" caption="|" name="label50"></wm-label> 
+                                                <wm-icon caption="Linkedin" iconclass="fa fa-linkedin-square" name="icon6"></wm-icon> 
+                                            </wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="2" name="gridcolumn120" padding="5px unset unset unset"> 
+                                                <wm-button class="btn-default" caption="" type="button" margin="unset 0.5em" name="button14_1" hint="Profile" iconclass="fa fa-external-link" on-click="Variables.goToPage_PageBusiness02.invoke()"></wm-button> 
+                                            </wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="2" name="gridcolumn121"> 
+                                                <wm-checkbox caption="" name="checkbox1"></wm-checkbox> 
+                                            </wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                    </wm-layoutgrid> 
+                                </wm-tile> 
+                            </wm-gridcolumn> 
+                            <wm-gridcolumn columnwidth="3" name="gridcolumn71"> 
+                                <wm-tile backgroundcolor="#ffffff" name="tile7_2"> 
+                                    <wm-layoutgrid name="layoutgrid19_1"> 
+                                        <wm-gridrow class="bordered" name="gridrow57_1"> 
+                                            <wm-gridcolumn columnwidth="2" padding="10px unset 10px 5px" name="gridcolumn104_1"> 
+                                                <wm-picture class="picture" width="50" picturesource="resources/images/imagelists/Logo1black.png" pictureaspect="None" name="picture3"></wm-picture> 
+                                            </wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="6" padding="5px" name="gridcolumn105"> 
+                                                <wm-label padding="unset 3em unset unset" caption="My Suite Pet" fontweight="bold" fontsize="14" class="p" name="label52"></wm-label> 
+                                                <wm-icon caption="Facebook" iconclass="fa fa-facebook-square" name="icon9_1"></wm-icon> 
+                                                <wm-label padding="unset 0.5em" caption="|" name="label53_1"></wm-label> 
+                                                <wm-icon caption="Linkedin" iconclass="fa fa-linkedin-square" name="icon10_1"></wm-icon> 
+                                            </wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="2" padding="5px unset unset unset" name="gridcolumn106_1"> 
+                                                <wm-button class="btn-default" caption="" type="button" margin="unset 0.5em" hint="Profile" iconclass="fa fa-external-link" name="button14"></wm-button> 
+                                            </wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="2" name="gridcolumn107_1"> 
+                                                <wm-checkbox caption="" name="checkbox3_1"></wm-checkbox> 
+                                            </wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                    </wm-layoutgrid> 
+                                </wm-tile> 
+                            </wm-gridcolumn> 
+                        </wm-gridrow> 
+                        <wm-gridrow name="gridrow62"> 
+                            <wm-gridcolumn columnwidth="12" name="gridcolumn125"> 
+                                <wm-container backgroundcolor="#00bb80" name="container9"> 
+                                    <wm-layoutgrid name="layoutgrid18_1"> 
+                                        <wm-gridrow name="gridrow55_1"> 
+                                            <wm-gridcolumn columnwidth="12" name="gridcolumn106"></wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                        <wm-gridrow name="gridrow56_1"> 
+                                            <wm-gridcolumn columnwidth="6" name="gridcolumn107_2"></wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="6" name="gridcolumn108_2"></wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                    </wm-layoutgrid> 
+                                </wm-container> 
+                            </wm-gridcolumn> 
+                        </wm-gridrow> 
+                        <wm-gridrow name="gridrow54" padding="10px unset unset unset"> 
+                            <wm-gridcolumn columnwidth="3" name="gridcolumn96" horizontalalign="center" padding="unset 10px unset 20px"> 
+                                <wm-tile backgroundcolor="#F86C6B" padding="3.1em 2em 3em 2em" color="#FFFFFF" name="tile2"> 
+                                    <wm-layoutgrid name="layoutgrid7"> 
+                                        <wm-gridrow height="100%" overflow="visible" name="gridrow15"> 
+                                            <wm-gridcolumn columnwidth="3" horizontalalign="left" class="col-xs-4" name="gridcolumn25"> 
+                                                <wm-icon iconsize="3em" iconclass="fa fa-user-times" name="icon1"></wm-icon> 
+                                            </wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="9" padding="unset unset unset .5em" horizontalalign="center" class="col-xs-8" name="gridcolumn26"> 
+                                                <wm-label caption="Total Value" class="text-uppercase" fontsize="14" fontunit="px" fontweight="bold" name="label14"></wm-label> 
+                                                <wm-label caption="50000€" fontunit="em" class="h4" color="#ffffff" margin="0px unset" name="label45_1"></wm-label> 
+                                                <wm-label caption="Maria" fontunit="em" class="h3" color="#ffffff" margin="0px unset" name="label15"></wm-label> 
+                                            </wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                        <wm-gridrow name="gridrow51" padding="5px unset"> 
+                                            <wm-gridcolumn columnwidth="9" name="gridcolumn85"></wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                        <wm-gridrow name="gridrow50" padding="5px unset unset unset"> 
+                                            <wm-gridcolumn columnwidth="2" name="gridcolumn86"></wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="10" name="gridcolumn84" horizontalalign="center"> 
+                                                <wm-button class="btn-default" caption="" type="button" margin="unset 0.5em" name="button3" iconclass="fa fa-money" hint="Total Value" on-click="button3Click($event, $scope)"></wm-button> 
+                                                <wm-button class="btn-default" caption="" type="button" margin="unset 0.5em" iconclass="fa fa-toggle-up" hint="Highest Invoice" name="button4" on-click="button4Click($event, $scope)"></wm-button> 
+                                                <wm-button class="btn-default" caption="" type="button" margin="unset 0.5em" iconclass="wi wi-people" hint="Oldest Invoice" name="button5" on-click="button5Click($event, $scope)"></wm-button> 
+                                            </wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                    </wm-layoutgrid> 
+                                </wm-tile> 
+                            </wm-gridcolumn> 
+                            <wm-gridcolumn columnwidth="3" name="gridcolumn98" horizontalalign="center" padding="unset 10px"> 
+                                <wm-tile backgroundcolor="#63C2DE" padding="3.1em 2em 3em 2em" color="#FFFFFF" name="tile3"> 
+                                    <wm-layoutgrid name="layoutgrid8"> 
+                                        <wm-gridrow height="100%" overflow="visible" name="gridrow16"> 
+                                            <wm-gridcolumn columnwidth="3" horizontalalign="left" class="col-xs-4" name="gridcolumn28"> 
+                                                <wm-icon iconsize="3em" iconclass="wi wi-check" name="icon2"></wm-icon> 
+                                            </wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="9" padding="unset unset unset .5em" horizontalalign="center" class="col-xs-8" name="gridcolumn29"> 
+                                                <wm-label caption="Invoiced" class="text-uppercase" fontsize="14" fontunit="px" fontweight="bold" name="label16_1"></wm-label> 
+                                                <wm-label caption="YTD" fontunit="em" class="h3" color="#ffffff" margin="0px unset" name="label48"></wm-label> 
+                                                <wm-label caption="50000€" fontunit="em" class="h3" color="#ffffff" margin="0px unset" name="label17_1"></wm-label> 
+                                            </wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                        <wm-gridrow name="gridrow52" padding="5px unset"> 
+                                            <wm-gridcolumn columnwidth="3" name="gridcolumn87"></wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="9" name="gridcolumn88"></wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                        <wm-gridrow name="gridrow53" padding="5px unset unset unset"> 
+                                            <wm-gridcolumn columnwidth="3" name="gridcolumn89"></wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="9" name="gridcolumn90" horizontalalign="center"> 
+                                                <wm-button class="btn-default" caption="" type="button" margin="unset 0.5em" iconclass="wi wi-calendar" hint="YTD" name="button6" on-click="button6Click($event, $scope)"></wm-button> 
+                                                <wm-button class="btn-default" caption="" type="button" margin="unset 0.5em" iconclass="fa fa-calendar-o" hint="MTD" name="button7" on-click="button7Click($event, $scope)"></wm-button> 
+                                            </wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                    </wm-layoutgrid> 
+                                </wm-tile> 
+                            </wm-gridcolumn> 
+                            <wm-gridcolumn columnwidth="3" name="gridcolumn99" horizontalalign="center" padding="unset 10px"> 
+                                <wm-tile backgroundcolor="#F8CB00" padding="3.1em 2em 3em 2em" color="#FFFFFF" name="tile4"> 
+                                    <wm-layoutgrid name="layoutgrid9"> 
+                                        <wm-gridrow height="100%" overflow="visible" name="gridrow17"> 
+                                            <wm-gridcolumn columnwidth="3" horizontalalign="left" class="col-xs-4" name="gridcolumn31"> 
+                                                <wm-icon iconsize="3em" iconclass="wi wi-euro-symbol" name="icon3"></wm-icon> 
+                                            </wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="9" padding="unset unset unset .5em" horizontalalign="center" class="col-xs-8" name="gridcolumn32"> 
+                                                <wm-label caption="Income" class="text-uppercase" fontsize="14" fontunit="px" fontweight="bold" name="label18_1"></wm-label> 
+                                                <wm-label caption="YTD" fontunit="em" class="h3" color="#ffffff" margin="0px unset" name="label49"></wm-label> 
+                                                <wm-label caption="40000€" fontunit="em" class="h3" color="#ffffff" margin="0px unset" name="label19"></wm-label> 
+                                            </wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                        <wm-gridrow name="gridrow52_1" padding="5px unset"> 
+                                            <wm-gridcolumn columnwidth="3" name="gridcolumn86_1"></wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="9" name="gridcolumn87_1"></wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                        <wm-gridrow name="gridrow53_1" padding="5px unset unset unset"> 
+                                            <wm-gridcolumn columnwidth="3" name="gridcolumn88_1"></wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="9" name="gridcolumn89_1" horizontalalign="center"> 
+                                                <wm-button class="btn-default" caption="" type="button" margin="unset 0.5em" iconclass="wi wi-calendar" hint="YTD" name="button9" on-click="button9Click($event, $scope)"></wm-button> 
+                                                <wm-button class="btn-default" caption="" type="button" margin="unset 0.5em" iconclass="fa fa-calendar-o" hint="MTD" name="button8" on-click="button8Click($event, $scope)"></wm-button> 
+                                            </wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                    </wm-layoutgrid> 
+                                </wm-tile> 
+                            </wm-gridcolumn> 
+                            <wm-gridcolumn columnwidth="3" name="gridcolumn97" horizontalalign="center" padding="unset 20px unset 5px"> 
+                                <wm-tile backgroundcolor="#4DBD74" padding="3.1em 2em 3em 2em" color="#FFFFFF" name="tile5"> 
+                                    <wm-layoutgrid name="layoutgrid10"> 
+                                        <wm-gridrow height="100%" overflow="visible" name="gridrow18"> 
+                                            <wm-gridcolumn columnwidth="3" horizontalalign="center" class="col-xs-4" name="gridcolumn34"> 
+                                                <wm-icon iconsize="3em" iconclass="fa fa-user-plus" name="icon4"></wm-icon> 
+                                            </wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="9" padding="unset unset unset .5em" horizontalalign="center" class="col-xs-8" name="gridcolumn35"> 
+                                                <wm-label caption="Best Partner" class="text-uppercase" fontsize="14" fontunit="px" fontweight="bold" name="label20"></wm-label> 
+                                                <wm-label caption="2000€" fontunit="em" class="h3" color="#ffffff" margin="0px unset" name="label50_1"></wm-label> 
+                                                <wm-label caption="Lucas" fontunit="em" class="h3" color="#ffffff" margin="0px unset" name="label21"></wm-label> 
+                                            </wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                        <wm-gridrow name="gridrow54_1" padding="5px unset"> 
+                                            <wm-gridcolumn columnwidth="3" name="gridcolumn90_1"></wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="9" name="gridcolumn91"></wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                        <wm-gridrow name="gridrow55" padding="5px unset unset unset"> 
+                                            <wm-gridcolumn columnwidth="3" name="gridcolumn92"></wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="9" name="gridcolumn93" horizontalalign="center"> 
+                                                <wm-button class="btn-default" caption="" type="button" margin="unset 0.5em" iconclass="fa fa-sort-up" hint="Best Partner" name="button10" on-click="button10Click($event, $scope)"></wm-button> 
+                                                <wm-button class="btn-default" caption="" type="button" margin="unset 0.5em" iconclass="fa fa-diamond" hint="Highest Invoice" name="button11" on-click="button11Click($event, $scope)"></wm-button> 
+                                                <wm-button class="btn-default" caption="" type="button" margin="unset 0.5em" iconclass="wi wi-people" hint="Recent Partner" name="button13" on-click="button13Click($event, $scope)"></wm-button> 
+                                            </wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                    </wm-layoutgrid> 
+                                </wm-tile> 
+                            </wm-gridcolumn> 
+                        </wm-gridrow> 
+                        <wm-gridrow name="gridrow40_1"> 
+                            <wm-gridcolumn columnwidth="7" name="gridcolumn68"></wm-gridcolumn> 
+                            <wm-gridcolumn columnwidth="5" name="gridcolumn69_1"></wm-gridcolumn> 
+                        </wm-gridrow> 
+                        <wm-gridrow padding="10px unset" name="gridrow19"> 
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn36"></wm-gridcolumn> 
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn37"></wm-gridcolumn> 
+                        </wm-gridrow> 
+                        <wm-gridrow name="gridrow20"> 
+                            <wm-gridcolumn columnwidth="6" padding="unset 5px" name="gridcolumn38"> 
+                                <wm-layoutgrid name="layoutgrid11"> 
+                                    <wm-gridrow name="gridrow21"> 
+                                        <wm-gridcolumn columnwidth="12" name="gridcolumn39"> 
+                                            <wm-container bordercolor="#007F64" borderstyle="solid" backgroundcolor="#ffffff" name="container5"> 
+                                                <wm-layoutgrid name="layoutgrid12"> 
+                                                    <wm-gridrow name="gridrow22"> 
+                                                        <wm-gridcolumn columnwidth="12" name="gridcolumn40"> 
+                                                            <wm-label padding="unset 0.5em" class="h2" color="#007F64" fontweight="bold" caption="bind:appLocale.SALES" name="label22"></wm-label> 
+                                                        </wm-gridcolumn> 
+                                                    </wm-gridrow> 
+                                                    <wm-gridrow padding="5px unset" name="gridrow23"> 
+                                                        <wm-gridcolumn columnwidth="6" name="gridcolumn41"> 
+                                                            <wm-label padding="unset 0.5em" caption="Junho 2017" fontsize="11" name="label23"></wm-label> 
+                                                        </wm-gridcolumn> 
+                                                        <wm-gridcolumn columnwidth="6" horizontalalign="right" name="gridcolumn42"> 
+                                                            <wm-label padding="unset 0.5em" caption="Total" fontsize="11" name="label24"></wm-label> 
+                                                        </wm-gridcolumn> 
+                                                    </wm-gridrow> 
+                                                    <wm-gridrow name="gridrow40"> 
+                                                        <wm-gridcolumn columnwidth="6" name="gridcolumn67"> 
+                                                            <wm-label padding="unset 0.5em" caption="Suit Animal" name="label40_1"></wm-label> 
+                                                        </wm-gridcolumn> 
+                                                        <wm-gridcolumn columnwidth="6" name="gridcolumn73" horizontalalign="right"> 
+                                                            <wm-label padding="unset 0.5em" caption="500,00€" name="label45"></wm-label> 
+                                                        </wm-gridcolumn> 
+                                                    </wm-gridrow> 
+                                                    <wm-gridrow name="gridrow43"> 
+                                                        <wm-gridcolumn columnwidth="6" name="gridcolumn74"> 
+                                                            <wm-label padding="unset 0.5em" caption="Orimundo" name="label44"></wm-label> 
+                                                        </wm-gridcolumn> 
+                                                        <wm-gridcolumn columnwidth="6" name="gridcolumn75" horizontalalign="right"> 
+                                                            <wm-label padding="unset 0.5em" caption="200,00€" name="label43"></wm-label> 
+                                                        </wm-gridcolumn> 
+                                                    </wm-gridrow> 
+                                                    <wm-gridrow padding="5px unset" name="gridrow24_1"> 
+                                                        <wm-gridcolumn columnwidth="6" name="gridcolumn43"> 
+                                                            <wm-label padding="unset 0.5em" caption="Acumulado anual" color="#007F64" fontweight="bold" name="label25"></wm-label> 
+                                                        </wm-gridcolumn> 
+                                                        <wm-gridcolumn columnwidth="6" horizontalalign="right" name="gridcolumn44"> 
+                                                            <wm-label padding="unset 0.5em" caption="0,00€" color="#007F64" fontweight="bold" name="label26"></wm-label> 
+                                                        </wm-gridcolumn> 
+                                                    </wm-gridrow> 
+                                                </wm-layoutgrid> 
+                                            </wm-container> 
+                                        </wm-gridcolumn> 
+                                    </wm-gridrow> 
+                                    <wm-gridrow padding="5px unset" name="gridrow25_1"> 
+                                        <wm-gridcolumn columnwidth="6" name="gridcolumn45"></wm-gridcolumn> 
+                                    </wm-gridrow> 
+                                    <wm-gridrow padding="unset unset 5px unset" name="gridrow26"> 
+                                        <wm-gridcolumn columnwidth="12" name="gridcolumn46"> 
+                                            <wm-container bordercolor="#41a940" borderstyle="solid" backgroundcolor="#ffffff" name="container6"> 
+                                                <wm-layoutgrid name="layoutgrid13"> 
+                                                    <wm-gridrow name="gridrow27"> 
+                                                        <wm-gridcolumn columnwidth="12" name="gridcolumn47"> 
+                                                            <wm-label padding="unset 0.5em" class="h2" color="#41a940" fontweight="bold" caption="bind:appLocale.PROFIT" name="label27"></wm-label> 
+                                                        </wm-gridcolumn> 
+                                                    </wm-gridrow> 
+                                                    <wm-gridrow padding="5px unset" name="gridrow28"> 
+                                                        <wm-gridcolumn columnwidth="6" name="gridcolumn48"> 
+                                                            <wm-label padding="unset 0.5em" caption="Junho 2017" fontsize="11" name="label28"></wm-label> 
+                                                        </wm-gridcolumn> 
+                                                        <wm-gridcolumn columnwidth="6" horizontalalign="right" name="gridcolumn49_1"> 
+                                                            <wm-label padding="unset 0.5em" caption="200,00€" fontsize="11" name="label29"></wm-label> 
+                                                        </wm-gridcolumn> 
+                                                    </wm-gridrow> 
+                                                    <wm-gridrow padding="5px unset" name="gridrow29"> 
+                                                        <wm-gridcolumn columnwidth="6" name="gridcolumn50_1"> 
+                                                            <wm-label padding="unset 0.5em" caption="Acumulado anual" color="#41a940" fontweight="bold" name="label30"></wm-label> 
+                                                        </wm-gridcolumn> 
+                                                        <wm-gridcolumn columnwidth="6" horizontalalign="right" name="gridcolumn51_1"> 
+                                                            <wm-label padding="unset 0.5em" caption="0,00€" color="#41a940" fontweight="bold" name="label31_1"></wm-label> 
+                                                        </wm-gridcolumn> 
+                                                    </wm-gridrow> 
+                                                </wm-layoutgrid> 
+                                            </wm-container> 
+                                        </wm-gridcolumn> 
+                                    </wm-gridrow> 
+                                </wm-layoutgrid> 
+                            </wm-gridcolumn> 
+                            <wm-gridcolumn columnwidth="6" padding="unset 5px" name="gridcolumn52"> 
+                                <wm-layoutgrid name="layoutgrid14"> 
+                                    <wm-gridrow name="gridrow30"> 
+                                        <wm-gridcolumn columnwidth="12" name="gridcolumn53"> 
+                                            <wm-container bordercolor="#000000" borderstyle="solid" backgroundcolor="#ffffff" name="container7"> 
+                                                <wm-layoutgrid name="layoutgrid15"> 
+                                                    <wm-gridrow name="gridrow31"> 
+                                                        <wm-gridcolumn columnwidth="12" name="gridcolumn54"> 
+                                                            <wm-label padding="unset 0.5em" class="h2" color="#000000" fontweight="bold" caption="bind:appLocale.Expense" name="label32"></wm-label> 
+                                                        </wm-gridcolumn> 
+                                                    </wm-gridrow> 
+                                                    <wm-gridrow padding="5px unset" name="gridrow32"> 
+                                                        <wm-gridcolumn columnwidth="6" name="gridcolumn55"> 
+                                                            <wm-label padding="unset 0.5em" caption="Junho 2017" fontsize="11" name="label33"></wm-label> 
+                                                        </wm-gridcolumn> 
+                                                        <wm-gridcolumn columnwidth="6" horizontalalign="right" name="gridcolumn56"> 
+                                                            <wm-label padding="unset 0.5em" caption="50,00€" fontsize="11" name="label34"></wm-label> 
+                                                        </wm-gridcolumn> 
+                                                    </wm-gridrow> 
+                                                    <wm-gridrow name="gridrow38_1"> 
+                                                        <wm-gridcolumn columnwidth="6" name="gridcolumn63_1"> 
+                                                            <wm-label padding="unset 0.5em" caption="Suit Animal" name="label41_1"></wm-label> 
+                                                        </wm-gridcolumn> 
+                                                        <wm-gridcolumn columnwidth="6" name="gridcolumn64_1" horizontalalign="right"> 
+                                                            <wm-label padding="unset 0.5em" caption="500,00€" name="label43_1"></wm-label> 
+                                                        </wm-gridcolumn> 
+                                                    </wm-gridrow> 
+                                                    <wm-gridrow name="gridrow39"> 
+                                                        <wm-gridcolumn columnwidth="6" name="gridcolumn65_1"> 
+                                                            <wm-label padding="unset 0.5em" caption="Orimundo" name="label42"></wm-label> 
+                                                        </wm-gridcolumn> 
+                                                        <wm-gridcolumn columnwidth="6" name="gridcolumn66" horizontalalign="right"> 
+                                                            <wm-label padding="unset 0.5em" caption="200,00€" name="label44_1"></wm-label> 
+                                                        </wm-gridcolumn> 
+                                                    </wm-gridrow> 
+                                                    <wm-gridrow padding="5px unset" name="gridrow33"> 
+                                                        <wm-gridcolumn columnwidth="6" name="gridcolumn57"> 
+                                                            <wm-label padding="unset 0.5em" caption="Acumulado anual" color="#000000" fontweight="bold" name="label35"></wm-label> 
+                                                        </wm-gridcolumn> 
+                                                        <wm-gridcolumn columnwidth="6" horizontalalign="right" name="gridcolumn58"> 
+                                                            <wm-label padding="unset 0.5em" caption="0,00€" color="#000000" fontweight="bold" name="label36"></wm-label> 
+                                                        </wm-gridcolumn> 
+                                                    </wm-gridrow> 
+                                                </wm-layoutgrid> 
+                                            </wm-container> 
+                                        </wm-gridcolumn> 
+                                    </wm-gridrow> 
+                                    <wm-gridrow padding="5px unset" name="gridrow34"> 
+                                        <wm-gridcolumn columnwidth="6" name="gridcolumn59"></wm-gridcolumn> 
+                                    </wm-gridrow> 
+                                    <wm-gridrow name="gridrow35"> 
+                                        <wm-gridcolumn columnwidth="12" name="gridcolumn60"> 
+                                            <wm-container bordercolor="#009FDA" borderstyle="solid" backgroundcolor="#ffffff" name="container8"> 
+                                                <wm-layoutgrid name="layoutgrid16_1"> 
+                                                    <wm-gridrow name="gridrow36"> 
+                                                        <wm-gridcolumn columnwidth="12" name="gridcolumn61"> 
+                                                            <wm-label padding="unset 0.5em" class="h2" color="#009FDA" fontweight="bold" caption="bind:appLocale.Orcamentos" name="label37"></wm-label> 
+                                                        </wm-gridcolumn> 
+                                                    </wm-gridrow> 
+                                                    <wm-gridrow padding="5px unset" name="gridrow37"> 
+                                                        <wm-gridcolumn columnwidth="6" name="gridcolumn62"> 
+                                                            <wm-label padding="unset 0.5em" caption="Junho 2017" fontsize="11" name="label38"></wm-label> 
+                                                        </wm-gridcolumn> 
+                                                        <wm-gridcolumn columnwidth="6" horizontalalign="right" name="gridcolumn63"> 
+                                                            <wm-label padding="unset 0.5em" caption="600,00€" fontsize="11" name="label39"></wm-label> 
+                                                        </wm-gridcolumn> 
+                                                    </wm-gridrow> 
+                                                    <wm-gridrow padding="5px unset" name="gridrow38"> 
+                                                        <wm-gridcolumn columnwidth="6" name="gridcolumn64"> 
+                                                            <wm-label padding="unset 0.5em" caption="Acumulado anual" color="#009FDA" fontweight="bold" name="label40"></wm-label> 
+                                                        </wm-gridcolumn> 
+                                                        <wm-gridcolumn columnwidth="6" horizontalalign="right" name="gridcolumn65"> 
+                                                            <wm-label padding="unset 0.5em" caption="0,00€" color="#009FDA" fontweight="bold" name="label41"></wm-label> 
+                                                        </wm-gridcolumn> 
+                                                    </wm-gridrow> 
+                                                </wm-layoutgrid> 
+                                            </wm-container> 
+                                        </wm-gridcolumn> 
+                                    </wm-gridrow> 
+                                </wm-layoutgrid> 
+                            </wm-gridcolumn> 
+                        </wm-gridrow> 
+                        <wm-gridrow name="gridrow41"> 
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn69"></wm-gridcolumn> 
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn70"></wm-gridcolumn> 
+                        </wm-gridrow> 
+                    </wm-layoutgrid> 
+                </wm-container> 
+            </wm-container> 
+            <wm-layoutgrid name="layoutgrid4"> 
+                <wm-gridrow name="gridrow7" padding="10px unset unset unset"> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn13" padding="unset 5px unset unset"> 
+                        <wm-panel collapsible="false" showheader="true" title="Últimos Pagamentos" expanded="true" iconclass="fa fa-eur" subheading="Julho 2017" name="panel1" class="panel-default"> 
+                            <wm-container bordercolor="#41a940" borderstyle="solid" backgroundcolor="#ffffff" name="container6_1"> 
+                                <wm-layoutgrid name="layoutgrid4_1"> 
+                                    <wm-gridrow name="gridrow7_1"> 
+                                        <wm-gridcolumn columnwidth="12" name="gridcolumn13_1"> 
+                                            <wm-label padding="unset 0.5em" class="h2" color="#41a940" fontweight="bold" caption="Fatura Paga" name="label11"></wm-label> 
+                                        </wm-gridcolumn> 
+                                    </wm-gridrow> 
+                                    <wm-gridrow padding="5px unset" name="gridrow8_1"> 
+                                        <wm-gridcolumn columnwidth="6" class="bordered-right" name="gridcolumn14_1"> 
+                                            <wm-label padding="unset 0.5em" caption="Suit Animal" name="label12"></wm-label> 
+                                        </wm-gridcolumn> 
+                                        <wm-gridcolumn columnwidth="6" horizontalalign="right" name="gridcolumn15_1"> 
+                                            <wm-label padding="unset 0.5em" caption="200,00€" name="label13"></wm-label> 
+                                        </wm-gridcolumn> 
+                                    </wm-gridrow> 
+                                </wm-layoutgrid> 
+                            </wm-container> 
+                        </wm-panel> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn14" padding="unset unset unset 5px"> 
+                        <wm-panel collapsible="false" showheader="true" title="Pagamentos em Falta" expanded="true" iconclass="wi wi-money-off" subheading="Julho 2017" name="panel2" class="panel-default"> 
+                            <wm-container bordercolor="#f60100" borderstyle="solid" backgroundcolor="#ffffff" name="container7_1"> 
+                                <wm-layoutgrid name="layoutgrid5"> 
+                                    <wm-gridrow name="gridrow10"> 
+                                        <wm-gridcolumn columnwidth="12" name="gridcolumn18"> 
+                                            <wm-label padding="unset 0.5em" class="h2" color="#f60100" fontweight="bold" caption="Fatura Vencida" name="label16"></wm-label> 
+                                        </wm-gridcolumn> 
+                                    </wm-gridrow> 
+                                    <wm-gridrow padding="5px unset" name="gridrow11"> 
+                                        <wm-gridcolumn columnwidth="6" name="gridcolumn19"> 
+                                            <wm-label padding="unset 0.5em" caption="Orimundo" name="label17"></wm-label> 
+                                        </wm-gridcolumn> 
+                                        <wm-gridcolumn columnwidth="6" horizontalalign="right" class="bordered-left" name="gridcolumn20"> 
+                                            <wm-label padding="unset 0.5em" caption="500,00€" name="label18"></wm-label> 
+                                        </wm-gridcolumn> 
+                                    </wm-gridrow> 
+                                </wm-layoutgrid> 
+                            </wm-container> 
+                        </wm-panel> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow8"> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn15"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn16"></wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow13"> 
+                    <wm-gridcolumn columnwidth="12" name="gridcolumn23"> 
+                        <wm-chart type="Pie" title="Valor Total" height="350px" iconclass="fa fa-eur" theme="Terrestrial" dataset="bind:Variables.InvoiceVarPie.dataSet" yaxisdatakey="invoiceTotal" aggregation="sum" xaxisdatakey="partner.name" aggregationcolumn="invoiceTotal" groupby="partner.name" showlegend="top" labeltype="value" ynumberformat=".0f" subheading="Por Clientes" name="chart1"></wm-chart> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

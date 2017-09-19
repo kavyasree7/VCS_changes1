@@ -1,0 +1,28 @@
+{
+  "headers" : { },
+  "proxy" : null,
+  "endpointAddress" : "https://api.ipify.org",
+  "method" : "GET",
+  "requestBody" : "",
+  "queryParams" : {
+    "format" : "json"
+  },
+  "sampleHttpResponseDetails" : {
+    "headers" : {
+      "Server" : [ "Cowboy" ],
+      "Access-Control-Allow-Origin" : [ "*" ],
+      "Connection" : [ "keep-alive" ],
+      "Content-Length" : [ "22" ],
+      "Date" : [ "Fri, 04 Aug 2017 12:22:20 GMT" ],
+      "Content-Type" : [ "application/json" ],
+      "Via" : [ "1.1 vegur" ]
+    },
+    "responseBody" : "{\"ip\":\"52.203.158.64\"}",
+    "convertedResponse" : null,
+    "statusCode" : 200
+  },
+  "redirectEnabled" : true,
+  "authDetails" : null,
+  "contentType" : "text/xml",
+  "multiParamInfoList" : null
+}

@@ -1,0 +1,33 @@
+<wm-page data-ng-controller="productPageController" pagetitle="Product" name="page1"> 
+    <wm-header content="header" name="header1" backgroundimage="resources/images/imagelists/slide3.jpg"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="8" name="page_content1"> 
+            <wm-container name="container1"> 
+                <wm-label padding="unset 0.5em" class="h1" caption="Products / Services" name="label1" color="#00bb80" fontweight="bold"></wm-label> 
+            </wm-container> 
+            <wm-table editmode="inline" title="Product List" dataset="bind:Variables.DbinvoiceProductData.dataSet" navigation="Classic" name="grid1"> 
+                <wm-table-column binding="id" caption="Id" type="integer" primary-key="true" generator="identity" readonly="true" edit-widget-type="number" show="true"></wm-table-column> 
+                <wm-table-column binding="name" caption="Name" type="string" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="salePrice" caption="Sale Price" type="integer" generator="assigned" edit-widget-type="number" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="cod" caption="Cod" type="integer" generator="assigned" edit-widget-type="number" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="descriptionShort" caption="Description Short" type="string" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="state" caption="State" type="string" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="codEan13" caption="Cod Ean13" type="string" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="internalCode" caption="Internal Code" type="integer" generator="assigned" edit-widget-type="number" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="imageListId" caption="Image List Id" type="integer" generator="assigned" edit-widget-type="number" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="productCategory.id" caption="Category Id" type="integer" primary-key="true" generator="identity" edit-widget-type="select" show="true" related-entity-name="ProductCategory" readonly="false"></wm-table-column> 
+                <wm-table-column binding="productCategory.name" caption="Category Name" type="string" generator="assigned" readonly="true" edit-widget-type="text" show="true" related-entity-name="ProductCategory"></wm-table-column> 
+                <wm-table-column binding="productType.id" caption="Type Id" type="integer" primary-key="true" generator="identity" edit-widget-type="select" datafield="id" displayfield="id" show="true" related-entity-name="ProductType" readonly="false"></wm-table-column> 
+                <wm-table-column binding="productType.name" caption="Type Name" type="string" primary-key="false" generator="assigned" readonly="true" edit-widget-type="text" show="true" related-entity-name="ProductType"></wm-table-column> 
+                <wm-table-column binding="rowOperations" caption="Actions" type="custom" width="120px" readonly="true" sortable="false" searchable="false" show="true"></wm-table-column> 
+                <wm-table-action key="addNewRow" display-name="New" show="true" class="btn-primary" iconclass="wi wi-plus" title="New" action="addNewRow()" shortcutkey="" disabled="false"></wm-table-action> 
+                <wm-table-row-action key="updaterow" display-name="" show="true" class="btn-transparent" iconclass="wi wi-pencil" title="Edit" action="editRow()" disabled="false"></wm-table-row-action> 
+                <wm-table-row-action key="deleterow" display-name="" show="true" class="btn-transparent" iconclass="wi wi-trash" title="Delete" action="deleteRow()" disabled="false"></wm-table-row-action> 
+            </wm-table> 
+        </wm-page-content> 
+        <wm-right-panel columnwidth="2" content="rightnav" name="right_panel1"></wm-right-panel> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

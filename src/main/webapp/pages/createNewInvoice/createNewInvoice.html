@@ -1,0 +1,643 @@
+<wm-page data-ng-controller="createNewInvoicePageController" pagetitle="createNewInvoice" name="page1"> 
+    <wm-header content="header" name="header1" backgroundimage="resources/images/imagelists/slide3.jpg"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="8" name="page_content1"> 
+            <wm-container name="container1"> 
+                <wm-label padding="unset 0.5em" class="h1" caption="New Invoice" name="label1" color="#00bb80" fontweight="bold" textalign="center"></wm-label> 
+            </wm-container> 
+            <wm-container backgroundcolor="#ffffff" name="container2" class="bordered"> 
+                <wm-layoutgrid name="layoutgrid1"> 
+                    <wm-gridrow name="gridrow9"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn15" horizontalalign="center" padding="50px unset unset unset"> 
+                            <wm-picture name="picture1" picturesource="bind:Widgets.select14.datavalue.logo" pictureplaceholder="resources/images/imagelists/default-image.png" width="250"></wm-picture> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn16" padding="50px 5px unset 5px"> 
+                            <wm-composite name="composite27"> 
+                                <wm-label class="col-md-3 control-label" name="label27" caption="Business"></wm-label> 
+                                <wm-container class="col-md-9" name="container30_1"> 
+                                    <wm-select name="select14" dataset="bind:Variables.businessVar.dataSet" datafield="All Fields" displayfield="name"></wm-select> 
+                                </wm-container> 
+                            </wm-composite> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow1"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn1" padding="10px unset unset unset"></wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn12" padding="unset unset 10px unset"></wm-gridcolumn> 
+                    </wm-gridrow> 
+                </wm-layoutgrid> 
+            </wm-container> 
+            <wm-container name="container24" backgroundcolor="#00bb80"> 
+                <wm-layoutgrid name="layoutgrid7"> 
+                    <wm-gridrow name="gridrow28"> 
+                        <wm-gridcolumn columnwidth="12" name="gridcolumn37"></wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow29"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn39"></wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn40"></wm-gridcolumn> 
+                    </wm-gridrow> 
+                </wm-layoutgrid> 
+            </wm-container> 
+            <wm-container name="container25" backgroundcolor="#ffffff" bordercolor="#00bb80" borderstyle="dashed"> 
+                <wm-layoutgrid name="layoutgrid4"> 
+                    <wm-gridrow name="gridrow15"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn20" padding="50px unset unset unset"> 
+                            <wm-layoutgrid name="layoutgrid5"> 
+                                <wm-gridrow name="gridrow17"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn24_1" padding="unset unset unset 5px"> 
+                                        <wm-composite name="composite13" margin="10px unset unset unset"> 
+                                            <wm-label class="col-md-3 control-label" caption="Customer" padding="5px unset unset unset" textalign="center" name="label14"></wm-label> 
+                                            <wm-container class="col-md-9" name="container15"> 
+                                                <wm-select dataset="bind:Variables.partnerVar.dataSet" datafield="All Fields" displayfield="name" name="selectCliente"></wm-select> 
+                                            </wm-container> 
+                                        </wm-composite> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow18"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn25" padding="unset unset unset 5px"> 
+                                        <wm-composite name="composite14_1"> 
+                                            <wm-label class="col-md-3 control-label" caption="NIF" textalign="center" padding="5px unset unset unset" name="label15"></wm-label> 
+                                            <wm-container class="col-md-9" name="container16_1"> 
+                                                <wm-text datavalue="bind:Widgets.selectCliente.datavalue.nif" readonly="true" name="text16" placeholder=""></wm-text> 
+                                            </wm-container> 
+                                        </wm-composite> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow21"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn34_1" horizontalalign="center" padding="5px unset"> 
+                                        <wm-button class="btn-success" caption="Create Customer" type="button" margin="unset 0.5em" name="button1" textalign="left" iconclass="wi wi-plus" on-click="Widgets.partnerDialogPatner.open()"></wm-button> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="1" name="gridcolumn49"></wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="5" name="gridcolumn21_1" padding="unset unset unset 5px"> 
+                            <wm-layoutgrid name="layoutgrid6"> 
+                                <wm-gridrow name="gridrow25" padding="10px unset unset unset"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn34" padding="unset 5px"> 
+                                        <wm-composite name="composite19" margin="10px unset unset unset"> 
+                                            <wm-label class="col-md-3 control-label" caption="Invoice Nº" textalign="center" padding="5px unset unset unset" name="label21"></wm-label> 
+                                            <wm-container class="col-md-9" name="container21"> 
+                                                <wm-text type="number" datavalue="bind:Variables.InvoiceVar.dataSet.data[$i].id" readonly="true" name="text24" placeholder=""></wm-text> 
+                                            </wm-container> 
+                                        </wm-composite> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow26"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn35" padding="unset 5px"> 
+                                        <wm-composite name="composite20"> 
+                                            <wm-label class="col-md-3 control-label" caption="Invoice Date" textalign="center" padding="5px unset unset unset" name="label22"></wm-label> 
+                                            <wm-container class="col-md-9" name="container22"> 
+                                                <wm-text type="date" name="text25"></wm-text> 
+                                            </wm-container> 
+                                        </wm-composite> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow27"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn36" padding="unset 5px"> 
+                                        <wm-composite name="composite21"> 
+                                            <wm-label class="col-md-3 control-label" caption="Payment Date" textalign="center" padding="5px unset unset unset" name="label23"></wm-label> 
+                                            <wm-container class="col-md-9" name="container23"> 
+                                                <wm-text type="date" name="text26"></wm-text> 
+                                            </wm-container> 
+                                        </wm-composite> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow16"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn22_1"></wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn23"></wm-gridcolumn> 
+                    </wm-gridrow> 
+                </wm-layoutgrid> 
+            </wm-container> 
+            <wm-container backgroundcolor="#00bb80" name="container27"> 
+                <wm-layoutgrid name="layoutgrid8"> 
+                    <wm-gridrow name="gridrow30"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn41"></wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn42"></wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow31"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn43"></wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn44"></wm-gridcolumn> 
+                    </wm-gridrow> 
+                </wm-layoutgrid> 
+            </wm-container> 
+            <wm-container backgroundcolor="#ffffff" bordercolor="#00bb80" borderstyle="dashed" name="container12"> 
+                <wm-layoutgrid name="layoutgrid8_1"> 
+                    <wm-gridrow name="gridrow45_2"> 
+                        <wm-gridcolumn columnwidth="12" name="gridcolumn97" padding="10px unset 5px unset"> 
+                            <wm-layoutgrid name="layoutgrid26"> 
+                                <wm-gridrow name="gridrow46_1"> 
+                                    <wm-gridcolumn columnwidth="6" name="gridcolumn98" horizontalalign="center" class="bordered-top bordered-bottom"> 
+                                        <wm-label padding="unset 0.5em" name="label13" caption="Item" fontweight="bold"></wm-label> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="2" name="gridcolumn99_1" horizontalalign="center" class="bordered-top bordered-bottom"> 
+                                        <wm-label padding="unset 0.5em" name="label14_1" caption="Quantity" fontweight="bold"></wm-label> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="2" name="gridcolumn102_1" horizontalalign="center" class="bordered-top bordered-bottom"> 
+                                        <wm-label padding="unset 0.5em" name="label15_1" caption="Unit Price" fontweight="bold"></wm-label> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="2" name="gridcolumn103_1" horizontalalign="center" class="bordered-top bordered-bottom"> 
+                                        <wm-label padding="unset 0.5em" name="label16" caption="Amount" fontweight="bold"></wm-label> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow18_1"> 
+                        <wm-gridcolumn columnwidth="12" name="gridcolumn30" padding="5px unset"> 
+                            <wm-layoutgrid name="FirstAddItem" show="true"> 
+                                <wm-gridrow name="gridrow27_1"> 
+                                    <wm-gridcolumn columnwidth="3" name="gridcolumn40_1" padding="5px unset unset unset"> 
+                                        <wm-composite name="composite12" horizontalalign="center" padding="unset unset unset 3px"> 
+                                            <wm-select name="selectProduto" dataset="bind:Variables.DbinvoiceProductData.dataSet" datafield="All Fields" displayfield="name" textalign="center" placeholder=""></wm-select> 
+                                        </wm-composite> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="3" name="gridcolumn47" padding="5px unset unset unset"> 
+                                        <wm-composite name="composite14" horizontalalign="center"> 
+                                            <wm-text name="text11" datavalue="bind:Widgets.selectProduto.datavalue.description" readonly="true" textalign="center" placeholder="Description"></wm-text> 
+                                        </wm-composite> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="2" name="gridcolumn41_1" class="bordered-left" padding="5px unset unset unset"> 
+                                        <wm-text name="Quantidade" type="number" placeholder="" textalign="center"></wm-text> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="2" name="gridcolumn44_1" class="bordered-left" padding="5px unset unset unset"> 
+                                        <wm-text datavalue="bind:Widgets.selectProduto.datavalue.salePrice" name="PrecoUnitario" readonly="true" type="number" textalign="center" placeholder=""></wm-text> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="2" name="gridcolumn45" class="bordered-left" padding="5px unset unset unset"> 
+                                        <wm-text datavalue="bind:Widgets.Quantidade.datavalue * Widgets.PrecoUnitario.datavalue" type="number" placeholder="" name="valor" readonly="true" textalign="center"></wm-text> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow26_3"> 
+                                    <wm-gridcolumn columnwidth="4" name="gridcolumn50_1"> 
+                                        <wm-layoutgrid name="layoutgrid29_1"> 
+                                            <wm-gridrow name="gridrow52_1"> 
+                                                <wm-gridcolumn columnwidth="12" name="gridcolumn111_1" horizontalalign="center"></wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                            <wm-gridrow name="gridrow53_1"> 
+                                                <wm-gridcolumn columnwidth="12" name="gridcolumn114" horizontalalign="center" padding="10px unset"> 
+                                                    <wm-button class="btn-success" caption="Create Item" type="button" margin="unset 0.5em" name="button9" on-click="Widgets.productDialog.open()" iconclass="wi wi-plus"></wm-button> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                            <wm-gridrow name="gridrow54"> 
+                                                <wm-gridcolumn columnwidth="12" name="gridcolumn115"></wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                        </wm-layoutgrid> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="8" name="gridcolumn51"> 
+                                        <wm-layoutgrid name="layoutgrid13"> 
+                                            <wm-gridrow name="gridrow29_1"> 
+                                                <wm-gridcolumn columnwidth="6" name="gridcolumn58"> 
+                                                    <wm-composite name="composite16" required="false"> 
+                                                        <wm-label class="col-md-3 control-label" name="label21_1" caption="Tax" textalign="center" padding="10px unset unset unset" required="false"></wm-label> 
+                                                        <wm-container class="col-md-9" name="container22_1"> 
+                                                            <wm-select name="select5" dataset="bind:Variables.DbinvoiceTaxRateData.dataSet" datafield="All Fields" displayfield="tax.name" required="false"></wm-select> 
+                                                        </wm-container> 
+                                                    </wm-composite> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn columnwidth="3" name="gridcolumn70"> 
+                                                    <wm-text datavalue="bind:Widgets.select5.datavalue.taxRate" type="number" placeholder="" readonly="true" textalign="center" name="text19"></wm-text> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn columnwidth="3" name="gridcolumn88"> 
+                                                    <wm-text datavalue="bind: (Widgets.text19.datavalue * Widgets.valor.datavalue)/100" type="number" placeholder="" readonly="true" textalign="center" name="item1tax1"></wm-text> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                        </wm-layoutgrid> 
+                                        <wm-layoutgrid name="newRowTaxa" show="true"> 
+                                            <wm-gridrow name="gridrow31_1"> 
+                                                <wm-gridcolumn columnwidth="6" name="gridcolumn62"> 
+                                                    <wm-composite name="composite17"> 
+                                                        <wm-label class="col-md-3 control-label" caption="Tax" textalign="center" padding="10px unset unset unset" name="label22_1"></wm-label> 
+                                                        <wm-container class="col-md-9" name="container23_1"> 
+                                                            <wm-select name="select6" dataset="bind:Variables.DbinvoiceTaxRateData.dataSet" datafield="All Fields" displayfield="tax.name"></wm-select> 
+                                                        </wm-container> 
+                                                    </wm-composite> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn columnwidth="3" name="gridcolumn71"> 
+                                                    <wm-text datavalue="bind:Widgets.select6.datavalue.taxRate" type="number" placeholder="" readonly="true" textalign="center" name="text22"></wm-text> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn columnwidth="3" name="gridcolumn89"> 
+                                                    <wm-text datavalue="bind:(Widgets.text22.datavalue * Widgets.valor.datavalue)/100" type="number" placeholder="" readonly="true" textalign="center" name="item1tax2"></wm-text> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                        </wm-layoutgrid> 
+                                        <wm-layoutgrid name="newRowTaxa2" show="true"> 
+                                            <wm-gridrow name="gridrow32"> 
+                                                <wm-gridcolumn columnwidth="6" name="gridcolumn63"> 
+                                                    <wm-composite name="composite18"> 
+                                                        <wm-label class="col-md-3 control-label" caption="Tax" textalign="center" padding="10px unset unset unset" name="label23_1"></wm-label> 
+                                                        <wm-container class="col-md-9" name="container24_1"> 
+                                                            <wm-select name="select7" dataset="bind:Variables.DbinvoiceTaxRateData.dataSet" datafield="All Fields" displayfield="tax.name"></wm-select> 
+                                                        </wm-container> 
+                                                    </wm-composite> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn columnwidth="3" name="gridcolumn72"> 
+                                                    <wm-text datavalue="bind:Widgets.select7.datavalue.taxRate" type="number" placeholder="" readonly="true" textalign="center" name="text23"></wm-text> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn columnwidth="3" name="gridcolumn90"> 
+                                                    <wm-text datavalue="bind:(Widgets.text23.datavalue * Widgets.valor.datavalue)/100" type="number" placeholder="" readonly="true" textalign="center" name="item1tax3"></wm-text> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                        </wm-layoutgrid> 
+                                        <wm-layoutgrid show="true" name="layoutgrid25"> 
+                                            <wm-gridrow name="gridrow46"> 
+                                                <wm-gridcolumn columnwidth="12" name="gridcolumn103" horizontalalign="center"> 
+                                                    <wm-button class="btn-success" caption="Add Tax" type="button" margin="unset 0.5em" name="buttonTaxa1" iconclass="wi wi-plus" on-click="buttonTaxa1Click($event, $scope)"></wm-button> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                        </wm-layoutgrid> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow22"> 
+                        <wm-gridcolumn columnwidth="12" name="gridcolumn37_1" padding="5px unset"> 
+                            <wm-layoutgrid name="newRowItem" show="true"> 
+                                <wm-gridrow name="gridrow26_2" class="bordered-top"> 
+                                    <wm-gridcolumn columnwidth="3" name="gridcolumn46" padding="5px unset unset unset"> 
+                                        <wm-composite horizontalalign="center" name="composite9" padding="unset unset unset 3px"> 
+                                            <wm-select dataset="bind:Variables.DbinvoiceProductData.dataSet" datafield="All Fields" displayfield="name" textalign="center" name="select3"></wm-select> 
+                                        </wm-composite> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="3" name="gridcolumn47_1" padding="5px unset unset unset"> 
+                                        <wm-composite horizontalalign="center" name="composite10"> 
+                                            <wm-text datavalue="bind:Widgets.select3.datavalue.description" readonly="true" textalign="center" name="text10" placeholder="Description"></wm-text> 
+                                        </wm-composite> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="2" class="bordered-left" name="gridcolumn48" padding="5px unset unset unset"> 
+                                        <wm-text type="number" placeholder="" textalign="center" name="text11_1"></wm-text> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="2" class="bordered-left" name="gridcolumn49_1" padding="5px unset unset unset"> 
+                                        <wm-text datavalue="bind:Widgets.select3.datavalue.salePrice" readonly="true" type="number" textalign="center" name="text12" placeholder=""></wm-text> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="2" class="bordered-left" name="gridcolumn50" padding="5px unset unset unset"> 
+                                        <wm-text datavalue="bind:Widgets.text11_1.datavalue * Widgets.text12.datavalue" type="number" placeholder="" readonly="true" textalign="center" name="text13"></wm-text> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow31_2"> 
+                                    <wm-gridcolumn columnwidth="4" name="gridcolumn60"> 
+                                        <wm-layoutgrid name="layoutgrid32"> 
+                                            <wm-gridrow name="gridrow63"> 
+                                                <wm-gridcolumn columnwidth="12" horizontalalign="center" name="gridcolumn123_1"></wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                            <wm-gridrow name="gridrow64"> 
+                                                <wm-gridcolumn columnwidth="12" horizontalalign="center" padding="10px unset" name="gridcolumn124"> 
+                                                    <wm-button class="btn-success" caption="Create Item" type="button" margin="unset 0.5em" on-click="Widgets.productDialog.open()" iconclass="wi wi-plus" name="button11"></wm-button> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                            <wm-gridrow name="gridrow65"> 
+                                                <wm-gridcolumn columnwidth="12" name="gridcolumn125"></wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                        </wm-layoutgrid> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="8" name="gridcolumn61"> 
+                                        <wm-layoutgrid name="layoutgrid15"> 
+                                            <wm-gridrow name="gridrow32_1"> 
+                                                <wm-gridcolumn columnwidth="6" name="gridcolumn64"> 
+                                                    <wm-composite name="composite16_1" required="false"> 
+                                                        <wm-label class="col-md-3 control-label" caption="Tax" textalign="center" padding="10px unset unset unset" name="label21_2" required="false"></wm-label> 
+                                                        <wm-container class="col-md-9" name="container22_2"> 
+                                                            <wm-select dataset="bind:Variables.DbinvoiceTaxRateData.dataSet" datafield="All Fields" name="select8" displayfield="tax.name" required="false"></wm-select> 
+                                                        </wm-container> 
+                                                    </wm-composite> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn columnwidth="3" name="gridcolumn65"> 
+                                                    <wm-text datavalue="bind:Widgets.select8.datavalue.taxRate" type="number" placeholder="" readonly="true" textalign="center" name="text21"></wm-text> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn columnwidth="3" name="gridcolumn91"> 
+                                                    <wm-text datavalue="bind:(Widgets.text21.datavalue * Widgets.text13.datavalue)/100" type="number" placeholder="" readonly="true" textalign="center" name="item2tax1"></wm-text> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                        </wm-layoutgrid> 
+                                        <wm-layoutgrid name="newRowTaxa3" show="true"> 
+                                            <wm-gridrow name="gridrow33"> 
+                                                <wm-gridcolumn columnwidth="6" name="gridcolumn66"> 
+                                                    <wm-composite name="composite17_1"> 
+                                                        <wm-label class="col-md-3 control-label" caption="Tax" textalign="center" padding="10px unset unset unset" name="label22_2"></wm-label> 
+                                                        <wm-container class="col-md-9" name="container23_2"> 
+                                                            <wm-select dataset="bind:Variables.DbinvoiceTaxRateData.dataSet" datafield="All Fields" displayfield="tax.name" name="select9"></wm-select> 
+                                                        </wm-container> 
+                                                    </wm-composite> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn columnwidth="3" name="gridcolumn67"> 
+                                                    <wm-text datavalue="bind:Widgets.select9.datavalue.taxRate" type="number" placeholder="" readonly="true" textalign="center" name="text22_1"></wm-text> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn columnwidth="3" name="gridcolumn92"> 
+                                                    <wm-text datavalue="bind:(Widgets.text21_1.datavalue * Widgets.text13.datavalue)/100" type="number" placeholder="" readonly="true" textalign="center" name="item2tax2"></wm-text> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                        </wm-layoutgrid> 
+                                        <wm-layoutgrid name="newRowTaxa4" show="true"> 
+                                            <wm-gridrow name="gridrow34"> 
+                                                <wm-gridcolumn columnwidth="6" name="gridcolumn68"> 
+                                                    <wm-composite name="composite18_1"> 
+                                                        <wm-label class="col-md-3 control-label" caption="Tax" textalign="center" padding="10px unset unset unset" name="label23_2"></wm-label> 
+                                                        <wm-container class="col-md-9" name="container24_2"> 
+                                                            <wm-select dataset="bind:Variables.DbinvoiceTaxRateData.dataSet" datafield="All Fields" displayfield="tax.name" name="select10"></wm-select> 
+                                                        </wm-container> 
+                                                    </wm-composite> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn columnwidth="3" name="gridcolumn69"> 
+                                                    <wm-text datavalue="bind:Widgets.select10.datavalue.taxRate" type="number" placeholder="" readonly="true" textalign="center" name="text23_1"></wm-text> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn columnwidth="3" name="gridcolumn93"> 
+                                                    <wm-text datavalue="bind:(Widgets.text23_1.datavalue * Widgets.text13.datavalue)/100" type="number" placeholder="" readonly="true" textalign="center" name="item2tax3"></wm-text> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                        </wm-layoutgrid> 
+                                        <wm-layoutgrid show="true" name="layoutgrid24"> 
+                                            <wm-gridrow name="gridrow45_1"> 
+                                                <wm-gridcolumn columnwidth="12" name="gridcolumn100" horizontalalign="center"> 
+                                                    <wm-button class="btn-success" caption="Add Tax" type="button" margin="unset 0.5em" iconclass="wi wi-plus" on-click="buttonTaxa2Click($event, $scope)" name="buttonTaxa2"></wm-button> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                        </wm-layoutgrid> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow24"> 
+                        <wm-gridcolumn columnwidth="12" name="gridcolumn43_2" padding="5px unset"> 
+                            <wm-layoutgrid show="true" name="newRowItem2"> 
+                                <wm-gridrow name="gridrow25_2" class="bordered-top"> 
+                                    <wm-gridcolumn columnwidth="3" name="gridcolumn44_2" padding="5px unset unset unset"> 
+                                        <wm-composite horizontalalign="center" name="composite11" padding="unset unset unset 3px"> 
+                                            <wm-select dataset="bind:Variables.DbinvoiceProductData.dataSet" datafield="All Fields" displayfield="name" textalign="center" name="select4"></wm-select> 
+                                        </wm-composite> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="3" name="gridcolumn45_1" padding="5px unset unset unset"> 
+                                        <wm-composite horizontalalign="center" name="composite12_1"> 
+                                            <wm-text datavalue="bind:Widgets.select4.datavalue.description" readonly="true" textalign="center" name="text14" placeholder="Description"></wm-text> 
+                                        </wm-composite> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="2" class="bordered-left" name="gridcolumn46_1" padding="5px unset unset unset"> 
+                                        <wm-text type="number" placeholder="" textalign="center" name="text15"></wm-text> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="2" class="bordered-left" name="gridcolumn47_2" padding="5px unset unset unset"> 
+                                        <wm-text datavalue="bind:Widgets.select4.datavalue.salePrice" readonly="true" type="number" textalign="center" name="text16_1" placeholder=""></wm-text> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="2" class="bordered-left" name="gridcolumn48_1" padding="5px unset unset unset"> 
+                                        <wm-text datavalue="bind:Widgets.text15.datavalue * Widgets.text16_1.datavalue" type="number" placeholder="" readonly="true" textalign="center" name="text17"></wm-text> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow36"> 
+                                    <wm-gridcolumn columnwidth="4" name="gridcolumn73_1"> 
+                                        <wm-layoutgrid name="layoutgrid33"> 
+                                            <wm-gridrow name="gridrow66"> 
+                                                <wm-gridcolumn columnwidth="12" horizontalalign="center" name="gridcolumn126"></wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                            <wm-gridrow name="gridrow67"> 
+                                                <wm-gridcolumn columnwidth="12" horizontalalign="center" padding="10px unset" name="gridcolumn127"> 
+                                                    <wm-button class="btn-success" caption="Create Item" type="button" margin="unset 0.5em" on-click="Widgets.productDialog.open()" iconclass="wi wi-plus" name="button12"></wm-button> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                            <wm-gridrow name="gridrow68"> 
+                                                <wm-gridcolumn columnwidth="12" name="gridcolumn128"></wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                        </wm-layoutgrid> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="8" name="gridcolumn74"> 
+                                        <wm-layoutgrid name="layoutgrid18"> 
+                                            <wm-gridrow name="gridrow37_1"> 
+                                                <wm-gridcolumn columnwidth="6" name="gridcolumn77"> 
+                                                    <wm-composite name="composite19_1" required="false"> 
+                                                        <wm-label class="col-md-3 control-label" caption="Tax" textalign="center" padding="10px unset unset unset" name="label24" required="false"></wm-label> 
+                                                        <wm-container class="col-md-9" name="container25_1"> 
+                                                            <wm-select dataset="bind:Variables.DbinvoiceTaxRateData.dataSet" datafield="All Fields" displayfield="tax.name" name="select11" required="false"></wm-select> 
+                                                        </wm-container> 
+                                                    </wm-composite> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn columnwidth="3" name="gridcolumn78"> 
+                                                    <wm-text datavalue="bind:Widgets.select11.datavalue.taxRate" type="number" placeholder="" readonly="true" textalign="center" name="text24_1"></wm-text> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn columnwidth="3" name="gridcolumn86_2"> 
+                                                    <wm-text datavalue="bind:(Widgets.text24_1.datavalue * Widgets.text17.datavalue)/100" type="number" placeholder="" readonly="true" textalign="center" name="item3tax1"></wm-text> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                        </wm-layoutgrid> 
+                                        <wm-layoutgrid name="newRowTaxa5" show="true"> 
+                                            <wm-gridrow name="gridrow38"> 
+                                                <wm-gridcolumn columnwidth="6" name="gridcolumn79"> 
+                                                    <wm-composite name="composite20_1"> 
+                                                        <wm-label class="col-md-3 control-label" caption="Tax" textalign="center" padding="10px unset unset unset" name="label25"></wm-label> 
+                                                        <wm-container class="col-md-9" name="container26"> 
+                                                            <wm-select dataset="bind:Variables.DbinvoiceTaxRateData.dataSet" datafield="All Fields" displayfield="tax.name" name="select12"></wm-select> 
+                                                        </wm-container> 
+                                                    </wm-composite> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn columnwidth="3" name="gridcolumn80"> 
+                                                    <wm-text datavalue="bind:Widgets.select12.datavalue.taxRate" type="number" placeholder="" readonly="true" textalign="center" name="text25_1"></wm-text> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn columnwidth="3" name="gridcolumn87_1"> 
+                                                    <wm-text datavalue="bind:(Widgets.text25_1.datavalue * Widgets.text17.datavalue)/100" type="number" placeholder="" readonly="true" textalign="center" name="item3tax2"></wm-text> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                        </wm-layoutgrid> 
+                                        <wm-layoutgrid name="newRowTaxa6" show="true"> 
+                                            <wm-gridrow name="gridrow39"> 
+                                                <wm-gridcolumn columnwidth="6" name="gridcolumn81"> 
+                                                    <wm-composite name="composite21_1"> 
+                                                        <wm-label class="col-md-3 control-label" caption="Tax" textalign="center" padding="10px unset unset unset" name="label26"></wm-label> 
+                                                        <wm-container class="col-md-9" name="container27_1"> 
+                                                            <wm-select dataset="bind:Variables.DbinvoiceTaxRateData.dataSet" datafield="All Fields" displayfield="tax.name" name="select13"></wm-select> 
+                                                        </wm-container> 
+                                                    </wm-composite> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn columnwidth="3" name="gridcolumn82"> 
+                                                    <wm-text datavalue="bind:Widgets.select13.datavalue.taxRate" type="number" placeholder="" readonly="true" textalign="center" name="text26_1"></wm-text> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn columnwidth="3" name="gridcolumn94"> 
+                                                    <wm-text datavalue="bind:(Widgets.text26_1.datavalue * Widgets.text17.datavalue)/100" type="number" placeholder="" readonly="true" textalign="center" name="item3tax3"></wm-text> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                        </wm-layoutgrid> 
+                                        <wm-layoutgrid show="true" name="layoutgrid22_1"> 
+                                            <wm-gridrow name="gridrow43" padding="5px unset 10px unset"> 
+                                                <wm-gridcolumn columnwidth="12" name="gridcolumn94_1" horizontalalign="center"> 
+                                                    <wm-button class="btn-success" caption="Add Tax" type="button" margin="unset 0.5em" iconclass="wi wi-plus" on-click="buttonTaxa3Click($event, $scope)" name="buttonTaxa3"></wm-button> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                        </wm-layoutgrid> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow25_1" padding="10px unset" class="bordered-top"> 
+                        <wm-gridcolumn columnwidth="12" name="gridcolumn36_1" horizontalalign="center"> 
+                            <wm-button class="btn-success" caption="Add New Item" type="button" margin="unset 0.5em" name="button3" iconclass="wi wi-plus" on-click="button3Click($event, $scope);button3Click1($event, $scope)"></wm-button> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow44_1"> 
+                        <wm-gridcolumn columnwidth="12" name="gridcolumn94_2"> 
+                            <wm-layoutgrid name="layoutgrid26_1"> 
+                                <wm-gridrow name="gridrow45_3" class="bordered-top"> 
+                                    <wm-gridcolumn columnwidth="7" name="gridcolumn95"></wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="1" name="gridcolumn96"></wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="4" name="gridcolumn99_2"> 
+                                        <wm-composite name="composite23"> 
+                                            <wm-label class="col-md-3 control-label" name="label28" caption="Subtotal" textalign="center" padding="10px unset unset unset"></wm-label> 
+                                            <wm-container class="col-md-9" name="container29"> 
+                                                <wm-text name="text37" readonly="true" datavalue="bind:Widgets.valor.datavalue + Widgets.text13.datavalue + Widgets.text17.datavalue" type="number" placeholder=""></wm-text> 
+                                            </wm-container> 
+                                        </wm-composite> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow46_2"> 
+                                    <wm-gridcolumn columnwidth="7" name="gridcolumn97_1"> 
+                                        <wm-composite name="composite26"> 
+                                            <wm-label class="col-md-3 control-label" caption="Payment Terms" textalign="center" padding="10px unset unset unset" name="label26_1"></wm-label> 
+                                            <wm-container class="col-md-9" name="container29_1"> 
+                                                <wm-text readonly="true" datavalue="bind:Widgets.selectCliente.datavalue.paymentTerm.name" type="text" placeholder="" name="text39_1"></wm-text> 
+                                            </wm-container> 
+                                        </wm-composite> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="1" name="gridcolumn98_1"></wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="4" name="gridcolumn101"> 
+                                        <wm-composite name="composite24"> 
+                                            <wm-label class="col-md-3 control-label" caption="Total Tax" textalign="center" padding="10px unset unset unset" name="label29"></wm-label> 
+                                            <wm-container class="col-md-9" name="container30"> 
+                                                <wm-text name="text38" readonly="true" type="number" placeholder=""></wm-text> 
+                                            </wm-container> 
+                                        </wm-composite> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow47"> 
+                                    <wm-gridcolumn columnwidth="7" name="gridcolumn102_2"></wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="1" name="gridcolumn103_2"></wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="4" name="gridcolumn104"> 
+                                        <wm-composite name="composite25"> 
+                                            <wm-label class="col-md-3 control-label" caption="Total" textalign="center" padding="10px unset unset unset" name="label30"></wm-label> 
+                                            <wm-container class="col-md-9" name="container31"> 
+                                                <wm-text name="text39" readonly="true" datavalue="bind:Widgets.text37.datavalue + Widgets.text38.datavalue" type="number" placeholder=""></wm-text> 
+                                            </wm-container> 
+                                        </wm-composite> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                </wm-layoutgrid> 
+            </wm-container> 
+            <wm-container backgroundcolor="#00bb80" name="container32"> 
+                <wm-layoutgrid name="layoutgrid28"> 
+                    <wm-gridrow name="gridrow51"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn109"></wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn110"></wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow52"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn111"></wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn112"></wm-gridcolumn> 
+                    </wm-gridrow> 
+                </wm-layoutgrid> 
+            </wm-container> 
+            <wm-container backgroundcolor="#ffffff" bordercolor="#00bb80" borderstyle="dashed" name="container33"> 
+                <wm-layoutgrid name="layoutgrid29"> 
+                    <wm-gridrow name="gridrow53"> 
+                        <wm-gridcolumn columnwidth="12" padding="unset unset unset 5px" name="gridcolumn118"> 
+                            <wm-composite name="composite31" padding="10px unset unset unset"> 
+                                <wm-label class="col-md-3 control-label" name="label36" padding="10px unset unset unset" textalign="center" caption="Notes"></wm-label> 
+                                <wm-container class="col-md-9" name="container39"> 
+                                    <wm-textarea name="textarea2"></wm-textarea> 
+                                </wm-container> 
+                            </wm-composite> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow60"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn122"></wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn123"></wm-gridcolumn> 
+                    </wm-gridrow> 
+                </wm-layoutgrid> 
+            </wm-container> 
+            <wm-container name="container34"> 
+                <wm-layoutgrid name="layoutgrid31"> 
+                    <wm-gridrow name="gridrow61"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn119_1"></wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn120_1"> 
+                            <wm-message name="message1" show="false"></wm-message> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow62"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn121_1"></wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn122_1" horizontalalign="center" padding="10px unset"> 
+                            <wm-button class="btn-success" caption="Conclude" type="button" margin="unset 0.5em" name="button10" on-click="button10Click($event, $scope)"></wm-button> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                </wm-layoutgrid> 
+            </wm-container> 
+        </wm-page-content> 
+        <wm-right-panel columnwidth="2" content="rightnav" name="right_panel1"></wm-right-panel> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+    <wm-view class="dialog-view" name="view3"> 
+        <wm-dialog dialogtype="design-dialog" name="partnerDialogPatner" title="Novo Cliente" iconclass="wi wi-plus" modal="true"> 
+            <wm-liveform errormessage="" title="" defaultmode="Edit" dataset="bind:Variables.partnerVar.dataSet" captionalign="left" captionposition="top" on-success="Widgets.partnerDialogPatner.close()" name="liveform1"> 
+                <wm-layoutgrid columns="1" name="layoutgrid7_1"> 
+                    <wm-gridrow name="gridrow15_1"> 
+                        <wm-gridcolumn columnwidth="12" name="gridcolumn24"> 
+                            <wm-form-field name="name" displayname="Name" show="true" primary-key="false" generator="assigned" key="name" type="string" readonly="false" required="true" widget="text" maxchars="255" inputtype="text" placeholder=""></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow16_1"> 
+                        <wm-gridcolumn columnwidth="12" name="gridcolumn25_1"> 
+                            <wm-form-field name="language" displayname="Country" show="true" primary-key="false" generator="assigned" key="language" type="list" is-related="true" readonly="false" required="false" widget="select" placeholder="" defaultvalue="bind:Variables.partnerVar.dataSet.data[$i].language.language" dataset="bind:Variables.partnerVar.dataSet.data[$i].language" displayfield="language"></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow17_1"> 
+                        <wm-gridcolumn columnwidth="12" name="gridcolumn26"> 
+                            <wm-form-field name="nif" displayname="NIF" show="true" primary-key="false" generator="assigned" key="nif" type="string" readonly="false" required="false" widget="text" maxchars="9" inputtype="text" placeholder="" defaultvalue="Consumidor Final"></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow69"> 
+                        <wm-gridcolumn columnwidth="12" name="gridcolumn127_1" horizontalalign="center"> 
+                            <wm-label padding="unset 0.5em" name="label25_1" caption="NIF must be valid"></wm-label> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                </wm-layoutgrid> 
+                <wm-form-field name="id" displayname="Id" show="false" primary-key="true" generator="identity" key="id" type="integer" readonly="true" required="true" step="0" widget="number" inputtype="number" placeholder=""></wm-form-field> 
+                <wm-form-action key="save" display-name="Conclude" show="true" class="form-save btn-success" iconclass="wi wi-save" title="Concluir" action="" shortcutkey="" disabled="false" type="submit" update-mode="true"></wm-form-action> 
+            </wm-liveform> 
+        </wm-dialog> 
+    </wm-view> 
+    <wm-view class="dialog-view" name="view3_1"> 
+        <wm-dialog dialogtype="design-dialog" name="productDialog" title="Novo Item" iconclass="wi wi-plus" modal="true"> 
+            <wm-liveform errormessage="" title="" defaultmode="Edit" dataset="bind:Variables.DbinvoiceProductData.dataSet" captionalign="left" captionposition="top" on-success="Widgets.productDialog.close()" name="liveform3_1"> 
+                <wm-layoutgrid columns="1" name="layoutgrid30"> 
+                    <wm-gridrow name="gridrow55"> 
+                        <wm-gridcolumn columnwidth="12" name="gridcolumn116"> 
+                            <wm-form-field name="name" displayname="Name" show="true" primary-key="false" generator="assigned" key="name" type="string" readonly="false" required="false" widget="text" maxchars="100" inputtype="text" placeholder=""></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow56"> 
+                        <wm-gridcolumn columnwidth="12" name="gridcolumn117"> 
+                            <wm-form-field name="description" displayname="Description" show="true" primary-key="false" generator="assigned" key="description" type="string" readonly="false" required="false" widget="text" maxchars="255" inputtype="text" placeholder=""></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow57"> 
+                        <wm-gridcolumn columnwidth="12" name="gridcolumn118_1"> 
+                            <wm-form-field name="category" displayname="Category" show="true" primary-key="false" generator="assigned" key="category" type="string" readonly="false" required="false" widget="text" maxchars="255" inputtype="text" placeholder=""></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow58"> 
+                        <wm-gridcolumn columnwidth="12" name="gridcolumn119"> 
+                            <wm-form-field name="salePrice" displayname="Sale Price" show="true" primary-key="false" generator="assigned" key="salePrice" type="integer" readonly="false" required="false" step="0" widget="number" inputtype="number" placeholder=""></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow59"> 
+                        <wm-gridcolumn columnwidth="12" name="gridcolumn120"> 
+                            <wm-form-field name="tax" displayname="Tax" show="true" primary-key="false" generator="assigned" key="tax" type="list" is-related="true" readonly="false" required="false" widget="select" placeholder="" datafield="All Fields" displayfield="taxRate" orderby="saleTaxes:desc" dataset="bind:Variables.DbinvoiceTaxRateData.dataSet"></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                </wm-layoutgrid> 
+                <wm-form-field name="id" displayname="Id" show="false" primary-key="true" generator="identity" key="id" type="integer" readonly="true" required="true" step="0" widget="number" inputtype="number" placeholder="Enter value"></wm-form-field> 
+                <wm-form-action key="custom" display-name="Informação" show="true" class="btn-secondary" iconclass="wi wi-plus" title="info" shortcutkey="" disabled="false" type="button" update-mode="true"></wm-form-action> 
+                <wm-form-action key="save" display-name="Save" show="true" class="form-save btn-success" iconclass="wi wi-save" title="Save" disabled="false" type="submit" update-mode="true"></wm-form-action> 
+            </wm-liveform> 
+        </wm-dialog> 
+    </wm-view> 
+</wm-page>

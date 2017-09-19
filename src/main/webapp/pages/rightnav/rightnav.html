@@ -1,0 +1,16 @@
+<wm-partial data-ng-controller="rightnavPageController" name="rightnav" type="rightnav"> 
+    <wm-nav name="rightnav" type="pills" layout="stacked"> 
+        <wm-nav-item name="list_task"> 
+            <wm-anchor caption="New Invoice" name="Novafatura" iconclass="fa fa-plus" color="#00bb80" fontweight="bold" on-click="Variables.goToPage_createNewInvoice.invoke()"></wm-anchor> 
+        </wm-nav-item> 
+        <wm-nav-item name="list_directory"> 
+            <wm-anchor caption="New Payment" name="NovoPagamento" iconclass="fa fa-plus" fontweight="bold" color="#00bb80"></wm-anchor> 
+        </wm-nav-item> 
+        <wm-nav-item name="nav_item4"> 
+            <wm-anchor name="NovoCliente" iconclass="fa fa-plus" caption="New Partner" fontweight="bold" color="#00bb80" on-click="Variables.goToPage_partner.invoke()"></wm-anchor> 
+        </wm-nav-item> 
+        <wm-nav-item name="nav_item5"> 
+            <wm-anchor name="NovoProduto" iconclass="fa fa-plus" caption="New Product" fontweight="bold" color="#00bb80" on-click="Variables.goToPage_product.invoke()"></wm-anchor> 
+        </wm-nav-item> 
+    </wm-nav> 
+</wm-partial>

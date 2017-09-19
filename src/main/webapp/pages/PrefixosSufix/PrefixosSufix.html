@@ -1,0 +1,38 @@
+<wm-page data-ng-controller="PrefixosSufixPageController" pagetitle="Prefixos Sufix" name="page1"> 
+    <wm-header content="header" name="header1" backgroundimage="resources/images/imagelists/slide3.jpg"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="8" name="page_content1"> 
+            <wm-table editmode="inline" title="User List" dataset="bind:Variables.DB_SystemControlUserData.dataSet" navigation="Classic" name="grid2"> 
+                <wm-table-column binding="id" caption="Id" type="integer" primary-key="true" generator="identity" readonly="true" edit-widget-type="number" show="true"></wm-table-column> 
+                <wm-table-column binding="username" caption="Username" type="string" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="email" caption="Email" type="string" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="password" caption="Password" type="string" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="role" caption="Role" type="string" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="rowOperations" caption="Actions" type="custom" width="120px" readonly="true" sortable="false" searchable="false" show="true"></wm-table-column> 
+                <wm-table-action key="addNewRow" display-name="New" show="true" class="btn-primary" iconclass="wi wi-plus" title="New" action="addNewRow()" shortcutkey="" disabled="false" position="footer,header"></wm-table-action> 
+                <wm-table-row-action key="updaterow" display-name="" show="true" class="btn-transparent" iconclass="wi wi-pencil" title="Edit" action="editRow()" disabled="false"></wm-table-row-action> 
+                <wm-table-row-action key="deleterow" display-name="" show="true" class="btn-transparent" iconclass="wi wi-trash" title="Delete" action="deleteRow()" disabled="false"></wm-table-row-action> 
+            </wm-table> 
+            <wm-table editmode="inline" title="Account List" dataset="bind:Variables.DB_SystemControlAccountData.dataSet" navigation="Classic" name="grid1"> 
+                <wm-table-column binding="id" caption="Id" type="integer" primary-key="true" generator="identity" readonly="true" edit-widget-type="number" show="true"></wm-table-column> 
+                <wm-table-column binding="accountRegistrationDate" caption="Account Registration Date" type="string" generator="assigned" edit-widget-type="date" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="accountTerminationDate" caption="Account Termination Date" type="string" generator="assigned" edit-widget-type="date" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="user.id" caption="User Id" type="integer" primary-key="true" generator="identity" formatpattern="prefix" prefix="a" edit-widget-type="select" datafield="id" displayfield="id" show="true" related-entity-name="User" readonly="false"></wm-table-column> 
+                <wm-table-column binding="user.username" caption="User Username" type="string" generator="assigned" readonly="true" edit-widget-type="text" show="true" related-entity-name="User"></wm-table-column> 
+                <wm-table-column binding="user.email" caption="User Email" type="string" generator="assigned" readonly="true" edit-widget-type="text" show="true" related-entity-name="User"></wm-table-column> 
+                <wm-table-column binding="user.password" caption="User Password" type="string" generator="assigned" readonly="true" edit-widget-type="text" show="true" related-entity-name="User"></wm-table-column> 
+                <wm-table-column binding="user.role" caption="User Role" type="string" generator="assigned" readonly="true" edit-widget-type="text" show="true" related-entity-name="User"></wm-table-column> 
+                <wm-table-column binding="accountId" caption="Account Id" type="integer" primary-key="false" generator="assigned" edit-widget-type="number" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="prefix" caption="Prefix" type="string" primary-key="false" generator="assigned" formatpattern="None" prefix="a" edit-widget-type="number" defaultvalue="bind:Variables.DB_SystemControlAccountData.dataSet.data[$i].id" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="rowOperations" caption="Actions" type="custom" width="120px" readonly="true" edit-widget-type="text" sortable="false" searchable="false" show="true"></wm-table-column> 
+                <wm-table-action key="addNewRow" display-name="New" show="true" class="btn-primary" iconclass="wi wi-plus" title="New" action="addNewRow()" shortcutkey="" disabled="false" position="footer,header"></wm-table-action> 
+                <wm-table-row-action key="updaterow" display-name="" show="true" class="btn-transparent" iconclass="wi wi-pencil" title="Edit" action="editRow()" disabled="false"></wm-table-row-action> 
+                <wm-table-row-action key="deleterow" display-name="" show="true" class="btn-transparent" iconclass="wi wi-trash" title="Delete" action="deleteRow()" disabled="false"></wm-table-row-action> 
+            </wm-table> 
+        </wm-page-content> 
+        <wm-right-panel columnwidth="2" content="rightnav" name="right_panel1"></wm-right-panel> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

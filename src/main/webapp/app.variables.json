@@ -1,0 +1,779 @@
+{
+  "EmailSending" : {
+    "_id" : "wm-EmailSending-wm.ServiceVariable-1498734805815",
+    "name" : "EmailSending",
+    "owner" : "App",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "toEmailAddress",
+      "value" : "ramyamendu94@gmail.com",
+      "type" : "string"
+    }, {
+      "target" : "emailSubject",
+      "value" : "Novo Registo",
+      "type" : "string"
+    }, {
+      "target" : "emailMessage",
+      "value" : "Dados do Novo registo",
+      "type" : "string"
+    }, {
+      "target" : "userName",
+      "value" : "ramyamendu94@gmail.com",
+      "type" : "string"
+    }, {
+      "target" : "password",
+      "value" : "R@my@123",
+      "type" : "string"
+    } ],
+    "type" : "string",
+    "service" : "EMailService",
+    "operation" : "sendEmail",
+    "operationId" : "EMailController_sendEmail",
+    "operationType" : "get",
+    "serviceType" : "JavaService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "startUpdate" : false,
+    "autoUpdate" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "EMail"
+  },
+  "FileServiceUploadFile" : {
+    "_id" : "wm-FileServiceUploadFile-wm.ServiceVariable-1498662844159",
+    "name" : "FileServiceUploadFile",
+    "owner" : "App",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ ],
+    "type" : "com.faturacaomodelo.fileservice.FileService.FileUploadResponse",
+    "service" : "FileService",
+    "operation" : "uploadFile",
+    "operationId" : "FileController_uploadFile",
+    "operationType" : "post",
+    "serviceType" : "JavaService",
+    "dataSet" : [ ],
+    "isList" : true,
+    "maxResults" : 20,
+    "startUpdate" : false,
+    "autoUpdate" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "isDefault" : true,
+    "controller" : "File"
+  },
+  "googleRestMapInfo" : {
+    "_id" : "wm-googleRestMapInfo-wm.ServiceVariable-1501689820109",
+    "name" : "googleRestMapInfo",
+    "owner" : "App",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "sensor",
+      "value" : "false",
+      "type" : "string"
+    }, {
+      "target" : "origin",
+      "value" : "Toronto",
+      "type" : "string"
+    }, {
+      "target" : "destination",
+      "value" : "Montreal",
+      "type" : "string"
+    } ],
+    "type" : "googleapis2.RootResponse",
+    "service" : "googleapis2",
+    "operation" : "invoke",
+    "operationId" : "googleapis2_RestServiceVirtualController-invoke",
+    "operationType" : "get",
+    "serviceType" : "RestService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "startUpdate" : false,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "RestServiceVirtual"
+  },
+  "goToPage_business" : {
+    "_id" : "wm-goToPage_business-wm.NavigationVariable-1498644920447",
+    "name" : "goToPage_business",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "business",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_contact" : {
+    "_id" : "wm-goToPage_contact-wm.NavigationVariable-1498644828497",
+    "name" : "goToPage_contact",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "contact",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_createEstimatePage" : {
+    "_id" : "wm-goToPage_createEstimatePage-wm.NavigationVariable-1499788095763",
+    "name" : "goToPage_createEstimatePage",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "createEstimatePage",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_createNewInvoice" : {
+    "_id" : "wm-goToPage_createNewInvoice-wm.NavigationVariable-1499178637094",
+    "name" : "goToPage_createNewInvoice",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "createNewInvoice",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_currency" : {
+    "_id" : "wm-goToPage_currency-wm.NavigationVariable-1498645579482",
+    "name" : "goToPage_currency",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "currency",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_FiscalPosition" : {
+    "_id" : "wm-goToPage_FiscalPosition-wm.NavigationVariable-1498644775491",
+    "name" : "goToPage_FiscalPosition",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "FiscalPosition",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_ForgetPassPage" : {
+    "_id" : "wm-goToPage_ForgetPassPage-wm.NavigationVariable-1499078888714",
+    "name" : "goToPage_ForgetPassPage",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "ForgetPassPage",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_HomePage" : {
+    "_id" : "wm-goToPage_HomePage-wm.NavigationVariable-1500029332533",
+    "name" : "goToPage_HomePage",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "HomePage",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_invoice" : {
+    "_id" : "wm-goToPage_invoice-wm.NavigationVariable-1498643990479",
+    "name" : "goToPage_invoice",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "invoice",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_language" : {
+    "_id" : "wm-goToPage_language-wm.NavigationVariable-1498645486264",
+    "name" : "goToPage_language",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "language",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_Login" : {
+    "_id" : "wm-goToPage_Login-wm.NavigationVariable-1498754190811",
+    "name" : "goToPage_Login",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ {
+      "target" : "pageName",
+      "value" : "Login",
+      "type" : "string"
+    } ],
+    "operation" : "gotoPage",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_Main" : {
+    "_id" : "wm-wm.NavigationVariable1389180517517",
+    "name" : "goToPage_Main",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "operation" : "gotoPage",
+    "pageName" : "Main"
+  },
+  "goToPage_mediaLibraryPage" : {
+    "_id" : "wm-goToPage_mediaLibraryPage-wm.NavigationVariable-1500394669896",
+    "name" : "goToPage_mediaLibraryPage",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "mediaLibraryPage",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_myBusinessPage" : {
+    "_id" : "wm-goToPage_myBusinessPage-wm.NavigationVariable-1499422259180",
+    "name" : "goToPage_myBusinessPage",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "myBusinessPage",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_myNetworkPage" : {
+    "_id" : "wm-goToPage_myNetworkPage-wm.NavigationVariable-1499429031302",
+    "name" : "goToPage_myNetworkPage",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "myNetworkPage",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_myProfilePage" : {
+    "_id" : "wm-goToPage_myProfilePage-wm.NavigationVariable-1499440110251",
+    "name" : "goToPage_myProfilePage",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "myProfilePage",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_NewPartnerPage" : {
+    "_id" : "wm-goToPage_NewPartnerPage-wm.NavigationVariable-1503913261678",
+    "name" : "goToPage_NewPartnerPage",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "NewPartnerPage",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_PageBusiness01" : {
+    "_id" : "wm-goToPage_PageBusiness01-wm.NavigationVariable-1499688592768",
+    "name" : "goToPage_PageBusiness01",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "PageBusiness01",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_PageBusiness02" : {
+    "_id" : "wm-goToPage_PageBusiness02-wm.NavigationVariable-1499690217436",
+    "name" : "goToPage_PageBusiness02",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "PageBusiness02",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_paginaX" : {
+    "_id" : "wm-goToPage_paginaX-wm.NavigationVariable-1501152692446",
+    "name" : "goToPage_paginaX",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "paginaX",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_partner" : {
+    "_id" : "wm-goToPage_partner-wm.NavigationVariable-1498644292468",
+    "name" : "goToPage_partner",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "partner",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_partnerProfile" : {
+    "_id" : "wm-goToPage_partnerProfile-wm.NavigationVariable-1501084888954",
+    "name" : "goToPage_partnerProfile",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "partnerProfile",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_paymentMethodPage" : {
+    "_id" : "wm-goToPage_paymentMethodPage-wm.NavigationVariable-1500391437115",
+    "name" : "goToPage_paymentMethodPage",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "paymentMethodPage",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_paymentterms" : {
+    "_id" : "wm-goToPage_paymentterms-wm.NavigationVariable-1498645848287",
+    "name" : "goToPage_paymentterms",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "paymentterms",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_PrefixosSufix" : {
+    "_id" : "wm-goToPage_PrefixosSufix-wm.NavigationVariable-1498823622611",
+    "name" : "goToPage_PrefixosSufix",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "PrefixosSufix",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_princingPage" : {
+    "_id" : "wm-goToPage_princingPage-wm.NavigationVariable-1499861592174",
+    "name" : "goToPage_princingPage",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "princingPage",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_product" : {
+    "_id" : "wm-goToPage_product-wm.NavigationVariable-1498645630219",
+    "name" : "goToPage_product",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "product",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_productCategoryPage" : {
+    "_id" : "wm-goToPage_productCategoryPage-wm.NavigationVariable-1500378631153",
+    "name" : "goToPage_productCategoryPage",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "productCategoryPage",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_productTypePage" : {
+    "_id" : "wm-goToPage_productTypePage-wm.NavigationVariable-1500378420170",
+    "name" : "goToPage_productTypePage",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "productTypePage",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_regBusinessPage" : {
+    "_id" : "wm-goToPage_regBusinessPage-wm.NavigationVariable-1498659672847",
+    "name" : "goToPage_regBusinessPage",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "regBusinessPage",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_sequence" : {
+    "_id" : "wm-goToPage_sequence-wm.NavigationVariable-1498645711692",
+    "name" : "goToPage_sequence",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "sequence",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_SignUpPage" : {
+    "_id" : "wm-goToPage_SignUpPage-wm.NavigationVariable-1499077525264",
+    "name" : "goToPage_SignUpPage",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "SignUpPage",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_SocialManagePost" : {
+    "_id" : "wm-goToPage_SocialManagePost-wm.NavigationVariable-1501587641105",
+    "name" : "goToPage_SocialManagePost",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "SocialManagePost",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_socialPage" : {
+    "_id" : "wm-goToPage_socialPage-wm.NavigationVariable-1500045561900",
+    "name" : "goToPage_socialPage",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "socialPage",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_state" : {
+    "_id" : "wm-goToPage_state-wm.NavigationVariable-1498645378424",
+    "name" : "goToPage_state",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "state",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_tax" : {
+    "_id" : "wm-goToPage_tax-wm.NavigationVariable-1498645759464",
+    "name" : "goToPage_tax",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "tax",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_taxRatePage" : {
+    "_id" : "wm-goToPage_taxRatePage-wm.NavigationVariable-1500478795197",
+    "name" : "goToPage_taxRatePage",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "taxRatePage",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_taxTypePage" : {
+    "_id" : "wm-goToPage_taxTypePage-wm.NavigationVariable-1500478892983",
+    "name" : "goToPage_taxTypePage",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "taxTypePage",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_test" : {
+    "_id" : "wm-goToPage_test-wm.NavigationVariable-1499251300057",
+    "name" : "goToPage_test",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "test",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_timezonePage" : {
+    "_id" : "wm-goToPage_timezonePage-wm.NavigationVariable-1500391285650",
+    "name" : "goToPage_timezonePage",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "timezonePage",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_translationPage" : {
+    "_id" : "wm-goToPage_translationPage-wm.NavigationVariable-1501060060466",
+    "name" : "goToPage_translationPage",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "translationPage",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_user" : {
+    "_id" : "wm-goToPage_user-wm.NavigationVariable-1498745348512",
+    "name" : "goToPage_user",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "user",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "loggedInUser" : {
+    "_id" : "wm-loggedInUser-wm.Variable-1498650548828",
+    "name" : "loggedInUser",
+    "owner" : "App",
+    "category" : "wm.Variable",
+    "dataBinding" : [ {
+      "target" : "isAuthenticated",
+      "value" : "true"
+    } ],
+    "dataSet" : {
+      "name" : "",
+      "id" : "",
+      "tenantId" : "",
+      "isAuthenticated" : "false",
+      "isSecurityEnabled" : true,
+      "roles" : [ ]
+    },
+    "type" : "string",
+    "isList" : false,
+    "saveInPhonegap" : false
+  },
+  "loginAction" : {
+    "_id" : "wm-loginVariable-wm.LoginVariable-1498650548827",
+    "name" : "loginAction",
+    "owner" : "App",
+    "category" : "wm.LoginVariable",
+    "dataBinding" : [ {
+      "target" : "username",
+      "value" : "bind:Widgets.usernametext.datavalue",
+      "type" : "string"
+    }, {
+      "target" : "password",
+      "value" : "bind:Widgets.passwordtext.datavalue",
+      "type" : "string"
+    }, {
+      "target" : "rememberme",
+      "value" : "bind:Widgets.remembermecheck.datavalue",
+      "type" : "boolean"
+    } ],
+    "dataSet" : {
+      "username" : "",
+      "password" : "",
+      "rememberme" : false
+    },
+    "type" : "string",
+    "saveInPhonegap" : false,
+    "onError" : "loginVariableonError($event, $s)",
+    "startUpdate" : false,
+    "autoUpdate" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "useDefaultSuccessHandler" : true
+  },
+  "logoutAction" : {
+    "_id" : "wm-logoutVariable-wm.LogoutVariable-1498650548827",
+    "name" : "logoutAction",
+    "owner" : "App",
+    "category" : "wm.LogoutVariable",
+    "type" : "string",
+    "saveInPhonegap" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "redirectTo" : "Login",
+    "useDefaultSuccessHandler" : true
+  },
+  "service_ip" : {
+    "_id" : "wm-service_ip-wm.ServiceVariable-1501849439126",
+    "name" : "service_ip",
+    "owner" : "App",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "format",
+      "value" : "json",
+      "type" : "string"
+    } ],
+    "type" : "ipify.RootResponse",
+    "service" : "ipify",
+    "operation" : "invoke",
+    "operationId" : "ipify_RestServiceVirtualController-invoke",
+    "operationType" : "get",
+    "serviceType" : "RestService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "startUpdate" : true,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "RestServiceVirtual"
+  },
+  "supportedLocale" : {
+    "_id" : "wm-wm.Variable1402640443182",
+    "name" : "supportedLocale",
+    "owner" : "App",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "en" : "English",
+      "pt-pt" : "português (Portugal)",
+      "fr-fr" : "français (France)",
+      "es-es" : "español (España)",
+      "de-de" : "Deutsch (Deutschland)"
+    },
+    "type" : "string",
+    "isList" : false,
+    "saveInPhonegap" : false
+  },
+  "sv_businessName" : {
+    "_id" : "wm-sv_businessName-wm.Variable-1501750107433",
+    "name" : "sv_businessName",
+    "owner" : "App",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "dataValue" : ""
+    },
+    "type" : "string",
+    "isList" : false,
+    "saveInPhonegap" : false
+  },
+  "sv_businessType" : {
+    "_id" : "wm-sv_businessType-wm.Variable-1501750130918",
+    "name" : "sv_businessType",
+    "owner" : "App",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "dataValue" : ""
+    },
+    "type" : "string",
+    "isList" : false,
+    "saveInPhonegap" : false
+  },
+  "sv_country" : {
+    "_id" : "wm-sv_country-wm.Variable-1501750169975",
+    "name" : "sv_country",
+    "owner" : "App",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "dataValue" : ""
+    },
+    "type" : "string",
+    "isList" : false,
+    "saveInPhonegap" : false
+  },
+  "sv_email" : {
+    "_id" : "wm-sv_email-wm.Variable-1501692277006",
+    "name" : "sv_email",
+    "owner" : "App",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "dataValue" : ""
+    },
+    "type" : "string",
+    "isList" : false,
+    "saveInPhonegap" : false
+  },
+  "sv_name" : {
+    "_id" : "wm-name-wm.Variable-1501691265228",
+    "name" : "sv_name",
+    "owner" : "App",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "dataValue" : ""
+    },
+    "type" : "string",
+    "isList" : false,
+    "saveInPhonegap" : false
+  },
+  "sv_subBusinessType" : {
+    "_id" : "wm-sv_subBusinessType-wm.Variable-1501750144999",
+    "name" : "sv_subBusinessType",
+    "owner" : "App",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "dataValue" : ""
+    },
+    "type" : "string",
+    "isList" : false,
+    "saveInPhonegap" : false
+  },
+  "UserInfoFromIpAddress" : {
+    "_id" : "wm-UserInfoFromIpAddres-wm.ServiceVariable-1501773166756",
+    "name" : "UserInfoFromIpAddress",
+    "owner" : "App",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "useripaddress",
+      "value" : "89.114.213.45",
+      "type" : "string"
+    } ],
+    "type" : "freegeoip.RootResponse",
+    "service" : "freegeoip",
+    "operation" : "invoke",
+    "operationId" : "freegeoip_RestServiceVirtualController-invoke",
+    "operationType" : "get",
+    "serviceType" : "RestService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "onError" : "Variables.goToPage_tax.invoke()",
+    "startUpdate" : false,
+    "autoUpdate" : true,
+    "columnField" : "country_name",
+    "dataField" : "country_name",
+    "inFlightBehavior" : "executeAll",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "RestServiceVirtual",
+    "transformationColumns" : [ ]
+  }
+}

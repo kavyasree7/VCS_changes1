@@ -1,0 +1,197 @@
+<wm-page data-ng-controller="testPageController" name="page1"> 
+    <wm-content name="content1"> 
+        <wm-page-content columnwidth="12" name="page_content1"> 
+            <wm-layoutgrid name="layoutgrid1"> 
+                <wm-gridrow name="gridrow1"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn1" class="col-lg-3"> 
+                        <wm-layoutgrid name="layoutgrid2" width="100%"> 
+                            <wm-gridrow name="gridrow2"> 
+                                <wm-gridcolumn columnwidth="12" horizontalalign="center" name="gridcolumn13" padding=".5em 0em"> 
+                                    <wm-picture shape="circle" picturesource="http://dev.wavemaker.com/example/comedians/stanleylaurel.jpg" pictureaspect="None" textalign="left" bordercolor="#c7c7c7" borderstyle="solid" name="picture1" borderwidth="1px"></wm-picture> 
+                                    <wm-label width="100%" caption="Jonathan Doe" fontweight="bold" class="h2" name="label1"></wm-label> 
+                                    <wm-label width="100%" caption="San jose, CA" name="label2"></wm-label> 
+                                    <wm-anchor caption="www.jonndoe.net" display="inline" name="anchor1"></wm-anchor> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="gridrow5"> 
+                                <wm-gridcolumn columnwidth="12" horizontalalign="center" name="gridcolumn6" padding=".5em"> 
+                                    <wm-button caption="" iconclass="fa fa-google-plus" class="btn-primary" fontsize="1.5" fontunit="em" backgroundcolor="#db4437" name="button1" borderstyle="none" margin=".5em" padding=".5em 1em"></wm-button> 
+                                    <wm-button caption="" iconclass="fa fa-twitter" class="btn-primary" fontsize="1.5" fontunit="em" backgroundcolor="#55acee" name="button2" borderstyle="none" margin=".5em" padding=".5em 1em"></wm-button> 
+                                    <wm-button caption="" iconclass="fa fa-facebook" class="btn-primary" fontsize="1.5" fontunit="em" backgroundcolor="#3b5998" name="button3" borderstyle="none" margin=".5em" padding=".5em 1em"></wm-button> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="gridrow4"> 
+                                <wm-gridcolumn columnwidth="12" name="gridcolumn7" padding=".5em"> 
+                                    <wm-button name="button4" width="100%" caption="Follow" class="btn-lg"></wm-button> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="gridrow5_2"> 
+                                <wm-gridcolumn columnwidth="4" name="gridcolumn8_1" padding=".5em"> 
+                                    <wm-tile name="tile4_1" horizontalalign="center"> 
+                                        <wm-layoutgrid name="layoutgrid2_1"> 
+                                            <wm-gridrow name="gridrow7"> 
+                                                <wm-gridcolumn columnwidth="12" name="gridcolumn14" horizontalalign="center"> 
+                                                    <wm-label name="label11" fontsize="2" fontunit="em" fontweight="bold" caption="21k"></wm-label> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                            <wm-gridrow name="gridrow6"> 
+                                                <wm-gridcolumn columnwidth="12" name="gridcolumn11_1" horizontalalign="center"> 
+                                                    <wm-label name="label12" class="text-uppercase" caption="Likes"></wm-label> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                        </wm-layoutgrid> 
+                                    </wm-tile> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="4" name="gridcolumn9" padding=".5em"> 
+                                    <wm-tile horizontalalign="center" name="tile5"> 
+                                        <wm-layoutgrid name="layoutgrid3"> 
+                                            <wm-gridrow name="gridrow9"> 
+                                                <wm-gridcolumn columnwidth="12" horizontalalign="center" name="gridcolumn20"> 
+                                                    <wm-label fontsize="2" fontunit="em" fontweight="bold" caption="200" name="label13"></wm-label> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                            <wm-gridrow name="gridrow10"> 
+                                                <wm-gridcolumn columnwidth="12" horizontalalign="center" name="gridcolumn21"> 
+                                                    <wm-label class="text-uppercase" name="label14" caption="Views"></wm-label> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                        </wm-layoutgrid> 
+                                    </wm-tile> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="4" name="gridcolumn10_1" padding=".5em"> 
+                                    <wm-tile horizontalalign="center" name="tile6"> 
+                                        <wm-layoutgrid name="layoutgrid4"> 
+                                            <wm-gridrow name="gridrow11"> 
+                                                <wm-gridcolumn columnwidth="12" horizontalalign="center" name="gridcolumn22"> 
+                                                    <wm-label fontsize="2" fontunit="em" fontweight="bold" caption="53" name="label15"></wm-label> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                            <wm-gridrow name="gridrow12"> 
+                                                <wm-gridcolumn columnwidth="12" horizontalalign="center" name="gridcolumn23"> 
+                                                    <wm-label class="text-uppercase" name="label16" caption="Posts"></wm-label> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                        </wm-layoutgrid> 
+                                    </wm-tile> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                        </wm-layoutgrid> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn2"> 
+                        <wm-layoutgrid name="layoutgrid3"> 
+                            <wm-gridrow name="gridrow6"> 
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn13_1" padding=".5em"> 
+                                    <wm-panel class="panel-default" collapsible="false" showheader="true" name="panel1" title="About Jonathan" margin="0em"> 
+                                        <wm-label name="label11" caption="Co founder of @Acme Company and CEO of @Great Company. You can see existing investments and exits on angelist. Recent exits include @bot.to.KCompany, @Another idea to Google."></wm-label> 
+                                    </wm-panel> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn15" padding=".5em"> 
+                                    <wm-panel class="panel-default" collapsible="false" showheader="true" title="Contact" name="panel2"> 
+                                        <wm-anchor name="anchor2" caption="jondoe@jondoe.com" width="100%"></wm-anchor> 
+                                        <wm-label name="label13" caption="971-001-0022" width="100%"></wm-label> 
+                                        <wm-label caption="422001111" width="100%" name="label14"></wm-label> 
+                                        <wm-anchor caption="www.jondoe.net" width="100%" name="anchor3"></wm-anchor> 
+                                    </wm-panel> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="gridrow7"> 
+                                <wm-gridcolumn columnwidth="12" name="gridcolumn16" padding=".5em"> 
+                                    <wm-panel class="panel-default" collapsible="false" showheader="true" title="Jonathan's posts" name="panel3"> 
+                                        <wm-list listclass="list-group" itemclass="list-group-item" template="true" name="livelist4" dataset="1, 2, 3, 4, 5, 6"> 
+                                            <wm-listtemplate layout="panel" name="listtemplate4"> 
+                                                <wm-layoutgrid borderstyle="none" name="layoutgrid8"> 
+                                                    <wm-gridrow name="gridrow13"> 
+                                                        <wm-gridcolumn columnwidth="2" name="gridcolumn23" padding=".5em 0em"> 
+                                                            <wm-picture shape="circle" picturesource="http://dev.wavemaker.com/example/comedians/stanleylaurel.jpg" borderstyle="solid" width="50" bordercolor="#cccccc" name="picture6" borderwidth="1px"></wm-picture> 
+                                                        </wm-gridcolumn> 
+                                                        <wm-gridcolumn columnwidth="10" name="gridcolumn24"> 
+                                                            <wm-label caption="Jonathan Doe posted a photo" width="100%" name="label26"></wm-label> 
+                                                            <wm-label caption="45 min ago" color="#d1d1d1" width="100%" name="label27" margin="-10px 0px 0px 0px"></wm-label> 
+                                                            <wm-label caption="Location" width="100%" name="label28"></wm-label> 
+                                                            <wm-picture picturesource="http://dev.wavemaker.com/example/comedians/harpomarx.jpg" name="picture7" width="14em"></wm-picture> 
+                                                        </wm-gridcolumn> 
+                                                    </wm-gridrow> 
+                                                    <wm-gridrow name="gridrow14"> 
+                                                        <wm-gridcolumn columnwidth="2" name="gridcolumn25" padding=".5em"></wm-gridcolumn> 
+                                                        <wm-gridcolumn columnwidth="5" horizontalalign="left" name="gridcolumn26" padding=".5em"> 
+                                                            <wm-anchor caption="23 Likes" name="anchor11" margin="0.5em 0.5em 0.5em 0em"></wm-anchor> 
+                                                            <wm-anchor caption="200 Comments" name="anchor12" margin="0.5em 0.5em 0.5em 0em"></wm-anchor> 
+                                                        </wm-gridcolumn> 
+                                                        <wm-gridcolumn columnwidth="5" name="gridcolumn25_1" horizontalalign="right"> 
+                                                            <wm-button caption="Like" name="button7" margin=".5em"></wm-button> 
+                                                            <wm-button caption="Comment" name="button8" margin=".5em"></wm-button> 
+                                                        </wm-gridcolumn> 
+                                                    </wm-gridrow> 
+                                                </wm-layoutgrid> 
+                                            </wm-listtemplate> 
+                                        </wm-list> 
+                                    </wm-panel> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                        </wm-layoutgrid> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn3" class="hidden-sm" padding=".5em"> 
+                        <wm-panel class="panel-default" collapsible="false" showheader="true" title="Jonathan's Groups" name="panel4"> 
+                            <wm-list listclass="list-group" itemclass="list-group-item" template="true" name="livelist3_1" dataset="1, 2, 3, 4, 5"> 
+                                <wm-listtemplate layout="gridlayout" name="listtemplate3_1"> 
+                                    <wm-layoutgrid class="gridlayout" name="layoutgrid7"> 
+                                        <wm-gridrow name="gridrow12" padding="1em 0em"> 
+                                            <wm-gridcolumn columnwidth="2" data-template-ctr="true" name="gridcolumn21" class="col-xs-2"> 
+                                                <wm-icon name="icon1" iconsize="2em" iconclass="wi wi-group"></wm-icon> 
+                                            </wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="10" data-template-ctr="true" name="gridcolumn22" class="col-xs-8" padding="0em .5em"> 
+                                                <wm-label name="label16" caption="Group Name" class="h4" margin="2pt 0pt 0pt 0pt "></wm-label> 
+                                            </wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                    </wm-layoutgrid> 
+                                </wm-listtemplate> 
+                            </wm-list> 
+                        </wm-panel> 
+                        <wm-list listclass="list-group" template="true" itemsperrow="xs-1 sm-2 md-4 lg-6" class="list-card" dataset="bind:Actions.loginAction.dataSet" navigation="None" name="livelist3"> 
+                            <wm-listtemplate layout="media" name="listtemplate3"> 
+                                <wm-card name="Picture"> 
+                                    <wm-card-content name="card_content1"> 
+                                        <wm-label caption="Name" name="Name" margin="0px unset unset unset" class="h4" whitespace="nowrap"></wm-label> 
+                                        <wm-layoutgrid columns="2" name="layoutgrid9"> 
+                                            <wm-gridrow name="gridrow17"> 
+                                                <wm-gridcolumn colwidth="6" columnwidth="2" horizontalalign="left" name="gridcolumn26_1"> 
+                                                    <wm-icon iconclass="wi wi-contact-mail fa-2x" class="text-muted" name="icon2"></wm-icon> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn colwidth="6" padding="unset unset unset 1.25em" name="gridcolumn27"> 
+                                                    <wm-label name="ID" caption="ID" fontunit="em" class="text-muted p" whitespace="nowrap"></wm-label> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                            <wm-gridrow name="gridrow18"> 
+                                                <wm-gridcolumn colwidth="6" columnwidth="2" horizontalalign="left" name="gridcolumn28"> 
+                                                    <wm-icon iconclass="wi wi-user fa-2x" class="text-muted" name="icon3"></wm-icon> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn colwidth="6" padding="unset unset unset 1.25em" name="gridcolumn29"> 
+                                                    <wm-label name="JobTitle" caption="JobTitle" fontunit="em" class="text-muted p"></wm-label> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                            <wm-gridrow name="gridrow19"> 
+                                                <wm-gridcolumn colwidth="6" columnwidth="2" horizontalalign="left" name="gridcolumn30"> 
+                                                    <wm-icon iconclass="wi wi-dashboard fa-2x" class="text-muted" name="icon4"></wm-icon> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn colwidth="6" padding="unset unset unset 1.25em" name="gridcolumn31"> 
+                                                    <wm-label name="Department" caption="Department" fontunit="em" class="text-muted"></wm-label> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                        </wm-layoutgrid> 
+                                    </wm-card-content> 
+                                    <wm-card-footer horizontalalign="center" name="card_footer1"> 
+                                        <wm-buttongroup class="btn-group-justified" horizontalalign="center" name="buttongroup1"> 
+                                            <wm-anchor class="btn btn-transparent text-muted" caption="" iconclass="wi wi-mail fa-2x" name="anchor6"></wm-anchor> 
+                                            <wm-anchor class="btn btn-transparent" caption="" iconclass="wi wi-call fa-2x" name="anchor7"></wm-anchor> 
+                                            <wm-anchor class="btn btn-transparent" caption="" iconclass="wi wi-location-on fa-2x" name="anchor8"></wm-anchor> 
+                                        </wm-buttongroup> 
+                                    </wm-card-footer> 
+                                </wm-card> 
+                            </wm-listtemplate> 
+                        </wm-list> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-page-content> 
+    </wm-content> 
+</wm-page>

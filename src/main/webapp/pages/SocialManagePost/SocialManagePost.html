@@ -1,0 +1,600 @@
+<wm-page data-ng-controller="SocialManagePostPageController" pagetitle="Social Manage Post" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-page-content columnwidth="12" name="page_content1"> 
+            <wm-container name="container12_1" backgroundcolor="#ffffff"> 
+                <wm-layoutgrid name="layoutgrid1"> 
+                    <wm-gridrow name="gridrow1"> 
+                        <wm-gridcolumn columnwidth="12" padding="20px unset 20px 20px" name="gridcolumn1"> 
+                            <wm-label padding="10px 0.5px 20px 0.5px" class="h1" caption="Social Media Manager" color="#00bb80" fontweight="bold" textalign="left" name="label1"></wm-label> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow2"> 
+                        <wm-gridcolumn columnwidth="12" padding="unset 5px unset unset" name="gridcolumn2"> 
+                            <wm-tile class="bg-primary" backgroundcolor="#ffffff" name="tile1"> 
+                                <wm-layoutgrid name="layoutgrid2"> 
+                                    <wm-gridrow padding="unset unset 5px unset" name="gridrow3"> 
+                                        <wm-gridcolumn columnwidth="12" padding="5px 5px 5px unset" name="gridcolumn3"></wm-gridcolumn> 
+                                    </wm-gridrow> 
+                                    <wm-gridrow padding="5px unset" name="gridrow4"> 
+                                        <wm-gridcolumn columnwidth="6" name="gridcolumn4"></wm-gridcolumn> 
+                                        <wm-gridcolumn columnwidth="6" name="gridcolumn5"></wm-gridcolumn> 
+                                    </wm-gridrow> 
+                                    <wm-gridrow name="gridrow5"> 
+                                        <wm-gridcolumn columnwidth="8" padding=".5px 5px .5px .5px" name="gridcolumn6"></wm-gridcolumn> 
+                                        <wm-gridcolumn columnwidth="4" padding="unset 5px" name="gridcolumn7"> 
+                                            <wm-container backgroundcolor="#ffffff" name="container1"> 
+                                                <wm-search placeholder="Search" width="100%" name="search1"></wm-search> 
+                                            </wm-container> 
+                                        </wm-gridcolumn> 
+                                    </wm-gridrow> 
+                                    <wm-gridrow padding="5px unset" name="gridrow6"> 
+                                        <wm-gridcolumn columnwidth="6" name="gridcolumn8"></wm-gridcolumn> 
+                                        <wm-gridcolumn columnwidth="6" horizontalalign="right" name="gridcolumn9"></wm-gridcolumn> 
+                                    </wm-gridrow> 
+                                    <wm-gridrow name="gridrow7"> 
+                                        <wm-gridcolumn columnwidth="6" padding="5px 5px 5px unset" name="gridcolumn10"> 
+                                            <wm-container bordercolor="#007F64" borderstyle="dashed" backgroundcolor="#ffffff" name="container2"> 
+                                                <wm-layoutgrid name="layoutgrid3"> 
+                                                    <wm-gridrow name="gridrow8"> 
+                                                        <wm-gridcolumn columnwidth="3" horizontalalign="left" name="gridcolumn11"> 
+                                                            <wm-button caption="" iconclass="fa fa-linkedin" class="btn-primary" fontsize="1.5" fontunit="em" backgroundcolor="#007bb6" borderstyle="none" margin=".5em" padding=".5em 1em" textalign="right" name="button2"></wm-button> 
+                                                        </wm-gridcolumn> 
+                                                        <wm-gridcolumn columnwidth="5" horizontalalign="center" class="bordered-left" name="gridcolumn12"></wm-gridcolumn> 
+                                                        <wm-gridcolumn columnwidth="4" horizontalalign="center" padding="25px unset unset unset" name="gridcolumn13"> 
+                                                            <wm-button class="btn-success" caption="New Post" type="button" margin="unset 0.5em" iconclass="wi wi-plus" textalign="center" on-click="button3_1Click($event, $scope)" name="button3_1"></wm-button> 
+                                                        </wm-gridcolumn> 
+                                                    </wm-gridrow> 
+                                                </wm-layoutgrid> 
+                                            </wm-container> 
+                                            <wm-container backgroundcolor="#ffffff" name="container10_2"> 
+                                                <wm-layoutgrid name="layoutgrid26"> 
+                                                    <wm-gridrow name="gridrow66_1" padding="10px unset"> 
+                                                        <wm-gridcolumn columnwidth="6" name="gridcolumn103_1"></wm-gridcolumn> 
+                                                        <wm-gridcolumn columnwidth="6" name="gridcolumn104_1"></wm-gridcolumn> 
+                                                    </wm-gridrow> 
+                                                    <wm-gridrow name="gridrow67_1"> 
+                                                        <wm-gridcolumn columnwidth="12" name="gridcolumn104_2" padding="unset 30px"> 
+                                                            <wm-panel iconclass="fa fa-linkedin-square" autoclose="outsideClick" title="New Post" name="panel1" class="panel-warning" show="true"> 
+                                                                <wm-panel-footer name="panel_footer1"> 
+                                                                    <wm-layoutgrid name="layoutgrid29_1"> 
+                                                                        <wm-gridrow name="gridrow73_1"> 
+                                                                            <wm-gridcolumn columnwidth="6" name="gridcolumn115_1"> 
+                                                                                <wm-fileupload service="FileService" operation="uploadFile" iconclass="wi wi-add-a-photo" caption="" margin="1em unset unset unset" name="fileupload1"></wm-fileupload> 
+                                                                            </wm-gridcolumn> 
+                                                                            <wm-gridcolumn columnwidth="6" name="gridcolumn116_1" horizontalalign="right"> 
+                                                                                <wm-menu caption="Publish as" autoclose="outsideClick" dataset="bind:[
+{
+&quot;label&quot;: &quot;Suit Animal&quot;,
+&quot;icon&quot;: &quot;&quot;,
+&quot;link&quot;: &quot;#/#&quot;,
+&quot;role&quot;: &quot;user&quot;
+},
+{
+&quot;label&quot;: &quot;Orimundo&quot;,
+&quot;icon&quot;: &quot;&quot;,
+&quot;link&quot;: &quot;#&quot;,
+&quot;role&quot;: &quot;user&quot;
+}
+]" menuclass="btn-primary" name="menu1"></wm-menu> 
+                                                                            </wm-gridcolumn> 
+                                                                        </wm-gridrow> 
+                                                                    </wm-layoutgrid> 
+                                                                </wm-panel-footer> 
+                                                                <wm-layoutgrid name="layoutgrid27_1"> 
+                                                                    <wm-gridrow name="gridrow68_2"> 
+                                                                        <wm-gridcolumn columnwidth="1" name="gridcolumn106_1"> 
+                                                                            <wm-picture class="picture" shape="circle" width="50" picturesource="resources/images/imagelists/AAEAAQAAAAAAAAWbAAAAJDU3ZjM5NzYwLTVlZDEtNGNjZS1hM2E1LTY3ZjEyZjkwNmZhYw.png" name="picture16_1"></wm-picture> 
+                                                                        </wm-gridcolumn> 
+                                                                        <wm-gridcolumn columnwidth="11" name="gridcolumn107_2"> 
+                                                                            <wm-layoutgrid name="layoutgrid28_1"> 
+                                                                                <wm-gridrow name="gridrow70_1"> 
+                                                                                    <wm-gridcolumn columnwidth="12" name="gridcolumn110_1" padding="0px unset 0px 5px"> 
+                                                                                        <wm-label padding="unset 0.5em" caption="Multibase" color="#e34f0e" fontweight="bold" fontsize="15" name="label44_1"></wm-label> 
+                                                                                    </wm-gridcolumn> 
+                                                                                </wm-gridrow> 
+                                                                                <wm-gridrow name="gridrow71_1"> 
+                                                                                    <wm-gridcolumn columnwidth="12" name="gridcolumn112_1" padding="0px unset 0px 5px"> 
+                                                                                        <wm-label padding="0em 0.5em unset 0.5em" caption="Information Technology and Services" fontsize="13" margin="0px unset unset unset" color="#000000" name="label45_1"></wm-label> 
+                                                                                    </wm-gridcolumn> 
+                                                                                </wm-gridrow> 
+                                                                            </wm-layoutgrid> 
+                                                                        </wm-gridcolumn> 
+                                                                    </wm-gridrow> 
+                                                                    <wm-gridrow name="gridrow72_1"> 
+                                                                        <wm-gridcolumn columnwidth="12" name="gridcolumn114_1" padding="10px unset"></wm-gridcolumn> 
+                                                                    </wm-gridrow> 
+                                                                    <wm-gridrow name="gridrow69_2"> 
+                                                                        <wm-gridcolumn columnwidth="12" name="gridcolumn108_2"> 
+                                                                            <wm-container name="container11_1"> 
+                                                                                <wm-textarea name="textarea1" placeholder="Write here what goes on in your head..."></wm-textarea> 
+                                                                            </wm-container> 
+                                                                        </wm-gridcolumn> 
+                                                                    </wm-gridrow> 
+                                                                </wm-layoutgrid> 
+                                                            </wm-panel> 
+                                                        </wm-gridcolumn> 
+                                                    </wm-gridrow> 
+                                                </wm-layoutgrid> 
+                                            </wm-container> 
+                                        </wm-gridcolumn> 
+                                        <wm-gridcolumn columnwidth="6" padding="5px unset 5px 5px" name="gridcolumn14"> 
+                                            <wm-container bordercolor="#007F64" borderstyle="dashed" backgroundcolor="#ffffff" name="container3"> 
+                                                <wm-layoutgrid name="layoutgrid4"> 
+                                                    <wm-gridrow name="gridrow9"> 
+                                                        <wm-gridcolumn columnwidth="3" horizontalalign="left" name="gridcolumn15"> 
+                                                            <wm-button caption="" iconclass="fa fa-facebook" class="btn-primary" fontsize="1.5" fontunit="em" backgroundcolor="#3b5998" borderstyle="none" margin=".5em" padding=".5em 1em" name="button3"></wm-button> 
+                                                        </wm-gridcolumn> 
+                                                        <wm-gridcolumn columnwidth="5" horizontalalign="center" class="bordered-left" name="gridcolumn16"></wm-gridcolumn> 
+                                                        <wm-gridcolumn columnwidth="4" horizontalalign="center" padding="25px unset unset unset" name="gridcolumn17"> 
+                                                            <wm-button class="btn-success" caption="New Post" type="button" margin="unset 0.5em" iconclass="wi wi-plus" textalign="center" name="button4" on-click="button4Click($event, $scope)"></wm-button> 
+                                                        </wm-gridcolumn> 
+                                                    </wm-gridrow> 
+                                                </wm-layoutgrid> 
+                                            </wm-container> 
+                                            <wm-layoutgrid name="layoutgrid34_1"> 
+                                                <wm-gridrow padding="10px unset" name="gridrow81_1"> 
+                                                    <wm-gridcolumn columnwidth="6" name="gridcolumn122_1"></wm-gridcolumn> 
+                                                    <wm-gridcolumn columnwidth="6" name="gridcolumn123_1"></wm-gridcolumn> 
+                                                </wm-gridrow> 
+                                                <wm-gridrow name="gridrow82_1"> 
+                                                    <wm-gridcolumn columnwidth="12" padding="unset 30px" name="gridcolumn124_1"> 
+                                                        <wm-panel iconclass="fa fa-facebook-square" autoclose="outsideClick" title="New Post" class="panel-info" show="true" name="panel3"> 
+                                                            <wm-panel-footer name="panel_footer3"> 
+                                                                <wm-layoutgrid name="layoutgrid35_1"> 
+                                                                    <wm-gridrow name="gridrow83_1"> 
+                                                                        <wm-gridcolumn columnwidth="6" name="gridcolumn125_1"> 
+                                                                            <wm-button class="btn-default" caption="" type="button" margin="unset 0.5em" name="button9" iconclass="fa fa-user-plus"></wm-button> 
+                                                                            <wm-button class="btn-default" caption="" type="button" margin="unset 0.5em" iconclass="wi wi-access-time" name="button10"></wm-button> 
+                                                                            <wm-button class="btn-default" caption="" type="button" margin="unset 0.5em" iconclass="wi wi-location-on" name="button11"></wm-button> 
+                                                                            <wm-button class="btn-default" caption="" type="button" margin="unset 0.5em" iconclass="wi wi-sentiment-satisfied" name="button12"></wm-button> 
+                                                                        </wm-gridcolumn> 
+                                                                        <wm-gridcolumn columnwidth="4" name="gridcolumn135_1" horizontalalign="right"> 
+                                                                            <wm-menu caption="" autoclose="outsideClick" name="menu4" dataset="bind:[
+{
+&quot;label&quot;: &quot;Only Me&quot;,
+&quot;icon&quot;: &quot;wi wi-lock-outline&quot;,
+&quot;link&quot;: &quot;#/#&quot;,
+&quot;role&quot;: &quot;user&quot;
+},
+{
+&quot;label&quot;: &quot;Public&quot;,
+&quot;icon&quot;: &quot;wi wi-public&quot;,
+&quot;link&quot;: &quot;#&quot;,
+&quot;role&quot;: &quot;user&quot;
+}
+]" iconclass="wi wi-public" menuclass="btn-default"></wm-menu> 
+                                                                        </wm-gridcolumn> 
+                                                                        <wm-gridcolumn columnwidth="2" horizontalalign="right" name="gridcolumn126_1"> 
+                                                                            <wm-menu caption="Publish as" autoclose="outsideClick" dataset="bind:[
+{
+&quot;label&quot;: &quot;Suit Animal&quot;,
+&quot;icon&quot;: &quot;&quot;,
+&quot;link&quot;: &quot;#/#&quot;,
+&quot;role&quot;: &quot;user&quot;
+},
+{
+&quot;label&quot;: &quot;Orimundo&quot;,
+&quot;icon&quot;: &quot;&quot;,
+&quot;link&quot;: &quot;#&quot;,
+&quot;role&quot;: &quot;user&quot;
+}
+]" menuclass="btn-primary" name="menu3"></wm-menu> 
+                                                                        </wm-gridcolumn> 
+                                                                    </wm-gridrow> 
+                                                                </wm-layoutgrid> 
+                                                            </wm-panel-footer> 
+                                                            <wm-layoutgrid name="layoutgrid36_1"> 
+                                                                <wm-gridrow name="gridrow84_1"> 
+                                                                    <wm-gridcolumn columnwidth="1" name="gridcolumn127_1"> 
+                                                                        <wm-picture class="picture" shape="circle" width="50" picturesource="resources/images/imagelists/AAEAAQAAAAAAAAWbAAAAJDU3ZjM5NzYwLTVlZDEtNGNjZS1hM2E1LTY3ZjEyZjkwNmZhYw.png" name="picture18_1"></wm-picture> 
+                                                                    </wm-gridcolumn> 
+                                                                    <wm-gridcolumn columnwidth="11" name="gridcolumn128_1"> 
+                                                                        <wm-layoutgrid name="layoutgrid37_1"> 
+                                                                            <wm-gridrow name="gridrow85_1"> 
+                                                                                <wm-gridcolumn columnwidth="12" padding="0px unset 0px 5px" name="gridcolumn129_1"> 
+                                                                                    <wm-label padding="unset 0.5em" caption="Multibase" color="#e34f0e" fontweight="bold" fontsize="15" name="label47_1"></wm-label> 
+                                                                                </wm-gridcolumn> 
+                                                                            </wm-gridrow> 
+                                                                            <wm-gridrow name="gridrow86_1"> 
+                                                                                <wm-gridcolumn columnwidth="12" padding="0px unset 0px 5px" name="gridcolumn130_1"> 
+                                                                                    <wm-label padding="0em 0.5em unset 0.5em" caption="Information Technology and Services" fontsize="13" margin="0px unset unset unset" color="#000000" name="label48_1"></wm-label> 
+                                                                                </wm-gridcolumn> 
+                                                                            </wm-gridrow> 
+                                                                        </wm-layoutgrid> 
+                                                                    </wm-gridcolumn> 
+                                                                </wm-gridrow> 
+                                                                <wm-gridrow name="gridrow90_1"> 
+                                                                    <wm-gridcolumn columnwidth="12" name="gridcolumn134_1" padding="10px unset unset unset"></wm-gridcolumn> 
+                                                                </wm-gridrow> 
+                                                                <wm-gridrow name="gridrow89_1"> 
+                                                                    <wm-gridcolumn columnwidth="12" name="gridcolumn133_1"> 
+                                                                        <wm-tabs name="tabs1"> 
+                                                                            <wm-tabpane name="tabpane1" title="Status" paneicon="fa fa-sticky-note-o"> 
+                                                                                <wm-textarea placeholder="Write here what goes on in your head..." name="textarea2"></wm-textarea> 
+                                                                            </wm-tabpane> 
+                                                                            <wm-tabpane name="tabpane2" title="Photo" paneicon="wi wi-photo-library"> 
+                                                                                <wm-textarea placeholder="Write here what goes on in your head..." name="textarea4"></wm-textarea> 
+                                                                            </wm-tabpane> 
+                                                                            <wm-tabpane name="tabpane3" title="Place" paneicon="wi wi-my-location"> 
+                                                                                <wm-textarea placeholder="Write here what goes on in your head..." name="textarea5"></wm-textarea> 
+                                                                            </wm-tabpane> 
+                                                                            <wm-tabpane name="tabpane4" title="Life Event" paneicon="wi wi-book-open"> 
+                                                                                <wm-textarea placeholder="Write here what goes on in your head..." name="textarea6"></wm-textarea> 
+                                                                            </wm-tabpane> 
+                                                                        </wm-tabs> 
+                                                                    </wm-gridcolumn> 
+                                                                </wm-gridrow> 
+                                                            </wm-layoutgrid> 
+                                                        </wm-panel> 
+                                                    </wm-gridcolumn> 
+                                                </wm-gridrow> 
+                                            </wm-layoutgrid> 
+                                        </wm-gridcolumn> 
+                                    </wm-gridrow> 
+                                    <wm-gridrow padding="10px unset 20px unset" name="gridrow10"> 
+                                        <wm-gridcolumn columnwidth="2" horizontalalign="left" padding="unset unset unset 5px" class="bordered-bottom" name="gridcolumn18"> 
+                                            <wm-label caption="Latest posts" width="100%" textalign="left" margin="0px" fontsize="18" color="#000000" name="label3"></wm-label> 
+                                        </wm-gridcolumn> 
+                                        <wm-gridcolumn columnwidth="2" name="gridcolumn19"></wm-gridcolumn> 
+                                        <wm-gridcolumn columnwidth="2" name="gridcolumn20"></wm-gridcolumn> 
+                                        <wm-gridcolumn columnwidth="2" padding="unset unset unset 5px" class="bordered-bottom" name="gridcolumn21"> 
+                                            <wm-label caption="Latest posts" width="100%" textalign="left" margin="0px" fontsize="18" color="#000000" name="label4"></wm-label> 
+                                        </wm-gridcolumn> 
+                                        <wm-gridcolumn columnwidth="2" name="gridcolumn22"></wm-gridcolumn> 
+                                        <wm-gridcolumn columnwidth="2" name="gridcolumn23"></wm-gridcolumn> 
+                                    </wm-gridrow> 
+                                    <wm-gridrow padding="unset unset 10px unset" name="gridrow11"> 
+                                        <wm-gridcolumn columnwidth="6" padding="unset 5px unset 20px" name="gridcolumn24"> 
+                                            <wm-layoutgrid width="98%" name="layoutgrid32"> 
+                                                <wm-gridrow name="gridrow72"> 
+                                                    <wm-gridcolumn columnwidth="1" horizontalalign="center" name="gridcolumn113"> 
+                                                        <wm-picture class="picture" shape="circle" width="50" picturesource="resources/images/imagelists/download.png" name="picture14"></wm-picture> 
+                                                    </wm-gridcolumn> 
+                                                    <wm-gridcolumn columnwidth="11" name="gridcolumn114"> 
+                                                        <wm-layoutgrid name="layoutgrid33"> 
+                                                            <wm-gridrow name="gridrow73"> 
+                                                                <wm-gridcolumn columnwidth="12" padding="0px unset 0px 5px" name="gridcolumn115"> 
+                                                                    <wm-label padding="unset 0.5em" caption="Microsoft" color="#e34f0e" fontweight="bold" fontsize="15" name="label40"></wm-label> 
+                                                                </wm-gridcolumn> 
+                                                            </wm-gridrow> 
+                                                            <wm-gridrow name="gridrow74"> 
+                                                                <wm-gridcolumn columnwidth="12" padding="0px unset 0px 5px" name="gridcolumn116"> 
+                                                                    <wm-label padding="0em 0.5em unset 0.5em" caption="Software" fontsize="13" margin="0px unset unset unset" color="#000000" name="label41"></wm-label> 
+                                                                </wm-gridcolumn> 
+                                                            </wm-gridrow> 
+                                                            <wm-gridrow name="gridrow75"> 
+                                                                <wm-gridcolumn columnwidth="12" padding="0pt unset 0pt 5pt" name="gridcolumn117"> 
+                                                                    <wm-label padding="0em 0.5em unset 0.5em" caption="1 day ago" fontsize="13" margin="0px unset unset unset" color="#000000" fontunit="px" name="label42"></wm-label> 
+                                                                </wm-gridcolumn> 
+                                                            </wm-gridrow> 
+                                                        </wm-layoutgrid> 
+                                                    </wm-gridcolumn> 
+                                                </wm-gridrow> 
+                                                <wm-gridrow padding="10px unset" name="gridrow76"> 
+                                                    <wm-gridcolumn columnwidth="12" data-template-ctr="true" padding=".5px" name="gridcolumn118"> 
+                                                        <wm-layoutgrid name="layoutgrid34"> 
+                                                            <wm-gridrow name="gridrow77"> 
+                                                                <wm-gridcolumn columnwidth="12" name="gridcolumn119"> 
+                                                                    <wm-label padding="unset 0.5em" caption="New Microsoft Office" color="#e34f0e" fontweight="bold" fontsize="15" class="p" name="label43"></wm-label> 
+                                                                    <wm-label padding="unset 0.5em" caption="This course provides a comprehensive overview of the five main MS Office applications." color="#000000" fontsize="15" class="p" name="label44"></wm-label> 
+                                                                </wm-gridcolumn> 
+                                                            </wm-gridrow> 
+                                                            <wm-gridrow padding="10px unset" name="gridrow78"> 
+                                                                <wm-gridcolumn columnwidth="12" horizontalalign="center" name="gridcolumn120"> 
+                                                                    <wm-picture class="picture" shape="rounded" width="500" picturesource="resources/images/imagelists/office.png" borderstyle="dashed" bordercolor="#000000" name="picture15"></wm-picture> 
+                                                                </wm-gridcolumn> 
+                                                            </wm-gridrow> 
+                                                            <wm-gridrow name="gridrow79"> 
+                                                                <wm-gridcolumn columnwidth="6" name="gridcolumn121"> 
+                                                                    <wm-label padding="unset 0.5em" caption="1 Like" color="#e34f0e" name="label45"></wm-label> 
+                                                                </wm-gridcolumn> 
+                                                                <wm-gridcolumn columnwidth="6" name="gridcolumn122"></wm-gridcolumn> 
+                                                            </wm-gridrow> 
+                                                            <wm-gridrow class="bordered-bottom" name="gridrow80"> 
+                                                                <wm-gridcolumn columnwidth="6" name="gridcolumn123"></wm-gridcolumn> 
+                                                                <wm-gridcolumn columnwidth="6" name="gridcolumn124"></wm-gridcolumn> 
+                                                            </wm-gridrow> 
+                                                            <wm-gridrow padding="10px unset unset unset" name="gridrow81"> 
+                                                                <wm-gridcolumn columnwidth="6" name="gridcolumn125"> 
+                                                                    <wm-picture picturesource="resources/images/imagelists/Capturar1.PNG" name="picture16"></wm-picture> 
+                                                                </wm-gridcolumn> 
+                                                                <wm-gridcolumn columnwidth="6" horizontalalign="right" name="gridcolumn126"></wm-gridcolumn> 
+                                                            </wm-gridrow> 
+                                                        </wm-layoutgrid> 
+                                                    </wm-gridcolumn> 
+                                                </wm-gridrow> 
+                                            </wm-layoutgrid> 
+                                            <wm-container backgroundcolor="#00bb80" name="container11"> 
+                                                <wm-layoutgrid name="layoutgrid31"> 
+                                                    <wm-gridrow name="gridrow70"> 
+                                                        <wm-gridcolumn columnwidth="12" name="gridcolumn110"></wm-gridcolumn> 
+                                                    </wm-gridrow> 
+                                                    <wm-gridrow name="gridrow71"> 
+                                                        <wm-gridcolumn columnwidth="6" name="gridcolumn111"></wm-gridcolumn> 
+                                                        <wm-gridcolumn columnwidth="6" name="gridcolumn112"></wm-gridcolumn> 
+                                                    </wm-gridrow> 
+                                                </wm-layoutgrid> 
+                                            </wm-container> 
+                                            <wm-layoutgrid width="98%" name="layoutgrid5"> 
+                                                <wm-gridrow name="gridrow94" padding="30px unset unset unset"> 
+                                                    <wm-gridcolumn columnwidth="1" name="gridcolumn144"></wm-gridcolumn> 
+                                                    <wm-gridcolumn columnwidth="11" name="gridcolumn145"></wm-gridcolumn> 
+                                                </wm-gridrow> 
+                                                <wm-gridrow name="gridrow12"> 
+                                                    <wm-gridcolumn columnwidth="1" horizontalalign="center" name="gridcolumn25"> 
+                                                        <wm-picture class="picture" shape="circle" width="50" picturesource="resources/images/imagelists/AAEAAQAAAAAAAAWbAAAAJDU3ZjM5NzYwLTVlZDEtNGNjZS1hM2E1LTY3ZjEyZjkwNmZhYw.png" name="picture1"></wm-picture> 
+                                                    </wm-gridcolumn> 
+                                                    <wm-gridcolumn columnwidth="11" name="gridcolumn26"> 
+                                                        <wm-layoutgrid name="layoutgrid6"> 
+                                                            <wm-gridrow name="gridrow13"> 
+                                                                <wm-gridcolumn columnwidth="12" padding="0px unset 0px 5px" name="gridcolumn27"> 
+                                                                    <wm-label padding="unset 0.5em" caption="Multibase" color="#e34f0e" fontweight="bold" fontsize="15" name="label5"></wm-label> 
+                                                                </wm-gridcolumn> 
+                                                            </wm-gridrow> 
+                                                            <wm-gridrow name="gridrow14"> 
+                                                                <wm-gridcolumn columnwidth="12" padding="0px unset 0px 5px" name="gridcolumn28"> 
+                                                                    <wm-label padding="0em 0.5em unset 0.5em" caption="Information Technology and Services" fontsize="13" margin="0px unset unset unset" color="#000000" name="label6"></wm-label> 
+                                                                </wm-gridcolumn> 
+                                                            </wm-gridrow> 
+                                                            <wm-gridrow name="gridrow15"> 
+                                                                <wm-gridcolumn columnwidth="12" padding="0px unset 0px 5px" name="gridcolumn29"> 
+                                                                    <wm-label padding="0em 0.5em unset 0.5em" caption="1 years ago" fontsize="13" margin="0px unset unset unset" color="#000000" fontunit="px" name="label7"></wm-label> 
+                                                                </wm-gridcolumn> 
+                                                            </wm-gridrow> 
+                                                        </wm-layoutgrid> 
+                                                    </wm-gridcolumn> 
+                                                </wm-gridrow> 
+                                                <wm-gridrow padding="10px unset" name="gridrow16"> 
+                                                    <wm-gridcolumn columnwidth="12" data-template-ctr="true" padding=".5px" name="gridcolumn30"> 
+                                                        <wm-layoutgrid name="layoutgrid7"> 
+                                                            <wm-gridrow name="gridrow17"> 
+                                                                <wm-gridcolumn columnwidth="12" name="gridcolumn31"> 
+                                                                    <wm-label padding="unset 0.5em" caption="Eficiência na gestão de compras - Nível de Stock de Segurança" color="#e34f0e" fontweight="bold" fontsize="15" class="p" name="label8"></wm-label> 
+                                                                    <wm-label padding="unset 0.5em" caption="Uma das situações com mais impacto no desempenho de qualquer negócio é a existência de stocks para satisfazer atempadamente as encomendas. Por outro lado, este stock (inventário) implica sempre ..." color="#000000" fontsize="15" class="p" name="label9"></wm-label> 
+                                                                </wm-gridcolumn> 
+                                                            </wm-gridrow> 
+                                                            <wm-gridrow padding="10px unset" name="gridrow18"> 
+                                                                <wm-gridcolumn columnwidth="12" horizontalalign="center" name="gridcolumn32"> 
+                                                                    <wm-picture class="picture" shape="rounded" width="500" picturesource="resources/images/imagelists/17509134_6066149291712_1982361843598884864_n.jpg" borderstyle="dashed" bordercolor="#000000" name="picture2"></wm-picture> 
+                                                                </wm-gridcolumn> 
+                                                            </wm-gridrow> 
+                                                            <wm-gridrow name="gridrow19"> 
+                                                                <wm-gridcolumn columnwidth="6" name="gridcolumn33"> 
+                                                                    <wm-label padding="unset 0.5em" caption="1 Like" color="#e34f0e" name="label10"></wm-label> 
+                                                                </wm-gridcolumn> 
+                                                                <wm-gridcolumn columnwidth="6" name="gridcolumn34"></wm-gridcolumn> 
+                                                            </wm-gridrow> 
+                                                            <wm-gridrow class="bordered-bottom" name="gridrow20"> 
+                                                                <wm-gridcolumn columnwidth="6" name="gridcolumn35"></wm-gridcolumn> 
+                                                                <wm-gridcolumn columnwidth="6" name="gridcolumn36"></wm-gridcolumn> 
+                                                            </wm-gridrow> 
+                                                            <wm-gridrow padding="10px unset unset unset" name="gridrow21"> 
+                                                                <wm-gridcolumn columnwidth="6" name="gridcolumn37"> 
+                                                                    <wm-picture picturesource="resources/images/imagelists/Capturar1.PNG" name="picture3"></wm-picture> 
+                                                                </wm-gridcolumn> 
+                                                                <wm-gridcolumn columnwidth="6" horizontalalign="right" name="gridcolumn38"></wm-gridcolumn> 
+                                                            </wm-gridrow> 
+                                                        </wm-layoutgrid> 
+                                                    </wm-gridcolumn> 
+                                                </wm-gridrow> 
+                                            </wm-layoutgrid> 
+                                        </wm-gridcolumn> 
+                                        <wm-gridcolumn columnwidth="6" padding="unset unset unset 20px" name="gridcolumn39"> 
+                                            <wm-layoutgrid name="layoutgrid8"> 
+                                                <wm-gridrow name="gridrow22"> 
+                                                    <wm-gridcolumn columnwidth="12" padding="unset unset 10px unset" name="gridcolumn40"> 
+                                                        <wm-container backgroundcolor="#ffffff" name="container4"> 
+                                                            <wm-layoutgrid width="98%" name="layoutgrid9"> 
+                                                                <wm-gridrow name="gridrow23"> 
+                                                                    <wm-gridcolumn columnwidth="1" horizontalalign="center" name="gridcolumn41"> 
+                                                                        <wm-picture class="picture" shape="rounded" width="50" picturesource="resources/images/imagelists/AAEAAQAAAAAAAAWbAAAAJDU3ZjM5NzYwLTVlZDEtNGNjZS1hM2E1LTY3ZjEyZjkwNmZhYw.png" name="picture4"></wm-picture> 
+                                                                    </wm-gridcolumn> 
+                                                                    <wm-gridcolumn columnwidth="11" name="gridcolumn42"> 
+                                                                        <wm-layoutgrid name="layoutgrid10"> 
+                                                                            <wm-gridrow name="gridrow24"> 
+                                                                                <wm-gridcolumn columnwidth="12" padding="unset unset unset 5px" name="gridcolumn43"> 
+                                                                                    <wm-label padding="unset 0.5em" caption="Multibase Portugal" color="#e34f0e" fontweight="bold" fontsize="14" name="label11"></wm-label> 
+                                                                                    <wm-label padding="unset 0.5em unset unset" caption="shared a link" color="#000000" fontsize="14" name="label12"></wm-label> 
+                                                                                </wm-gridcolumn> 
+                                                                            </wm-gridrow> 
+                                                                            <wm-gridrow name="gridrow25"> 
+                                                                                <wm-gridcolumn columnwidth="12" padding="unset unset unset 5px" name="gridcolumn44"> 
+                                                                                    <wm-label padding="0em 0.5em unset 0.5em" caption="5 months ago" fontsize="11" class="text-muted" margin="0px unset unset unset" name="label13"></wm-label> 
+                                                                                </wm-gridcolumn> 
+                                                                            </wm-gridrow> 
+                                                                        </wm-layoutgrid> 
+                                                                    </wm-gridcolumn> 
+                                                                </wm-gridrow> 
+                                                                <wm-gridrow padding="10px unset" name="gridrow26"> 
+                                                                    <wm-gridcolumn columnwidth="12" data-template-ctr="true" padding=".5px" name="gridcolumn45"> 
+                                                                        <wm-layoutgrid name="layoutgrid11"> 
+                                                                            <wm-gridrow class="bordered" padding="10px unset" name="gridrow27"> 
+                                                                                <wm-gridcolumn columnwidth="8" horizontalalign="center" name="gridcolumn46"> 
+                                                                                    <wm-picture class="picture" shape="rounded" width="323" picturesource="resources/images/imagelists/17861250_6066149291112_6681411525506236416_n.jpg" height="226" borderstyle="dashed" bordercolor="#000000" name="picture5"></wm-picture> 
+                                                                                </wm-gridcolumn> 
+                                                                                <wm-gridcolumn columnwidth="4" padding="10px unset unset unset" horizontalalign="left" name="gridcolumn47"> 
+                                                                                    <wm-label padding="unset 0.5em" caption="Pagamentos através de referências Multibanco para a 100Rumos" color="#e34f0e" fontweight="bold" fontsize="14" class="p" name="label14"></wm-label> 
+                                                                                    <wm-label padding="unset 0.5em" caption="multibase.pt" color="#000000" fontsize="11" class="p" name="label15"></wm-label> 
+                                                                                </wm-gridcolumn> 
+                                                                            </wm-gridrow> 
+                                                                            <wm-gridrow padding="10px unset unset unset" name="gridrow28"> 
+                                                                                <wm-gridcolumn columnwidth="6" name="gridcolumn48"> 
+                                                                                    <wm-picture picturesource="resources/images/imagelists/Capturar.PNG" name="picture6"></wm-picture> 
+                                                                                </wm-gridcolumn> 
+                                                                                <wm-gridcolumn columnwidth="6" horizontalalign="right" name="gridcolumn49"> 
+                                                                                    <wm-label padding="unset 0.5em" caption="View on Facebook" color="#e34f0e" name="label16"></wm-label> 
+                                                                                    <wm-label caption="." color="#000000" name="label17"></wm-label> 
+                                                                                    <wm-label padding="unset 0.5em" caption="Share" color="#e34f0e" name="label18"></wm-label> 
+                                                                                </wm-gridcolumn> 
+                                                                            </wm-gridrow> 
+                                                                        </wm-layoutgrid> 
+                                                                    </wm-gridcolumn> 
+                                                                </wm-gridrow> 
+                                                            </wm-layoutgrid> 
+                                                        </wm-container> 
+                                                    </wm-gridcolumn> 
+                                                </wm-gridrow> 
+                                            </wm-layoutgrid> 
+                                            <wm-container backgroundcolor="#00bb80" name="container10"> 
+                                                <wm-layoutgrid name="layoutgrid30"> 
+                                                    <wm-gridrow name="gridrow68"> 
+                                                        <wm-gridcolumn columnwidth="12" name="gridcolumn107"></wm-gridcolumn> 
+                                                    </wm-gridrow> 
+                                                    <wm-gridrow name="gridrow69"> 
+                                                        <wm-gridcolumn columnwidth="6" name="gridcolumn108"></wm-gridcolumn> 
+                                                        <wm-gridcolumn columnwidth="6" name="gridcolumn109"></wm-gridcolumn> 
+                                                    </wm-gridrow> 
+                                                </wm-layoutgrid> 
+                                            </wm-container> 
+                                            <wm-layoutgrid name="layoutgrid27"> 
+                                                <wm-gridrow name="gridrow93" padding="30px unset unset unset"> 
+                                                    <wm-gridcolumn columnwidth="12" name="gridcolumn143"></wm-gridcolumn> 
+                                                </wm-gridrow> 
+                                                <wm-gridrow name="gridrow63"> 
+                                                    <wm-gridcolumn columnwidth="12" padding="unset unset 10px unset" name="gridcolumn100"> 
+                                                        <wm-container backgroundcolor="#ffffff" name="container10_1"> 
+                                                            <wm-layoutgrid width="98%" name="layoutgrid28"> 
+                                                                <wm-gridrow name="gridrow64"> 
+                                                                    <wm-gridcolumn columnwidth="1" horizontalalign="center" name="gridcolumn101"> 
+                                                                        <wm-picture class="picture" shape="rounded" width="50" picturesource="resources/images/imagelists/download.png" name="picture11"></wm-picture> 
+                                                                    </wm-gridcolumn> 
+                                                                    <wm-gridcolumn columnwidth="11" name="gridcolumn102"> 
+                                                                        <wm-layoutgrid name="layoutgrid29"> 
+                                                                            <wm-gridrow name="gridrow65"> 
+                                                                                <wm-gridcolumn columnwidth="12" padding="unset unset unset 5px" name="gridcolumn103"> 
+                                                                                    <wm-label padding="unset 0.5em" caption="Microsoft" color="#e34f0e" fontweight="bold" fontsize="14" name="label31_1"></wm-label> 
+                                                                                    <wm-label padding="unset 0.5em unset unset" caption="shared a link" color="#000000" fontsize="14" name="label32"></wm-label> 
+                                                                                </wm-gridcolumn> 
+                                                                            </wm-gridrow> 
+                                                                            <wm-gridrow name="gridrow66"> 
+                                                                                <wm-gridcolumn columnwidth="12" padding="unset unset unset 5px" name="gridcolumn104"> 
+                                                                                    <wm-label padding="0em 0.5em unset 0.5em" caption="1 day ago" fontsize="11" class="text-muted" margin="0px unset unset unset" name="label33"></wm-label> 
+                                                                                </wm-gridcolumn> 
+                                                                            </wm-gridrow> 
+                                                                        </wm-layoutgrid> 
+                                                                    </wm-gridcolumn> 
+                                                                </wm-gridrow> 
+                                                                <wm-gridrow padding="10px unset" name="gridrow67"> 
+                                                                    <wm-gridcolumn columnwidth="12" data-template-ctr="true" padding=".5px" name="gridcolumn105"> 
+                                                                        <wm-layoutgrid name="layoutgrid30_1"> 
+                                                                            <wm-gridrow class="bordered" padding="10px unset" name="gridrow68_1"> 
+                                                                                <wm-gridcolumn columnwidth="8" horizontalalign="center" name="gridcolumn106"> 
+                                                                                    <wm-picture class="picture" shape="rounded" width="323" picturesource="resources/images/imagelists/office.png" height="226" borderstyle="dashed" bordercolor="#000000" name="picture12"></wm-picture> 
+                                                                                </wm-gridcolumn> 
+                                                                                <wm-gridcolumn columnwidth="4" padding="10px unset unset unset" horizontalalign="left" name="gridcolumn107_1"> 
+                                                                                    <wm-label padding="unset 0.5em" caption="New Microsoft Office" color="#e34f0e" fontweight="bold" fontsize="14" class="p" name="label34"></wm-label> 
+                                                                                    <wm-label padding="unset 0.5em" caption="This course provides a comprehensive overview of the five main MS Office applications." color="#000000" fontsize="13" class="p" name="label35"></wm-label> 
+                                                                                    <wm-label padding="unset 0.5em" caption="microsoft.pt" color="#000000" fontsize="11" class="p" name="label36"></wm-label> 
+                                                                                </wm-gridcolumn> 
+                                                                            </wm-gridrow> 
+                                                                            <wm-gridrow padding="10px unset unset unset" name="gridrow69_1"> 
+                                                                                <wm-gridcolumn columnwidth="6" name="gridcolumn108_1"> 
+                                                                                    <wm-picture picturesource="resources/images/imagelists/Capturar.PNG" name="picture13"></wm-picture> 
+                                                                                </wm-gridcolumn> 
+                                                                                <wm-gridcolumn columnwidth="6" horizontalalign="right" name="gridcolumn109_1"> 
+                                                                                    <wm-label padding="unset 0.5em" caption="View on Facebook" color="#e34f0e" name="label37"></wm-label> 
+                                                                                    <wm-label caption="." color="#000000" name="label38"></wm-label> 
+                                                                                    <wm-label padding="unset 0.5em" caption="Share" color="#e34f0e" name="label39"></wm-label> 
+                                                                                </wm-gridcolumn> 
+                                                                            </wm-gridrow> 
+                                                                        </wm-layoutgrid> 
+                                                                    </wm-gridcolumn> 
+                                                                </wm-gridrow> 
+                                                            </wm-layoutgrid> 
+                                                        </wm-container> 
+                                                    </wm-gridcolumn> 
+                                                </wm-gridrow> 
+                                            </wm-layoutgrid> 
+                                            <wm-container backgroundcolor="#00bb80" name="container12"> 
+                                                <wm-layoutgrid name="layoutgrid35"> 
+                                                    <wm-gridrow name="gridrow82"> 
+                                                        <wm-gridcolumn columnwidth="12" name="gridcolumn127"></wm-gridcolumn> 
+                                                    </wm-gridrow> 
+                                                    <wm-gridrow name="gridrow83"> 
+                                                        <wm-gridcolumn columnwidth="6" name="gridcolumn128"></wm-gridcolumn> 
+                                                        <wm-gridcolumn columnwidth="6" name="gridcolumn129"></wm-gridcolumn> 
+                                                    </wm-gridrow> 
+                                                </wm-layoutgrid> 
+                                            </wm-container> 
+                                            <wm-layoutgrid name="layoutgrid36"> 
+                                                <wm-gridrow name="gridrow91" padding="30px unset unset unset"> 
+                                                    <wm-gridcolumn columnwidth="12" name="gridcolumn140"></wm-gridcolumn> 
+                                                </wm-gridrow> 
+                                                <wm-gridrow name="gridrow84"> 
+                                                    <wm-gridcolumn columnwidth="12" padding="unset unset 10px unset" name="gridcolumn130"> 
+                                                        <wm-container backgroundcolor="#ffffff" name="container13"> 
+                                                            <wm-layoutgrid width="98%" name="layoutgrid37"> 
+                                                                <wm-gridrow name="gridrow85"> 
+                                                                    <wm-gridcolumn columnwidth="1" horizontalalign="center" name="gridcolumn131"> 
+                                                                        <wm-picture class="picture" shape="rounded" width="50" picturesource="resources/images/imagelists/logo1.jpg" name="picture17"></wm-picture> 
+                                                                    </wm-gridcolumn> 
+                                                                    <wm-gridcolumn columnwidth="11" name="gridcolumn132"> 
+                                                                        <wm-layoutgrid name="layoutgrid38"> 
+                                                                            <wm-gridrow name="gridrow86"> 
+                                                                                <wm-gridcolumn columnwidth="12" padding="unset unset unset 5px" name="gridcolumn133"> 
+                                                                                    <wm-label padding="unset 0.5em" caption="Pet Care" color="#e34f0e" fontweight="bold" fontsize="14" name="label46"></wm-label> 
+                                                                                    <wm-label padding="unset 0.5em unset unset" caption="shared a link" color="#000000" fontsize="14" name="label47"></wm-label> 
+                                                                                </wm-gridcolumn> 
+                                                                            </wm-gridrow> 
+                                                                            <wm-gridrow name="gridrow87"> 
+                                                                                <wm-gridcolumn columnwidth="12" padding="unset unset unset 5px" name="gridcolumn134"> 
+                                                                                    <wm-label padding="0em 0.5em unset 0.5em" caption="2 day ago" fontsize="11" class="text-muted" margin="0px unset unset unset" name="label48"></wm-label> 
+                                                                                </wm-gridcolumn> 
+                                                                            </wm-gridrow> 
+                                                                        </wm-layoutgrid> 
+                                                                    </wm-gridcolumn> 
+                                                                </wm-gridrow> 
+                                                                <wm-gridrow padding="10px unset" name="gridrow88"> 
+                                                                    <wm-gridcolumn columnwidth="12" data-template-ctr="true" padding=".5px" name="gridcolumn135"> 
+                                                                        <wm-layoutgrid name="layoutgrid39"> 
+                                                                            <wm-gridrow class="bordered" padding="10px unset" name="gridrow89"> 
+                                                                                <wm-gridcolumn columnwidth="8" horizontalalign="center" name="gridcolumn136"> 
+                                                                                    <wm-picture class="picture" shape="rounded" width="300" picturesource="resources/images/imagelists/20376155_1529221447129671_5416004746552193371_n.jpg" borderstyle="dashed" bordercolor="#000000" name="picture18"></wm-picture> 
+                                                                                </wm-gridcolumn> 
+                                                                                <wm-gridcolumn columnwidth="4" padding="10px unset unset unset" horizontalalign="left" name="gridcolumn137"> 
+                                                                                    <wm-label padding="unset 0.5em" caption="[ATTENTION!]" color="#e34f0e" fontweight="bold" fontsize="14" class="p" name="label55"></wm-label> 
+                                                                                    <wm-label padding="unset 0.5em" caption="Take your pet for a walk and get a free oral evaluation with our veterinarians!" color="#e34f0e" fontweight="bold" fontsize="14" class="p" name="label56"></wm-label> 
+                                                                                    <wm-label padding="unset 0.5em" caption="We will distribute gifts on the spot, we are waiting for you!" color="#000000" fontsize="13" class="p" name="label57"></wm-label> 
+                                                                                    <wm-label padding="unset 0.5em" caption="petcare.com" color="#000000" fontsize="11" class="p" name="label58"></wm-label> 
+                                                                                </wm-gridcolumn> 
+                                                                            </wm-gridrow> 
+                                                                            <wm-gridrow padding="10px unset unset unset" name="gridrow90"> 
+                                                                                <wm-gridcolumn columnwidth="6" name="gridcolumn138"> 
+                                                                                    <wm-picture picturesource="resources/images/imagelists/Capturar.PNG" name="picture19"></wm-picture> 
+                                                                                </wm-gridcolumn> 
+                                                                                <wm-gridcolumn columnwidth="6" horizontalalign="right" name="gridcolumn139"> 
+                                                                                    <wm-label padding="unset 0.5em" caption="View on Facebook" color="#e34f0e" name="label52"></wm-label> 
+                                                                                    <wm-label caption="." color="#000000" name="label53"></wm-label> 
+                                                                                    <wm-label padding="unset 0.5em" caption="Share" color="#e34f0e" name="label54"></wm-label> 
+                                                                                </wm-gridcolumn> 
+                                                                            </wm-gridrow> 
+                                                                        </wm-layoutgrid> 
+                                                                    </wm-gridcolumn> 
+                                                                </wm-gridrow> 
+                                                            </wm-layoutgrid> 
+                                                        </wm-container> 
+                                                    </wm-gridcolumn> 
+                                                </wm-gridrow> 
+                                            </wm-layoutgrid> 
+                                        </wm-gridcolumn> 
+                                    </wm-gridrow> 
+                                    <wm-gridrow name="gridrow29"> 
+                                        <wm-gridcolumn columnwidth="6" name="gridcolumn50"></wm-gridcolumn> 
+                                        <wm-gridcolumn columnwidth="6" name="gridcolumn51"></wm-gridcolumn> 
+                                    </wm-gridrow> 
+                                </wm-layoutgrid> 
+                            </wm-tile> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow30"> 
+                        <wm-gridcolumn columnwidth="12" padding="5px unset unset unset" name="gridcolumn52"></wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow31"></wm-gridrow> 
+                </wm-layoutgrid> 
+            </wm-container> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

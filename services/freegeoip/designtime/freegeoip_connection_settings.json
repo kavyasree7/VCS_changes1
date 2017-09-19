@@ -1,0 +1,31 @@
+{
+  "headers" : { },
+  "proxy" : null,
+  "endpointAddress" : "http://freegeoip.net/json/89.114.213.45",
+  "method" : "GET",
+  "requestBody" : "89.114.213.45",
+  "queryParams" : { },
+  "sampleHttpResponseDetails" : {
+    "headers" : {
+      "Transfer-Encoding" : [ "chunked" ],
+      "X-Ratelimit-Reset" : [ "2323" ],
+      "X-Ratelimit-Limit" : [ "15000" ],
+      "Server" : [ "cloudflare-nginx" ],
+      "CF-RAY" : [ "388a7ffac20e21c2-EWR" ],
+      "X-Ratelimit-Remaining" : [ "14990" ],
+      "Connection" : [ "keep-alive" ],
+      "Set-Cookie" : [ "__cfduid=df253421dc067a495b279a716ffe2ab5b1501776132; expires=Fri, 03-Aug-18 16:02:12 GMT; path=/; domain=.freegeoip.net; HttpOnly" ],
+      "Vary" : [ "Origin" ],
+      "X-Database-Date" : [ "Thu, 03 Aug 2017 06:09:19 GMT" ],
+      "Date" : [ "Thu, 03 Aug 2017 16:02:12 GMT" ],
+      "Content-Type" : [ "application/json" ]
+    },
+    "responseBody" : "{\"ip\":\"89.114.213.45\",\"country_code\":\"PT\",\"country_name\":\"Portugal\",\"region_code\":\"11\",\"region_name\":\"Lisbon\",\"city\":\"Sintra\",\"zip_code\":\"2710-000\",\"time_zone\":\"Europe/Lisbon\",\"latitude\":38.801,\"longitude\":-9.3783,\"metro_code\":0}",
+    "convertedResponse" : null,
+    "statusCode" : 200
+  },
+  "redirectEnabled" : true,
+  "authDetails" : null,
+  "contentType" : "text/xml",
+  "multiParamInfoList" : null
+}

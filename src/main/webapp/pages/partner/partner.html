@@ -1,0 +1,62 @@
+<wm-page data-ng-controller="partnerPageController" pagetitle="newPartner" name="page1"> 
+    <wm-header content="header" name="header1" backgroundimage="resources/images/imagelists/slide3.jpg"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="8" name="page_content1"> 
+            <wm-container name="container1"> 
+                <wm-label padding="unset 0.5em" class="h1" caption="Partners" name="label1" color="#00bb80" fontweight="bold"></wm-label> 
+            </wm-container> 
+            <wm-table editmode="inline" title="Partners" dataset="bind:Variables.DbinvoicePartnerData.dataSet" navigation="Classic" name="grid4"> 
+                <wm-table-column binding="id" caption="Id" type="integer" primary-key="true" generator="identity" readonly="true" edit-widget-type="number" show="true"></wm-table-column> 
+                <wm-table-column binding="name" caption="Name" type="string" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="cod" caption="Cod" type="integer" generator="assigned" edit-widget-type="number" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="nif" caption="Nif" type="string" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="description" caption="Description" type="string" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="price" caption="Price" type="float" generator="assigned" edit-widget-type="number" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="deadline" caption="Deadline" type="date" generator="assigned" edit-widget-type="date" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="minimumQuantity" caption="Minimum Quantity" type="integer" generator="assigned" edit-widget-type="number" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="language.id" caption="Language Id" type="integer" primary-key="true" generator="identity" edit-widget-type="select" show="true" related-entity-name="Language" readonly="false"></wm-table-column> 
+                <wm-table-column binding="language.language" caption="Language Language" type="string" generator="assigned" readonly="true" edit-widget-type="text" show="true" related-entity-name="Language"></wm-table-column> 
+                <wm-table-column binding="rowOperations" caption="Actions" type="custom" width="120px" readonly="true" sortable="false" searchable="false" show="true"></wm-table-column> 
+                <wm-table-action key="addNewRow" display-name="New" show="true" class="btn-primary" iconclass="wi wi-plus" title="New" action="addNewRow()" shortcutkey="" disabled="false" position="footer,header"></wm-table-action> 
+                <wm-table-row-action key="updaterow" display-name="" show="true" class="btn-transparent" iconclass="wi wi-pencil" title="Edit" action="editRow()" disabled="false"></wm-table-row-action> 
+                <wm-table-row-action key="deleterow" display-name="" show="true" class="btn-transparent" iconclass="wi wi-trash" title="Delete" action="deleteRow()" disabled="false"></wm-table-row-action> 
+            </wm-table> 
+            <wm-table editmode="inline" title="Contacts" dataset="bind:Variables.DbinvoiceContactData.dataSet" navigation="Classic" name="grid3"> 
+                <wm-table-column binding="id" caption="Id" type="integer" primary-key="true" generator="identity" readonly="true" edit-widget-type="number" show="true"></wm-table-column> 
+                <wm-table-column binding="titleContact" caption="Title Contact" type="string" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="firstName" caption="First Name" type="string" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="lastName" caption="Last Name" type="string" primary-key="false" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="street" caption="Street" type="string" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="building" caption="Building" type="string" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="fraction" caption="Fraction" type="string" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="postalCode" caption="Postal Code" type="string" primary-key="false" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="locality" caption="Locality" type="string" primary-key="false" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="country" caption="Country" type="string" primary-key="false" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="rowOperations" caption="Actions" type="custom" width="120px" readonly="true" edit-widget-type="text" sortable="false" searchable="false" show="true"></wm-table-column> 
+                <wm-table-action key="addNewRow" display-name="New" show="true" class="btn-primary" iconclass="wi wi-plus" title="New" action="addNewRow()" shortcutkey="" disabled="false" position="footer,header"></wm-table-action> 
+                <wm-table-row-action key="updaterow" display-name="" show="true" class="btn-transparent" iconclass="wi wi-pencil" title="Edit" action="editRow()" disabled="false"></wm-table-row-action> 
+                <wm-table-row-action key="deleterow" display-name="" show="true" class="btn-transparent" iconclass="wi wi-trash" title="Delete" action="deleteRow()" disabled="false"></wm-table-row-action> 
+            </wm-table> 
+            <wm-table editmode="inline" title="Partner Contact" dataset="bind:Variables.DbinvoicePartnerContactRelData.dataSet" navigation="Classic" name="grid3"> 
+                <wm-table-column binding="contactType" caption="Contact Type" type="integer" primary-key="false" generator="assigned" edit-widget-type="number" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="partner.id" caption="Partner Id" type="integer" primary-key="true" generator="identity" edit-widget-type="number" show="true" related-entity-name="Partner" readonly="false"></wm-table-column> 
+                <wm-table-column binding="contact.id" caption="Contact Id" type="integer" primary-key="true" generator="identity" edit-widget-type="number" show="true" related-entity-name="Contact" readonly="false"></wm-table-column> 
+                <wm-table-action key="addNewRow" display-name="New" iconclass="wi wi-plus" show="true" class="btn-primary" action="addNewRow()" position="footer,header" shortcutkey=""></wm-table-action> 
+            </wm-table> 
+            <wm-table editmode="inline" title="Partner Allowed Payment Methods" dataset="bind:Variables.DbinvoicePartnerPaymentMethodsRelData.dataSet" navigation="Classic" name="grid5"> 
+                <wm-table-column binding="paymentMethods.id" caption="Methods Id" type="integer" primary-key="true" generator="identity" edit-widget-type="select" show="true" related-entity-name="PaymentMethods" readonly="false"></wm-table-column> 
+                <wm-table-column binding="paymentMethods.name" caption="Methods Name" type="string" generator="assigned" readonly="true" edit-widget-type="text" show="true" related-entity-name="PaymentMethods"></wm-table-column> 
+                <wm-table-column binding="partner.id" caption="Partner Id" type="integer" primary-key="true" generator="identity" edit-widget-type="select" show="true" related-entity-name="Partner" readonly="false"></wm-table-column> 
+                <wm-table-column binding="partner.name" caption="Partner Name" type="string" generator="assigned" readonly="true" edit-widget-type="text" show="true" related-entity-name="Partner"></wm-table-column> 
+                <wm-table-column binding="rowOperations" caption="Actions" type="custom" width="120px" readonly="true" edit-widget-type="text" sortable="false" searchable="false" show="true"></wm-table-column> 
+                <wm-table-action key="addNewRow" display-name="New" show="true" class="btn-primary" iconclass="wi wi-plus" title="New" action="addNewRow()" shortcutkey="" disabled="false" position="footer,header"></wm-table-action> 
+                <wm-table-row-action key="updaterow" display-name="" show="true" class="btn-transparent" iconclass="wi wi-pencil" title="Edit" action="editRow()" disabled="false"></wm-table-row-action> 
+                <wm-table-row-action key="deleterow" display-name="" show="true" class="btn-transparent" iconclass="wi wi-trash" title="Delete" action="deleteRow()" disabled="false"></wm-table-row-action> 
+            </wm-table> 
+        </wm-page-content> 
+        <wm-right-panel columnwidth="2" content="rightnav" name="right_panel1"></wm-right-panel> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

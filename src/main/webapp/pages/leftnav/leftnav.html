@@ -1,0 +1,29 @@
+<wm-partial data-ng-controller="leftnavPageController" name="leftnav" type="leftnav"> 
+    <wm-accordion name="accordion1" show="true"> 
+        <wm-accordionpane name="accordionpane1" title="Sales" iconclass="fa fa-diamond" badgetype="default" show="true"> 
+            <wm-container name="container1" padding="5px unset"> 
+                <wm-anchor caption="Invoice" iconclass="wi wi-arrow-right" name="anchor6" on-click="Variables.goToPage_invoice.invoke()" color="#00bb80" fontweight="bold"></wm-anchor> 
+            </wm-container> 
+            <wm-container padding="5px unset" name="container16" show="false"> 
+                <wm-anchor caption="Nota de Credito" iconclass="wi wi-arrow-right" on-click="Variables.goToPage_invoice.invoke()" color="#00bb80" fontweight="bold" name="anchor16_1"></wm-anchor> 
+            </wm-container> 
+            <wm-container padding="5px unset" name="container4" show="false"> 
+                <wm-anchor caption="Pagamentos" iconclass="wi wi-arrow-right" on-click="Variables.goToPage_invoice.invoke()" color="#00bb80" fontweight="bold" name="anchor8_1"></wm-anchor> 
+            </wm-container> 
+            <wm-container padding="5px unset" name="container17" show="false"> 
+                <wm-anchor caption="Proformas" iconclass="wi wi-arrow-right" on-click="Variables.goToPage_invoice.invoke()" color="#00bb80" fontweight="bold" name="anchor17_1"></wm-anchor> 
+            </wm-container> 
+            <wm-container padding="5px unset" name="container18" show="false"> 
+                <wm-anchor caption="Orçamentos" iconclass="wi wi-arrow-right" on-click="Variables.goToPage_createEstimatePage.invoke()" color="#00bb80" fontweight="bold" name="anchor18"></wm-anchor> 
+            </wm-container> 
+        </wm-accordionpane> 
+        <wm-accordionpane name="accordionpane4" title="Catalogue" iconclass="fa fa-headphones"> 
+            <wm-container name="container3" padding="5px unset"> 
+                <wm-anchor caption="Products / Services" iconclass="wi wi-arrow-right" on-click="Variables.goToPage_product.invoke()" name="anchor9" color="#00bb80" fontweight="bold"></wm-anchor> 
+            </wm-container> 
+            <wm-container padding="5px unset" name="container7"> 
+                <wm-anchor caption="Category" iconclass="wi wi-arrow-right" on-click="Variables.goToPage_productCategoryPage.invoke()" color="#00bb80" fontweight="bold" name="anchor7"></wm-anchor> 
+            </wm-container> 
+        </wm-accordionpane> 
+    </wm-accordion> 
+</wm-partial>

@@ -1,0 +1,160 @@
+{
+  "username" : "{WM_CLOUD_MYSQL_USER_NAME}",
+  "password" : "{WM_CLOUD_MYSQL_PASSWORD}",
+  "url" : "jdbc:mysql://{WM_CLOUD_MYSQL_HOST}/dbC4B?useUnicode=yes&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&createDatabaseIfNotExist=true",
+  "driverClass" : "com.mysql.jdbc.Driver",
+  "dialect" : "com.wavemaker.runtime.data.dialect.MySQLDialect",
+  "serviceId" : "dbC4B",
+  "packageName" : "com.faturacaomodelo.dbc4b",
+  "dbType" : "MySQL",
+  "host" : "{WM_CLOUD_MYSQL_HOST}",
+  "dbName" : "dbC4B",
+  "port" : "",
+  "schemaName" : null,
+  "tableFilter" : [ {
+    "table" : "accountMove",
+    "schema" : null
+  }, {
+    "table" : "accountMoveLine",
+    "schema" : null
+  }, {
+    "table" : "business",
+    "schema" : null
+  }, {
+    "table" : "business_paymentMethods_rel",
+    "schema" : null
+  }, {
+    "table" : "contact",
+    "schema" : null
+  }, {
+    "table" : "country",
+    "schema" : null
+  }, {
+    "table" : "currency",
+    "schema" : null
+  }, {
+    "table" : "documentMediaLibrary",
+    "schema" : null
+  }, {
+    "table" : "documentTemplate",
+    "schema" : null
+  }, {
+    "table" : "documentsWorkflow",
+    "schema" : null
+  }, {
+    "table" : "fiscalPosition",
+    "schema" : null
+  }, {
+    "table" : "fiscalSpace",
+    "schema" : null
+  }, {
+    "table" : "invoice",
+    "schema" : null
+  }, {
+    "table" : "invoiceLine",
+    "schema" : null
+  }, {
+    "table" : "invoice_partner_rel",
+    "schema" : null
+  }, {
+    "table" : "journal",
+    "schema" : null
+  }, {
+    "table" : "language",
+    "schema" : null
+  }, {
+    "table" : "lead",
+    "schema" : null
+  }, {
+    "table" : "lead_contact_rel",
+    "schema" : null
+  }, {
+    "table" : "partner",
+    "schema" : null
+  }, {
+    "table" : "partner_business_rel",
+    "schema" : null
+  }, {
+    "table" : "partner_contact_rel",
+    "schema" : null
+  }, {
+    "table" : "partner_paymentMethods_rel",
+    "schema" : null
+  }, {
+    "table" : "payment",
+    "schema" : null
+  }, {
+    "table" : "paymentMethods",
+    "schema" : null
+  }, {
+    "table" : "paymentTerm",
+    "schema" : null
+  }, {
+    "table" : "product",
+    "schema" : null
+  }, {
+    "table" : "productCategory",
+    "schema" : null
+  }, {
+    "table" : "productType",
+    "schema" : null
+  }, {
+    "table" : "quotation",
+    "schema" : null
+  }, {
+    "table" : "quotationLine",
+    "schema" : null
+  }, {
+    "table" : "role",
+    "schema" : null
+  }, {
+    "table" : "sequence",
+    "schema" : null
+  }, {
+    "table" : "settings",
+    "schema" : null
+  }, {
+    "table" : "tax",
+    "schema" : null
+  }, {
+    "table" : "taxRate",
+    "schema" : null
+  }, {
+    "table" : "taxType",
+    "schema" : null
+  }, {
+    "table" : "tax_invoiceLine_rel",
+    "schema" : null
+  }, {
+    "table" : "timezone",
+    "schema" : null
+  }, {
+    "table" : "translation",
+    "schema" : null
+  }, {
+    "table" : "user",
+    "schema" : null
+  }, {
+    "table" : "TABLE42",
+    "schema" : null
+  }, {
+    "table" : "taxScope",
+    "schema" : null
+  } ],
+  "schemaFilter" : [ ],
+  "impersonateUser" : false,
+  "activeDirectoryDomain" : null,
+  "hbm2ddl" : "update",
+  "maxPageSize" : 100,
+  "minPoolSize" : 2,
+  "maxPoolSize" : 4,
+  "transactionTimeout" : 30,
+  "dataSourceType" : "WM_MANAGED_DATASOURCE",
+  "jndiName" : "",
+  "reloadInfo" : {
+    "reload" : true,
+    "reason" : "MIGRATION_FAILED",
+    "message" : "Source code re-generation needed with respect to spring upgrade"
+  },
+  "readOnly" : false
+}

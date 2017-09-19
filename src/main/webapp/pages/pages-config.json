@@ -1,0 +1,196 @@
+[ {
+  "name" : "Common",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "FiscalPosition",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "ForgetPassPage",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "HomePage",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Login",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Main",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "NewPartnerPage",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "PageBusiness01",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "PageBusiness02",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "PrefixosSufix",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "SignUpPage",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "SocialManagePost",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "business",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "contact",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "createEstimatePage",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "createNewInvoice",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "currency",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "footer",
+  "type" : "FOOTER",
+  "params" : [ ]
+}, {
+  "name" : "header",
+  "type" : "HEADER",
+  "params" : [ ]
+}, {
+  "name" : "invoice",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "language",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "leftnav",
+  "type" : "LEFTNAV",
+  "params" : [ ]
+}, {
+  "name" : "mediaLibraryPage",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "myBusinessPage",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "myNetworkPage",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "myProfilePage",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "paginaX",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "partner",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "partnerProfile",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "paymentMethodPage",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "paymentterms",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "princingPage",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "product",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "productCategoryPage",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "productTypePage",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "regBusinessPage",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "rightnav",
+  "type" : "RIGHTNAV",
+  "params" : [ ]
+}, {
+  "name" : "sequence",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "socialPage",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "state",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "tax",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "taxRatePage",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "taxTypePage",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "test",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "timezonePage",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "topnav",
+  "type" : "TOPNAV",
+  "params" : [ {
+    "name" : "userId",
+    "type" : "integer"
+  } ]
+}, {
+  "name" : "translationPage",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "user",
+  "type" : "PAGE",
+  "params" : [ ]
+} ]

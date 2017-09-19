@@ -1,0 +1,24 @@
+<wm-page data-ng-controller="taxRatePagePageController" pagetitle="Tax Rate Page" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="8" name="page_content1"> 
+            <wm-container name="container1"> 
+                <wm-label padding="unset 0.5em" class="h1" caption="Tax Rate" color="#00bb80" fontweight="bold" name="label1"></wm-label> 
+            </wm-container> 
+            <wm-table editmode="inline" title="Tax Rate List" dataset="bind:Variables.DbinvoiceTaxRateData.dataSet" navigation="Classic" name="grid1"> 
+                <wm-table-column binding="id" caption="Id" generator="identity" pcdisplay="true" mobiledisplay="true" type="integer" primary-key="true" readonly="true"></wm-table-column> 
+                <wm-table-column binding="rate" caption="Rate" generator="assigned" pcdisplay="true" mobiledisplay="true" type="integer"></wm-table-column> 
+                <wm-table-column binding="effectiveDate" caption="Effective Date" generator="assigned" pcdisplay="true" mobiledisplay="true" type="date"></wm-table-column> 
+                <wm-table-column binding="tax.id" caption="Tax Id" generator="identity" pcdisplay="true" mobiledisplay="true" type="integer" primary-key="true" related-entity-name="Tax"></wm-table-column> 
+                <wm-table-column binding="tax.name" caption="Tax Name" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string" related-entity-name="Tax" readonly="true"></wm-table-column> 
+                <wm-table-action key="addNewRow" display-name="New" iconclass="wi wi-plus" show="true" class="btn-primary" action="addNewRow()" position="footer" shortcutkey=""></wm-table-action> 
+                <wm-table-row-action key="updaterow" display-name="" title="Edit" iconclass="wi wi-pencil" show="true" class="btn-transparent" action="editRow()"></wm-table-row-action> 
+                <wm-table-row-action key="deleterow" display-name="" title="Delete" iconclass="wi wi-trash" show="true" class="btn-transparent" action="deleteRow()"></wm-table-row-action> 
+            </wm-table> 
+        </wm-page-content> 
+        <wm-right-panel columnwidth="2" content="rightnav" name="right_panel1"></wm-right-panel> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>
