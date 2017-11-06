@@ -1,6 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<beans xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd" xmlns="http://www.springframework.org/schema/beans" xmlns:security="http://www.springframework.org/schema/security" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <context:component-scan base-package="com.faturacaomodelo.db_a_account_id.controller,com.faturacaomodelo.db_a_account_id.service,com.faturacaomodelo.db_a_account_id.dao" xmlns:p="http://www.springframework.org/schema/p" xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context" xmlns:mvc="http://www.springframework.org/schema/mvc"/>
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <context:component-scan base-package="com.faturacaomodelo.db_a_account_id.controller,com.faturacaomodelo.db_a_account_id.service,com.faturacaomodelo.db_a_account_id.dao"/>
     <bean class="com.wavemaker.runtime.data.spring.WMPropertyPlaceholderConfigurer">
         <property name="locations">
             <list>
@@ -11,26 +16,30 @@
         </property>
         <property name="ignoreUnresolvablePlaceholders" value="true"/>
     </bean>
-    <bean class="com.zaxxer.hikari.HikariConfig" id="db_a_account_idHikariConfig">
+
+    <bean id="db_a_account_idHikariConfig" class="com.zaxxer.hikari.HikariConfig">
         <property name="jdbcUrl" value="${db_a_account_id.url}"/>
         <property name="driverClassName" value="${db_a_account_id.driverClass}"/>
         <property name="username" value="${db_a_account_id.username}"/>
         <property name="password" value="${db_a_account_id.password}"/>
         <property name="maximumPoolSize" value="${db_a_account_id.maxPoolSize}"/>
         <property name="minimumIdle" value="${db_a_account_id.minPoolSize}"/>
-        <property name="connectionTimeout" value="30000"/>
-        <property name="validationTimeout" value="5000"/>
-        <property name="idleTimeout" value="600000"/>
-        <property name="maxLifetime" value="1800000"/>
-        <property name="initializationFailTimeout" value="-1"/>
-        <property name="leakDetectionThreshold" value="120000"/>
-        <property name="registerMbeans" value="false"/>
+        <property name="connectionTimeout" value="30000" />
+        <property name="validationTimeout" value="5000" />
+        <property name="idleTimeout" value="600000" />
+        <property name="maxLifetime" value="1800000" />
+        <property name="initializationFailTimeout" value="-1" />
+        <property name="leakDetectionThreshold" value="120000" />
+        <property name="registerMbeans" value="false" />
     </bean>
-    <bean class="com.zaxxer.hikari.HikariDataSource" lazy-init="true" destroy-method="close" id="db_a_account_idWMManagedDataSource">
+
+    <bean id="db_a_account_idWMManagedDataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close" lazy-init="true">
         <constructor-arg ref="db_a_account_idHikariConfig"/>
     </bean>
-    <bean class="com.wavemaker.runtime.data.interceptors.WMEntityInterceptor" id="db_a_account_idEntityInterceptor"/>
-    <bean class="com.wavemaker.runtime.data.factory.TypeResolverSessionFactoryBean" id="db_a_account_idSessionFactory">
+
+    <bean id="db_a_account_idEntityInterceptor" class="com.wavemaker.runtime.data.interceptors.WMEntityInterceptor"/>
+
+    <bean id="db_a_account_idSessionFactory" class="com.wavemaker.runtime.data.factory.TypeResolverSessionFactoryBean">
         <property name="dataSource" ref="db_a_account_idDataSource"/>
         <property name="packagesToScan" value="com.faturacaomodelo.db_a_account_id"/>
         <property name="entityInterceptor" ref="db_a_account_idEntityInterceptor"/>
@@ -41,8 +50,9 @@
                 </value>
             </list>
         </property>
+
         <property name="customTypes">
-            <array value-type="com.wavemaker.runtime.data.CustomType" xmlns:p="http://www.springframework.org/schema/p" xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context" xmlns:mvc="http://www.springframework.org/schema/mvc">
+            <array value-type="com.wavemaker.runtime.data.CustomType">
                 <ref bean="dateTimeCustomType"/>
             </array>
         </property>
@@ -66,28 +76,26 @@
                 <prop key="hibernate.schema_update.unique_constraint_strategy">
                     skip
                 </prop>
-                <prop key="hibernate.id.new_generator_mappings">
-                    true
-                </prop>
             </props>
         </property>
     </bean>
-    <bean class="org.springframework.orm.hibernate5.HibernateTransactionManager" id="db_a_account_idTransactionManager">
+    <bean id="db_a_account_idTransactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
         <property name="sessionFactory" ref="db_a_account_idSessionFactory"/>
         <property name="defaultTimeout" value="${db_a_account_id.transactionTimeout}"/>
     </bean>
-    <bean class="org.springframework.orm.hibernate5.HibernateTemplate" id="db_a_account_idTemplate">
+    <bean id="db_a_account_idTemplate" class="org.springframework.orm.hibernate5.HibernateTemplate">
         <property name="sessionFactory" ref="db_a_account_idSessionFactory"/>
     </bean>
-    <bean class="com.wavemaker.runtime.data.dao.query.WMQueryExecutorImpl" id="db_a_account_idWMQueryExecutor">
+    <bean id="db_a_account_idWMQueryExecutor" class="com.wavemaker.runtime.data.dao.query.WMQueryExecutorImpl">
         <property name="template" ref="db_a_account_idTemplate"/>
     </bean>
-    <bean class="com.wavemaker.runtime.data.dao.procedure.WMProcedureExecutorImpl" id="db_a_account_idWMProcedureExecutor">
+    <bean id="db_a_account_idWMProcedureExecutor" class="com.wavemaker.runtime.data.dao.procedure.WMProcedureExecutorImpl">
         <property name="template" ref="db_a_account_idTemplate"/>
-        <property name="serviceId" value="db_a_account_id"/>
+        <property name="serviceId" value="db_a_account_id" />
     </bean>
-    <bean class="com.wavemaker.commons.data.type.WMPersistentLocalDateTime" id="persistentLocalDateTimeType"/>
-    <bean class="com.wavemaker.runtime.data.CustomType" id="dateTimeCustomType">
+
+    <bean id="persistentLocalDateTimeType" class="com.wavemaker.commons.data.type.WMPersistentLocalDateTime"/>
+    <bean id="dateTimeCustomType" class="com.wavemaker.runtime.data.CustomType">
         <property name="type" ref="persistentLocalDateTimeType"/>
         <property name="keys">
             <list>
@@ -96,22 +104,27 @@
             </list>
         </property>
     </bean>
-    <bean class="com.wavemaker.runtime.resolver.WMPageableHandlerMethodArgumentResolver" id="db_a_account_idPageableHandlerMethodResolver">
+    <bean id="db_a_account_idPageableHandlerMethodResolver" class="com.wavemaker.runtime.resolver.WMPageableHandlerMethodArgumentResolver" >
         <property name="pageParameterName" value="page"/>
         <property name="sizeParameterName" value="size"/>
         <property name="oneIndexedParameters" value="true"/>
         <property name="maxPageSize" value="${db_a_account_id.maxPageSize}"/>
         <property name="fallbackPageable">
-            <bean class="org.springframework.data.domain.PageRequest">
-                <constructor-arg value="0"/>
-                <constructor-arg value="20"/>
+            <bean  class="org.springframework.data.domain.PageRequest">
+                <constructor-arg  value="0"/>
+                <constructor-arg  value="20"/>
             </bean>
         </property>
     </bean>
-    <bean class="com.wavemaker.runtime.data.datasource.WMDataSource" id="db_a_account_idDataSource">
+
+    <bean id="db_a_account_idDataSource" class="com.wavemaker.runtime.data.datasource.WMDataSource">
         <property name="dataSourceType" value="${db_a_account_id.dataSourceType}"/>
         <property name="jndiName" value="${db_a_account_id.jndiName}"/>
         <property name="serviceId" value="db_a_account_id"/>
     </bean>
-    <tx:annotation-driven xmlns:p="http://www.springframework.org/schema/p" xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context" xmlns:mvc="http://www.springframework.org/schema/mvc"/>
+
+
+    <tx:annotation-driven/>
+
 </beans>
+

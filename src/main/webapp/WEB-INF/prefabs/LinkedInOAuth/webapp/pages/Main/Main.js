@@ -1,4 +1,4 @@
-Application.$controller("LinkedInOAuthController",["$scope", "CONSTANTS", function($scope, CONSTANTS) {
+Application.$controller("LinkedInOAuthController",["$scope", "Utils", function($scope, Utils) {
     "use strict";
     var LOGIN_MODE = {
             'AUTOMATIC': "auto"

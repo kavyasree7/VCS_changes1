@@ -1,4 +1,4 @@
-Application.$controller("GoogleOAuthController", ["$scope", function ($scope) {
+Application.$controller("GoogleOAuthController", ["$scope", "Utils", function ($scope, Utils) {
     "use strict";
     var LOGIN_MODE = {
             'AUTOMATIC': "auto"

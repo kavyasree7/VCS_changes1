@@ -7,11 +7,12 @@
     "catalog" : "db_systemControl",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -33,11 +34,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "role",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -81,11 +83,12 @@
     "catalog" : "db_systemControl",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : false,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -107,37 +110,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
-      "fieldName" : "username",
-      "foreignKey" : false,
-      "generatorType" : "assigned",
-      "generatorValue" : null,
-      "javaType" : "string",
-      "length" : 255,
-      "name" : "username",
-      "nullable" : true,
-      "oldName" : "username",
-      "partOfAnyRelation" : false,
-      "partOfForeignKey" : false,
-      "partOfPrimaryKey" : false,
-      "partOfUniqueKey" : false,
-      "precision" : 0,
-      "primaryKey" : false,
-      "scale" : 0,
-      "sequenceSchema" : null,
-      "sqlType" : "string",
-      "unique" : false
-    }, {
-      "columnValue" : {
-        "type" : "user-defined",
-        "insertable" : true,
-        "updatable" : true,
-        "defaultValue" : ""
-      },
+      "constraintList" : null,
       "fieldName" : "email",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -159,11 +137,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "password",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -185,11 +164,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "role",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -199,6 +179,33 @@
       "name" : "role",
       "nullable" : true,
       "oldName" : "role",
+      "partOfAnyRelation" : false,
+      "partOfForeignKey" : false,
+      "partOfPrimaryKey" : false,
+      "partOfUniqueKey" : false,
+      "precision" : 0,
+      "primaryKey" : false,
+      "scale" : 0,
+      "sequenceSchema" : null,
+      "sqlType" : "string",
+      "unique" : false
+    }, {
+      "columnValue" : {
+        "insertable" : true,
+        "updatable" : true,
+        "defaultValue" : "",
+        "type" : "user-defined"
+      },
+      "constraintList" : null,
+      "fieldName" : "username",
+      "foreignKey" : false,
+      "generatorType" : "assigned",
+      "generatorValue" : null,
+      "javaType" : "string",
+      "length" : 255,
+      "name" : "username",
+      "nullable" : true,
+      "oldName" : "username",
       "partOfAnyRelation" : false,
       "partOfForeignKey" : false,
       "partOfPrimaryKey" : false,

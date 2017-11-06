@@ -7,11 +7,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -33,11 +34,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "status",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -59,11 +61,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "date",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -85,11 +88,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "movement",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -111,11 +115,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "amount",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -137,11 +142,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "paymentId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -163,11 +169,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "journalId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -189,11 +196,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "businessId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -215,11 +223,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "partnerId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -348,11 +357,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -374,11 +384,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "credit",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -400,11 +411,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "debit",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -426,11 +438,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "quantity",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -452,11 +465,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "description",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -478,11 +492,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "accountMoveId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -504,11 +519,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "journalId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -530,11 +546,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "businessId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -556,11 +573,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "partnerId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -672,11 +690,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -698,11 +717,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "partnerId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -724,11 +744,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "name",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -750,11 +771,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "logo",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -776,11 +798,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "categoryList",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -802,11 +825,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "documentTemplateId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -828,11 +852,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "businessTypeId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -854,11 +879,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "currencyId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -880,11 +906,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "languageId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -906,11 +933,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "timezoneId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -1175,11 +1203,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -1201,11 +1230,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "name",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1227,11 +1257,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "businessTypeParentId",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1292,11 +1323,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -1318,11 +1350,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "businessId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -1344,11 +1377,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "paymentMethodsId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -1426,11 +1460,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : false,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -1452,11 +1487,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "name",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1517,11 +1553,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -1543,11 +1580,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "postalCode",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1569,11 +1607,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "country",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1595,11 +1634,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "phone",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1621,11 +1661,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "fax",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1647,11 +1688,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "mobile",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1673,11 +1715,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "titleContact",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1699,11 +1742,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "firstName",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1725,11 +1769,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "lastName",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1751,11 +1796,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "email",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1777,11 +1823,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "website",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1803,11 +1850,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "street",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1829,11 +1877,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "building",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1855,11 +1904,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "fraction",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1881,11 +1931,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "locality",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1907,11 +1958,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "note",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1933,11 +1985,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "languageId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -1959,11 +2012,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "currencyId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -1985,11 +2039,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "facebook",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2101,11 +2156,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -2127,11 +2183,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "languageId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -2153,11 +2210,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "currencyId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -2179,11 +2237,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "currencyFormat",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2205,11 +2264,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "dateFormat",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2231,11 +2291,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "timezoneId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -2257,11 +2318,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "name",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2407,11 +2469,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -2433,11 +2496,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "currency",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2459,11 +2523,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "exchangeRate",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2626,11 +2691,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -2652,11 +2718,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "name",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2678,11 +2745,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "description",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2704,11 +2772,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "url",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2730,11 +2799,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "productId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -2795,11 +2865,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -2821,11 +2892,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "name",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2886,11 +2958,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -2912,11 +2985,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "status",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2938,11 +3012,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "document",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -3003,11 +3078,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -3029,11 +3105,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "name",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -3055,11 +3132,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "countryId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -3120,11 +3198,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -3146,11 +3225,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "name",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -3211,11 +3291,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -3237,11 +3318,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "purchaseOrder",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -3263,11 +3345,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "invoiceDate",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -3289,11 +3372,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "partnerId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -3315,11 +3399,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "deliveryDate",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -3341,11 +3426,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "paymentTermId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -3367,11 +3453,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "documentsWorkflowId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -3393,11 +3480,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "currencyId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -3419,11 +3507,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "exchangeRate",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -3445,11 +3534,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "invoiceTotal",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -3471,11 +3561,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "businessId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -3497,11 +3588,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "languageId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -3523,11 +3615,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "paymentValidationDate",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -3549,11 +3642,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "note",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -3575,11 +3669,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "numberInvoice",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -3776,11 +3871,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -3802,11 +3898,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "invoiceId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -3828,11 +3925,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "productId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -3854,11 +3952,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "quantity",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -3880,11 +3979,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "priceUnity",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -3906,11 +4006,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "productDescription",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -4005,11 +4106,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -4031,11 +4133,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "invoiceId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -4057,11 +4160,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "partnerId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -4139,11 +4243,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -4165,11 +4270,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "name",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -4191,11 +4297,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "cod",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -4217,11 +4324,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "sequence",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -4243,11 +4351,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "paymentId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -4269,11 +4378,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "businessId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -4295,11 +4405,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "currencyId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -4428,11 +4539,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -4454,11 +4566,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "name",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -4480,11 +4593,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "cod",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -4630,11 +4744,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -4656,11 +4771,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "name",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -4682,11 +4798,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "date",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -4708,11 +4825,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "hour",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -4773,11 +4891,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -4799,11 +4918,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "leadId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -4825,11 +4945,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "contactId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -4907,11 +5028,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -4933,11 +5055,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "fiscalPositionId",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -4959,11 +5082,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "paymentTermId",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -4985,11 +5109,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "currencyId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -5011,11 +5136,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "languageId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -5037,11 +5163,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "timezoneId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -5063,11 +5190,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "name",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -5089,11 +5217,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "nif",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -5115,11 +5244,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "description",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -5435,11 +5565,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -5461,11 +5592,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "code",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -5487,11 +5619,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "partnerId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -5513,11 +5646,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "codeTypeId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -5595,11 +5729,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -5621,11 +5756,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "partnerId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -5647,11 +5783,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "businessId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -5729,11 +5866,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -5755,11 +5893,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "partnerId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -5781,11 +5920,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "contactId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -5807,11 +5947,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "contactType",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -5889,11 +6030,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -5915,11 +6057,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "partnerId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -5941,11 +6084,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "paymentMethodsId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -6023,11 +6167,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -6049,11 +6194,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "username",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -6075,11 +6221,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "password",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -6101,11 +6248,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "email",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -6127,11 +6275,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "roleId",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -6175,11 +6324,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -6201,11 +6351,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "amount",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -6227,11 +6378,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "date",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -6253,11 +6405,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "reference",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -6279,11 +6432,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "partnerId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -6305,11 +6459,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "paymentMethodId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -6421,11 +6576,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -6447,11 +6603,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "name",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -6473,11 +6630,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "isActive",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -6499,11 +6657,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "countryId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -6615,11 +6774,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -6641,11 +6801,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "numberOfDays",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -6667,11 +6828,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "name",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -6693,11 +6855,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "description",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -6719,11 +6882,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "businessId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -6745,11 +6909,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "active",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -6827,11 +6992,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -6853,11 +7019,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "name",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -6879,11 +7046,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "taxId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -6905,11 +7073,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "salePrice",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -6931,11 +7100,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "descriptionShort",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -6957,11 +7127,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "productTypeId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -6983,11 +7154,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "state",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -7009,11 +7181,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "ean13",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -7035,11 +7208,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "internalCode",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -7061,11 +7235,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "productCategoryId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -7087,11 +7262,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "descriptionLong",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -7113,11 +7289,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "documentMediaLibraryId",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -7139,11 +7316,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "costPrice",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -7165,11 +7343,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "partnerId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -7332,11 +7511,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : false,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -7358,11 +7538,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "name",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -7384,11 +7565,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "category",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -7449,11 +7631,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : false,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -7475,11 +7658,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "name",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -7540,11 +7724,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -7566,11 +7751,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "name",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -7592,11 +7778,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "estimatedDate",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -7618,11 +7805,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "expirationDate",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -7644,11 +7832,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "purchaseOrder",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -7670,11 +7859,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "note",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -7696,11 +7886,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "partnerId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -7722,11 +7913,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "currencyId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -7748,11 +7940,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "invoiceId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -7864,11 +8057,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -7890,11 +8084,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "quantity",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -7916,11 +8111,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "priceUnity",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -7942,11 +8138,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "productDescription",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -7968,11 +8165,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "quotationId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -7994,11 +8192,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "productId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -8076,11 +8275,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -8102,11 +8302,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "name",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -8128,11 +8329,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "policy",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -8193,11 +8395,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -8219,11 +8422,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "prefix",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -8245,11 +8449,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "number",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -8271,11 +8476,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "suffix",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -8297,11 +8503,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "description",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -8345,11 +8552,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -8371,11 +8579,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "type",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -8397,11 +8606,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "name",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -8423,11 +8633,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "value",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -8471,11 +8682,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -8497,11 +8709,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "partnerId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -8562,11 +8775,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -8588,11 +8802,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "name",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -8614,11 +8829,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "cod",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -8640,11 +8856,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "description",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -8666,11 +8883,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "fiscalScope",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -8692,11 +8910,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "taxLevel",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -8718,11 +8937,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "reasonForImmunity",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -8744,11 +8964,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "isCompound",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -8770,11 +8991,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "fiscalSpaceId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -8796,11 +9018,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "taxTypeId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -8822,11 +9045,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "taxSale",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -8848,11 +9072,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "taxPurchase",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -8874,11 +9099,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "countryId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -9024,11 +9250,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -9050,11 +9277,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "rate",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -9076,11 +9304,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "effectiveDate",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -9102,11 +9331,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "taxId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -9167,11 +9397,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -9193,11 +9424,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "scope",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -9241,11 +9473,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -9267,11 +9500,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "name",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -9332,11 +9566,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -9358,11 +9593,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "taxId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -9384,11 +9620,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "invoiceLineId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -9466,11 +9703,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -9492,11 +9730,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "timezone",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -9591,11 +9830,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -9617,11 +9857,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "source",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -9643,11 +9884,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "translation",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -9669,11 +9911,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "object",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -9695,11 +9938,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "languageId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -9760,11 +10004,12 @@
     "catalog" : "dbinvoice",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "id",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -9786,11 +10031,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "email",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -9812,11 +10058,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "password",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -9838,11 +10085,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "name",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -9864,11 +10112,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : ""
+        "defaultValue" : "",
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "roleId",
       "foreignKey" : true,
       "generatorType" : "assigned",
